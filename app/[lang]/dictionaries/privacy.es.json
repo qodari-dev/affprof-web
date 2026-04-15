@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Politica de Privacidad — AffProf",
+    "description": "Conoce como AffProf recopila, utiliza y protege tus datos personales cuando usas nuestra plataforma de gestion de enlaces de afiliados."
+  },
+  "title": "Politica de Privacidad",
+  "lastUpdated": "15 de abril de 2025",
+  "sections": [
+    {
+      "heading": "Introduccion",
+      "content": "Esta Politica de Privacidad explica como AffProf (\"nosotros\", \"nos\" o \"nuestro\") recopila, utiliza, divulga y protege tu informacion cuando visitas nuestro sitio web en affprof.com y usas nuestra aplicacion en app.affprof.com. Estamos comprometidos con la proteccion de tu privacidad y el manejo transparente de tus datos. Al acceder o utilizar nuestros servicios, aceptas las practicas descritas en esta politica. Si no estas de acuerdo con los terminos de esta Politica de Privacidad, por favor deja de utilizar nuestros servicios de inmediato."
+    },
+    {
+      "heading": "Informacion que Recopilamos",
+      "content": "Recopilamos la informacion que proporcionas directamente al crear una cuenta, incluyendo tu nombre, direccion de correo electronico e informacion de pago para los planes de pago. Tambien recopilamos automaticamente datos de uso como tu direccion IP, tipo de navegador, sistema operativo, URLs de referencia, paginas visitadas y marcas de tiempo de tus interacciones con nuestra plataforma. Cuando creas enlaces cortos o codigos QR a traves de AffProf, almacenamos metadatos asociados a esos enlaces, incluyendo URLs de destino, fechas de creacion y cualquier etiqueta personalizada que asignes. Adicionalmente, utilizamos cookies y tecnologias de seguimiento similares para mantener tu sesion, recordar tus preferencias y recopilar analiticas sobre como usas nuestros servicios."
+    },
+    {
+      "heading": "Como Utilizamos tu Informacion",
+      "content": "Utilizamos la informacion que recopilamos para proporcionar, mantener y mejorar nuestros servicios, incluyendo funciones de gestion de enlaces, analiticas y reportes. Tu informacion de cuenta se usa para autenticar tu identidad, procesar pagos y comunicarnos contigo sobre tu cuenta o nuestros servicios. Los datos de uso nos ayudan a entender como se utiliza nuestra plataforma, identificar y corregir problemas tecnicos, y desarrollar nuevas funcionalidades. Tambien podemos usar tu direccion de correo electronico para enviar avisos relacionados con el servicio, actualizaciones y comunicaciones promocionales, de las cuales puedes darte de baja en cualquier momento."
+    },
+    {
+      "heading": "Enlaces Cortos y Seguimiento de Clics",
+      "content": "Una funcion central de AffProf es la creacion y gestion de enlaces cortos para marketing de afiliados. Cuando alguien hace clic en un enlace corto creado a traves de nuestra plataforma, recopilamos datos sobre ese clic, incluyendo la direccion IP del visitante, ubicacion geografica aproximada, tipo de dispositivo, navegador, sistema operativo, sitio web de referencia y la fecha y hora del clic. Estos datos se agregan y se presentan a traves de nuestro panel de analiticas para ayudarte a medir el rendimiento de tus enlaces de afiliados. No utilizamos estos datos de clics para construir perfiles individuales de los usuarios finales que hacen clic en tus enlaces, y no vendemos estos datos a terceros. Los usuarios finales que hacen clic en enlaces cortos son redirigidos a la URL de destino; no tienen una relacion de cuenta con AffProf a menos que se registren de forma independiente en nuestro servicio."
+    },
+    {
+      "heading": "Comparticion de Datos y Terceros",
+      "content": "No vendemos tu informacion personal a terceros. Podemos compartir tus datos con proveedores de servicios de confianza que nos asisten en la operacion de nuestra plataforma, procesamiento de pagos, envio de correos electronicos y alojamiento de nuestra infraestructura. Estos proveedores estan obligados contractualmente a usar tus datos unicamente para los fines que especificamos y de acuerdo con esta Politica de Privacidad. Tambien podemos divulgar tu informacion si asi lo requiere la ley, regulacion, proceso legal o solicitud gubernamental, o si consideramos que la divulgacion es necesaria para proteger nuestros derechos, tu seguridad o la seguridad de otros."
+    },
+    {
+      "heading": "Seguridad de los Datos",
+      "content": "Implementamos medidas tecnicas y organizativas estandar de la industria para proteger tus datos personales contra el acceso no autorizado, alteracion, divulgacion o destruccion. Estas medidas incluyen el cifrado de datos en transito mediante TLS, almacenamiento seguro de credenciales y evaluaciones de seguridad periodicas. Sin embargo, ningun metodo de transmision por Internet o almacenamiento electronico es completamente seguro. Aunque nos esforzamos por proteger tu informacion, no podemos garantizar su seguridad absoluta, y utilizas nuestros servicios bajo tu propio riesgo."
+    },
+    {
+      "heading": "Retencion de Datos",
+      "content": "Conservamos tu informacion personal mientras tu cuenta este activa o sea necesaria para proporcionarte nuestros servicios. Si cierras tu cuenta, eliminaremos o anonimizaremos tus datos personales dentro de 90 dias, excepto cuando la retencion sea requerida por ley o para propositos comerciales legitimos como resolver disputas o hacer cumplir nuestros acuerdos. Los datos analiticos de clics agregados y anonimizados pueden conservarse indefinidamente, ya que no pueden utilizarse para identificar a ninguna persona."
+    },
+    {
+      "heading": "Tus Derechos",
+      "content": "Dependiendo de tu jurisdiccion, puedes tener ciertos derechos sobre tus datos personales. Estos pueden incluir el derecho a acceder a los datos personales que tenemos sobre ti, el derecho a solicitar la correccion de datos inexactos, el derecho a solicitar la eliminacion de tus datos, el derecho a restringir u oponerte al procesamiento, y el derecho a la portabilidad de datos. Si te encuentras en el Espacio Economico Europeo, el Reino Unido u otra jurisdiccion con leyes de proteccion de datos similares, puedes ejercer estos derechos contactandonos en hello@affprof.com. Responderemos a tu solicitud dentro de 30 dias."
+    },
+    {
+      "heading": "Privacidad de Menores",
+      "content": "AffProf no esta destinado para uso de personas menores de 16 anos. No recopilamos intencionalmente informacion personal de menores de 16 anos. Si descubrimos que hemos recopilado inadvertidamente datos personales de un menor de 16 anos, tomaremos medidas para eliminar esa informacion lo antes posible. Si crees que un menor de 16 anos nos ha proporcionado datos personales, por favor contactanos en hello@affprof.com."
+    },
+    {
+      "heading": "Cambios a esta Politica",
+      "content": "Podemos actualizar esta Politica de Privacidad periodicamente para reflejar cambios en nuestras practicas, tecnologias, requisitos legales u otros factores. Cuando realicemos cambios materiales, te notificaremos publicando la politica actualizada en nuestro sitio web y actualizando la fecha de \"Ultima actualizacion\" en la parte superior de esta pagina. Te recomendamos revisar esta Politica de Privacidad periodicamente para mantenerte informado sobre como protegemos tus datos. Tu uso continuado de nuestros servicios despues de cualquier cambio constituye tu aceptacion de la politica actualizada."
+    },
+    {
+      "heading": "Contacto",
+      "content": "Si tienes alguna pregunta, inquietud o solicitud relacionada con esta Politica de Privacidad o nuestras practicas de datos, por favor contactanos en hello@affprof.com. Haremos nuestro mejor esfuerzo para atender tu consulta de manera oportuna."
+    }
+  ]
+}
