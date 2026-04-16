@@ -1,58 +1,62 @@
 {
   "meta": {
     "title": "Terms of Service — AffProf",
-    "description": "Read the terms and conditions that govern your use of the AffProf affiliate link management platform."
+    "description": "Read the terms and conditions that govern your use of the AffProf affiliate link management service."
   },
   "title": "Terms of Service",
   "lastUpdated": "April 15, 2025",
   "sections": [
     {
-      "heading": "Acceptance of Terms",
-      "content": "By accessing or using AffProf's website at affprof.com and application at app.affprof.com (collectively, the \"Service\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, you may not access or use the Service. These Terms constitute a legally binding agreement between you and AffProf. We reserve the right to update these Terms at any time, and your continued use of the Service following any changes constitutes acceptance of those changes."
+      "heading": "1. Acceptance of Terms",
+      "content": "By creating an account or using AffProf (\"Service\"), you agree to these Terms of Service. If you do not agree, do not use the Service."
     },
     {
-      "heading": "Account Registration",
-      "content": "To use certain features of the Service, you must create an account by providing accurate and complete information. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately at hello@affprof.com if you become aware of any unauthorized use of your account. We reserve the right to suspend or terminate accounts that contain false or misleading information, or that violate these Terms."
+      "heading": "2. Description of Service",
+      "content": "AffProf provides affiliate link management tools including:\n\n• Short link generation and tracking\n• QR code generation\n• Affiliate link monitoring\n• Click analytics"
     },
     {
-      "heading": "Service Description",
-      "content": "AffProf is an affiliate link management platform that provides tools for creating, organizing, and monitoring affiliate links. Our services include link shortening, QR code generation, click tracking and analytics, link grouping and tagging, destination URL monitoring, and performance reporting. We strive to keep the Service available and functioning reliably, but we do not guarantee uninterrupted or error-free operation. We may modify, suspend, or discontinue any part of the Service at any time with reasonable notice."
+      "heading": "3. Account Registration",
+      "content": "• You must provide accurate information when registering\n• You are responsible for maintaining the security of your account credentials\n• You must be at least 18 years old to use the Service\n• One person may not maintain multiple free accounts"
     },
     {
-      "heading": "Free and Paid Plans",
-      "content": "AffProf offers both free and paid subscription plans. Free plans provide access to a limited set of features and may be subject to usage restrictions such as caps on the number of links, clicks, or analytics retention. Paid plans unlock additional features, higher usage limits, and priority support. The specific features and limits of each plan are described on our pricing page and may change over time. We will notify existing subscribers of any material changes to their plan before they take effect."
+      "heading": "4. Acceptable Use",
+      "content": "You agree NOT to:\n\n• Use the Service for illegal purposes\n• Use short links to redirect to malicious, deceptive, or harmful content\n• Spam or abuse the short link redirect system\n• Attempt to reverse engineer or compromise the Service\n• Resell or sublicense the Service without permission\n• Create short links that impersonate other brands or people\n\nWe reserve the right to terminate accounts that violate these terms without notice."
     },
     {
-      "heading": "Payment and Billing",
-      "content": "If you subscribe to a paid plan, you agree to pay the applicable fees as described at the time of purchase. Payments are processed through our third-party payment provider, and you agree to their terms of service as well. Subscriptions renew automatically at the end of each billing cycle unless you cancel before the renewal date. Refunds are generally not provided for partial billing periods, but we may offer them at our discretion. If payment fails, we may suspend access to paid features until the outstanding balance is resolved."
+      "heading": "5. Subscription and Billing",
+      "content": "• Free plan is available with limitations as described on the Pricing page\n• Pro plan is billed monthly or annually via Stripe\n• Subscriptions automatically renew unless cancelled\n• You may cancel at any time from your account settings\n• Cancellations take effect at the end of the billing period\n• We do not offer refunds for partial billing periods\n• We reserve the right to change pricing with 30 days notice"
     },
     {
-      "heading": "Intellectual Property",
-      "content": "All content, features, and functionality of the Service, including but not limited to text, graphics, logos, icons, software, and underlying code, are the exclusive property of AffProf and are protected by copyright, trademark, and other intellectual property laws. You retain ownership of the content you upload or create through the Service, such as your links, tags, and custom configurations. By using the Service, you grant AffProf a limited, non-exclusive license to use your content solely for the purpose of providing and improving the Service."
+      "heading": "6. Free Trial",
+      "content": "• Pro plan includes a 14-day free trial\n• No credit card required to start the trial\n• After the trial, you will be charged unless you cancel"
     },
     {
-      "heading": "Acceptable Use",
-      "content": "You agree to use the Service only for lawful purposes and in accordance with these Terms. You may not use AffProf to create links that direct to illegal, fraudulent, or harmful content, including malware, phishing pages, or content that infringes on the rights of others. You may not engage in activities that interfere with or disrupt the Service, attempt to gain unauthorized access to our systems, or use automated tools to scrape or abuse the platform. We reserve the right to remove any links or content that violate these restrictions and to suspend or terminate the accounts of repeat offenders."
+      "heading": "7. Intellectual Property",
+      "content": "• AffProf and its logo are trademarks of AffProf\n• You retain ownership of all content you create (links, products, data)\n• You grant AffProf a license to store and process your data to provide the Service"
     },
     {
-      "heading": "Limitation of Liability",
-      "content": "To the fullest extent permitted by applicable law, AffProf and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Service. This includes, without limitation, damages for loss of profits, data, goodwill, or other intangible losses. Our total aggregate liability for any claims arising from or related to the Service shall not exceed the amount you paid us in the twelve months preceding the claim. Some jurisdictions do not allow certain limitations of liability, so these limitations may not apply to you."
+      "heading": "8. Disclaimer of Warranties",
+      "content": "THE SERVICE IS PROVIDED \"AS IS\" WITHOUT WARRANTIES OF ANY KIND. WE DO NOT GUARANTEE:\n\n• 100% uptime or availability\n• That link monitoring will catch every broken link instantly\n• Accuracy of click analytics data"
     },
     {
-      "heading": "Termination",
-      "content": "You may terminate your account at any time by contacting us at hello@affprof.com or through the account settings in the application. We may suspend or terminate your account if you violate these Terms, engage in fraudulent or abusive behavior, or fail to pay applicable fees. Upon termination, your right to use the Service ceases immediately. We may retain certain data as required by law or for legitimate business purposes. Any provisions of these Terms that by their nature should survive termination shall remain in effect."
+      "heading": "9. Limitation of Liability",
+      "content": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, AFFPROF SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING FROM USE OF THE SERVICE, INCLUDING LOST AFFILIATE COMMISSIONS."
     },
     {
-      "heading": "Changes to Terms",
-      "content": "We reserve the right to modify these Terms at any time. When we make material changes, we will notify you by posting the updated Terms on our website and updating the \"Last Updated\" date. We may also send an email notification for significant changes. Your continued use of the Service after the revised Terms take effect constitutes your acceptance of the changes. If you do not agree with the updated Terms, you must stop using the Service and close your account."
+      "heading": "10. Termination",
+      "content": "We may suspend or terminate your account if you:\n\n• Violate these Terms\n• Engage in fraudulent activity\n• Fail to pay subscription fees\n\nYou may delete your account at any time from Settings."
     },
     {
-      "heading": "Governing Law",
-      "content": "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which AffProf operates, without regard to its conflict of law provisions. Any disputes arising out of or relating to these Terms or the Service shall be resolved through good-faith negotiation. If negotiation fails, disputes shall be submitted to the exclusive jurisdiction of the competent courts in the applicable jurisdiction. Nothing in these Terms shall prevent either party from seeking injunctive or other equitable relief where appropriate."
+      "heading": "11. Governing Law",
+      "content": "These Terms are governed by the laws of Ontario, Canada, without regard to conflict of law principles."
     },
     {
-      "heading": "Contact Us",
-      "content": "If you have any questions or concerns about these Terms of Service, please contact us at hello@affprof.com. We will make reasonable efforts to respond to your inquiry in a timely manner."
+      "heading": "12. Changes to Terms",
+      "content": "We may update these Terms. We will notify you by email at least 14 days before significant changes take effect. Continued use after changes constitutes acceptance."
+    },
+    {
+      "heading": "13. Contact",
+      "content": "For questions about these Terms: hello@affprof.com"
     }
   ]
 }

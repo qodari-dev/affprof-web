@@ -1,58 +1,62 @@
 {
   "meta": {
-    "title": "Terminos de Servicio — AffProf",
-    "description": "Lee los terminos y condiciones que rigen el uso de la plataforma de gestion de enlaces de afiliados AffProf."
+    "title": "Términos de Servicio — AffProf",
+    "description": "Lee los términos y condiciones que regulan el uso del servicio de gestión de enlaces de afiliados de AffProf."
   },
-  "title": "Terminos de Servicio",
+  "title": "Términos de Servicio",
   "lastUpdated": "15 de abril de 2025",
   "sections": [
     {
-      "heading": "Aceptacion de los Terminos",
-      "content": "Al acceder o utilizar el sitio web de AffProf en affprof.com y la aplicacion en app.affprof.com (colectivamente, el \"Servicio\"), aceptas quedar vinculado por estos Terminos de Servicio (\"Terminos\"). Si no estas de acuerdo con estos Terminos, no puedes acceder ni utilizar el Servicio. Estos Terminos constituyen un acuerdo legalmente vinculante entre tu y AffProf. Nos reservamos el derecho de actualizar estos Terminos en cualquier momento, y tu uso continuado del Servicio despues de cualquier cambio constituye la aceptacion de dichos cambios."
+      "heading": "1. Aceptación de los Términos",
+      "content": "Al crear una cuenta o utilizar AffProf (\"Servicio\"), aceptas estos Términos de Servicio. Si no estás de acuerdo, no utilices el Servicio."
     },
     {
-      "heading": "Registro de Cuenta",
-      "content": "Para utilizar ciertas funciones del Servicio, debes crear una cuenta proporcionando informacion precisa y completa. Eres responsable de mantener la confidencialidad de tus credenciales de cuenta y de todas las actividades que ocurran bajo tu cuenta. Debes notificarnos inmediatamente en hello@affprof.com si detectas cualquier uso no autorizado de tu cuenta. Nos reservamos el derecho de suspender o cancelar cuentas que contengan informacion falsa o enganosa, o que violen estos Terminos."
+      "heading": "2. Descripción del Servicio",
+      "content": "AffProf proporciona herramientas para la gestión de enlaces de afiliados, incluyendo:\n\n• Generación y seguimiento de enlaces cortos\n• Generación de códigos QR\n• Monitoreo de enlaces de afiliados\n• Analítica de clics"
     },
     {
-      "heading": "Descripcion del Servicio",
-      "content": "AffProf es una plataforma de gestion de enlaces de afiliados que proporciona herramientas para crear, organizar y monitorear enlaces de afiliados. Nuestros servicios incluyen acortamiento de enlaces, generacion de codigos QR, seguimiento de clics y analiticas, agrupacion y etiquetado de enlaces, monitoreo de URLs de destino y reportes de rendimiento. Nos esforzamos por mantener el Servicio disponible y funcionando de manera confiable, pero no garantizamos una operacion ininterrumpida o libre de errores. Podemos modificar, suspender o descontinuar cualquier parte del Servicio en cualquier momento con un aviso razonable."
+      "heading": "3. Registro de Cuenta",
+      "content": "• Debes proporcionar información precisa al registrarte\n• Eres responsable de mantener la seguridad de las credenciales de tu cuenta\n• Debes tener al menos 18 años para usar el Servicio\n• Una persona no puede mantener múltiples cuentas gratuitas"
     },
     {
-      "heading": "Planes Gratuitos y de Pago",
-      "content": "AffProf ofrece planes de suscripcion tanto gratuitos como de pago. Los planes gratuitos proporcionan acceso a un conjunto limitado de funcionalidades y pueden estar sujetos a restricciones de uso, como limites en el numero de enlaces, clics o retencion de analiticas. Los planes de pago desbloquean funcionalidades adicionales, limites de uso mas altos y soporte prioritario. Las funcionalidades y limites especificos de cada plan se describen en nuestra pagina de precios y pueden cambiar con el tiempo. Notificaremos a los suscriptores existentes sobre cualquier cambio material en su plan antes de que entre en vigor."
+      "heading": "4. Uso Aceptable",
+      "content": "Aceptas NO:\n\n• Usar el Servicio con fines ilegales\n• Utilizar enlaces cortos para redirigir a contenido malicioso, engañoso o perjudicial\n• Hacer spam o abusar del sistema de redirección de enlaces\n• Intentar realizar ingeniería inversa o comprometer el Servicio\n• Revender o sublicenciar el Servicio sin autorización\n• Crear enlaces cortos que suplanten a otras marcas o personas\n\nNos reservamos el derecho de terminar cuentas que violen estos términos sin previo aviso."
     },
     {
-      "heading": "Pago y Facturacion",
-      "content": "Si te suscribes a un plan de pago, aceptas pagar las tarifas aplicables segun se describen en el momento de la compra. Los pagos se procesan a traves de nuestro proveedor de pagos externo, y aceptas sus terminos de servicio tambien. Las suscripciones se renuevan automaticamente al final de cada ciclo de facturacion a menos que canceles antes de la fecha de renovacion. Generalmente no se proporcionan reembolsos por periodos de facturacion parciales, pero podemos ofrecerlos a nuestra discrecion. Si el pago falla, podemos suspender el acceso a las funciones de pago hasta que se resuelva el saldo pendiente."
+      "heading": "5. Suscripción y Facturación",
+      "content": "• Existe un plan gratuito con limitaciones descritas en la página de precios\n• El plan Pro se factura mensual o anualmente a través de Stripe\n• Las suscripciones se renuevan automáticamente a menos que se cancelen\n• Puedes cancelar en cualquier momento desde la configuración de tu cuenta\n• Las cancelaciones tienen efecto al final del período de facturación\n• No ofrecemos reembolsos por períodos de facturación parciales\n• Nos reservamos el derecho de cambiar los precios con 30 días de aviso"
     },
     {
-      "heading": "Propiedad Intelectual",
-      "content": "Todo el contenido, funcionalidades y funciones del Servicio, incluyendo pero no limitado a textos, graficos, logotipos, iconos, software y codigo subyacente, son propiedad exclusiva de AffProf y estan protegidos por leyes de derechos de autor, marcas registradas y otras leyes de propiedad intelectual. Tu conservas la propiedad del contenido que subas o crees a traves del Servicio, como tus enlaces, etiquetas y configuraciones personalizadas. Al utilizar el Servicio, otorgas a AffProf una licencia limitada y no exclusiva para usar tu contenido unicamente con el proposito de proporcionar y mejorar el Servicio."
+      "heading": "6. Prueba Gratuita",
+      "content": "• El plan Pro incluye una prueba gratuita de 14 días\n• No se requiere tarjeta de crédito para iniciar la prueba\n• Después de la prueba, se te cobrará a menos que canceles"
     },
     {
-      "heading": "Uso Aceptable",
-      "content": "Aceptas utilizar el Servicio unicamente para fines legales y de acuerdo con estos Terminos. No puedes usar AffProf para crear enlaces que dirijan a contenido ilegal, fraudulento o danino, incluyendo malware, paginas de phishing o contenido que infrinja los derechos de otros. No puedes realizar actividades que interfieran con o interrumpan el Servicio, intentar obtener acceso no autorizado a nuestros sistemas, o usar herramientas automatizadas para extraer datos o abusar de la plataforma. Nos reservamos el derecho de eliminar cualquier enlace o contenido que viole estas restricciones y de suspender o cancelar las cuentas de infractores reincidentes."
+      "heading": "7. Propiedad Intelectual",
+      "content": "• AffProf y su logo son marcas registradas de AffProf\n• Conservas la propiedad de todo el contenido que crees (enlaces, productos, datos)\n• Concedes a AffProf una licencia para almacenar y procesar tus datos con el fin de proporcionar el Servicio"
     },
     {
-      "heading": "Limitacion de Responsabilidad",
-      "content": "En la maxima medida permitida por la ley aplicable, AffProf y sus directivos, directores, empleados y agentes no seran responsables de ningun dano indirecto, incidental, especial, consecuente o punitivo que surja de o este relacionado con tu uso del Servicio. Esto incluye, sin limitacion, danos por perdida de beneficios, datos, fondo de comercio u otras perdidas intangibles. Nuestra responsabilidad total acumulada por cualquier reclamacion derivada de o relacionada con el Servicio no excedera el monto que nos hayas pagado en los doce meses anteriores a la reclamacion. Algunas jurisdicciones no permiten ciertas limitaciones de responsabilidad, por lo que estas limitaciones pueden no aplicarse en tu caso."
+      "heading": "8. Exención de Garantías",
+      "content": "EL SERVICIO SE PROPORCIONA \"TAL CUAL\" SIN GARANTÍAS DE NINGÚN TIPO. NO GARANTIZAMOS:\n\n• Disponibilidad o funcionamiento ininterrumpido\n• Que el monitoreo detecte todos los enlaces caídos de forma inmediata\n• Exactitud total de los datos de analítica de clics"
     },
     {
-      "heading": "Terminacion",
-      "content": "Puedes cancelar tu cuenta en cualquier momento contactandonos en hello@affprof.com o a traves de la configuracion de cuenta en la aplicacion. Podemos suspender o cancelar tu cuenta si violas estos Terminos, participas en comportamiento fraudulento o abusivo, o no pagas las tarifas aplicables. Tras la cancelacion, tu derecho a usar el Servicio cesa inmediatamente. Podemos retener ciertos datos segun lo requiera la ley o para propositos comerciales legitimos. Cualquier disposicion de estos Terminos que por su naturaleza deba sobrevivir a la cancelacion permanecera en vigor."
+      "heading": "9. Limitación de Responsabilidad",
+      "content": "EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, AFFPROF NO SERÁ RESPONSABLE POR DAÑOS INDIRECTOS, INCIDENTALES O CONSECUENTES DERIVADOS DEL USO DEL SERVICIO, INCLUYENDO PÉRDIDA DE COMISIONES DE AFILIADOS."
     },
     {
-      "heading": "Cambios a los Terminos",
-      "content": "Nos reservamos el derecho de modificar estos Terminos en cualquier momento. Cuando realicemos cambios materiales, te notificaremos publicando los Terminos actualizados en nuestro sitio web y actualizando la fecha de \"Ultima actualizacion\". Tambien podemos enviar una notificacion por correo electronico para cambios significativos. Tu uso continuado del Servicio despues de que los Terminos revisados entren en vigor constituye tu aceptacion de los cambios. Si no estas de acuerdo con los Terminos actualizados, debes dejar de usar el Servicio y cerrar tu cuenta."
+      "heading": "10. Terminación",
+      "content": "Podemos suspender o cancelar tu cuenta si:\n\n• Violas estos Términos\n• Participas en actividades fraudulentas\n• No pagas las tarifas de suscripción\n\nPuedes eliminar tu cuenta en cualquier momento desde Configuración."
     },
     {
-      "heading": "Ley Aplicable",
-      "content": "Estos Terminos se regiran e interpretaran de acuerdo con las leyes de la jurisdiccion en la que opera AffProf, sin tener en cuenta sus disposiciones sobre conflictos de leyes. Cualquier disputa que surja de o este relacionada con estos Terminos o el Servicio se resolvera mediante negociacion de buena fe. Si la negociacion falla, las disputas se someteran a la jurisdiccion exclusiva de los tribunales competentes en la jurisdiccion aplicable. Nada en estos Terminos impedira que cualquiera de las partes busque medidas cautelares u otras medidas equitativas cuando sea apropiado."
+      "heading": "11. Legislación Aplicable",
+      "content": "Estos Términos se rigen por las leyes de Ontario, Canadá, sin tener en cuenta los principios de conflicto de leyes."
     },
     {
-      "heading": "Contacto",
-      "content": "Si tienes alguna pregunta o inquietud sobre estos Terminos de Servicio, por favor contactanos en hello@affprof.com. Haremos esfuerzos razonables para responder a tu consulta de manera oportuna."
+      "heading": "12. Cambios en los Términos",
+      "content": "Podemos actualizar estos Términos. Te notificaremos por correo electrónico al menos 14 días antes de que los cambios importantes entren en vigor. El uso continuo después de los cambios constituye tu aceptación."
+    },
+    {
+      "heading": "13. Contacto",
+      "content": "Para preguntas sobre estos Términos: hello@affprof.com"
     }
   ]
 }

@@ -1,54 +1,50 @@
 {
   "meta": {
     "title": "Privacy Policy — AffProf",
-    "description": "Learn how AffProf collects, uses, and protects your personal data when you use our affiliate link management platform."
+    "description": "Learn how AffProf collects, uses, and protects your information when you use our affiliate link management service."
   },
   "title": "Privacy Policy",
   "lastUpdated": "April 15, 2025",
   "sections": [
     {
-      "heading": "Introduction",
-      "content": "This Privacy Policy explains how AffProf (\"we\", \"us\", or \"our\") collects, uses, discloses, and safeguards your information when you visit our website at affprof.com and use our application at app.affprof.com. We are committed to protecting your privacy and handling your data transparently. By accessing or using our services, you agree to the practices described in this policy. If you do not agree with the terms of this Privacy Policy, please discontinue use of our services immediately."
+      "heading": "1. Information We Collect",
+      "content": "AffProf (\"we\", \"us\", \"our\") collects the following information when you use our service:\n\n• Account information: email address and name when you register\n• Usage data: links you create, products you add, click events on your short links\n• Click analytics: country, device type, browser, and referrer source of clicks on your short links (no personally identifiable visitor information is stored)\n• Payment information: handled entirely by Stripe. We never store credit card details.\n• IP addresses: stored in hashed form only, never in raw format"
     },
     {
-      "heading": "Information We Collect",
-      "content": "We collect information you provide directly when creating an account, including your name, email address, and payment information for paid plans. We also automatically collect usage data such as your IP address, browser type, operating system, referring URLs, pages visited, and timestamps of your interactions with our platform. When you create short links or QR codes through AffProf, we store metadata associated with those links, including destination URLs, creation dates, and any custom tags or labels you assign. Additionally, we use cookies and similar tracking technologies to maintain your session, remember your preferences, and gather analytics about how you use our services."
+      "heading": "2. How We Use Your Information",
+      "content": "We use your information to:\n\n• Provide and operate the AffProf service\n• Send email alerts when your affiliate links break\n• Send transactional emails (receipts, account notices)\n• Improve and develop new features\n• Respond to support requests\n\nWe do not sell your personal data to third parties."
     },
     {
-      "heading": "How We Use Your Information",
-      "content": "We use the information we collect to provide, maintain, and improve our services, including link management, analytics, and reporting features. Your account information is used to authenticate your identity, process payments, and communicate with you about your account or our services. Usage data helps us understand how our platform is used, identify and fix technical issues, and develop new features. We may also use your email address to send service-related notices, updates, and promotional communications, from which you can opt out at any time."
+      "heading": "3. Data Sharing",
+      "content": "We share data only with:\n\n• Stripe: for payment processing\n• Resend: for transactional email delivery\n• Neon/Supabase: for database hosting\n• Vercel: for application hosting\n\nAll providers are contractually bound to protect your data."
     },
     {
-      "heading": "Short Links and Click Tracking",
-      "content": "A core feature of AffProf is the creation and management of short links for affiliate marketing. When someone clicks on a short link created through our platform, we collect data about that click, including the clicker's IP address, approximate geographic location, device type, browser, operating system, referring website, and the date and time of the click. This data is aggregated and presented to you through our analytics dashboard to help you measure the performance of your affiliate links. We do not use this click data to build individual profiles of end users who click your links, and we do not sell this data to third parties. End users who click on short links are redirected to the destination URL; they do not have an account relationship with AffProf unless they independently sign up for our service."
+      "heading": "4. Data Retention",
+      "content": "• Account data is retained while your account is active\n• After account deletion, data is removed within 30 days\n• Click analytics are retained for 12 months"
     },
     {
-      "heading": "Data Sharing and Third Parties",
-      "content": "We do not sell your personal information to third parties. We may share your data with trusted service providers who assist us in operating our platform, processing payments, sending emails, and hosting our infrastructure. These providers are contractually obligated to use your data only for the purposes we specify and in accordance with this Privacy Policy. We may also disclose your information if required by law, regulation, legal process, or governmental request, or if we believe disclosure is necessary to protect our rights, your safety, or the safety of others."
+      "heading": "5. Cookies",
+      "content": "AffProf uses only essential cookies required for authentication and session management. We do not use advertising cookies or third-party tracking cookies."
     },
     {
-      "heading": "Data Security",
-      "content": "We implement industry-standard technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These measures include encryption of data in transit using TLS, secure storage of credentials, and regular security assessments. However, no method of transmission over the Internet or electronic storage is completely secure. While we strive to protect your information, we cannot guarantee its absolute security, and you use our services at your own risk."
+      "heading": "6. Your Rights",
+      "content": "You have the right to:\n\n• Access the personal data we hold about you\n• Request correction of inaccurate data\n• Request deletion of your account and data\n• Export your data in a portable format\n\nTo exercise these rights, contact us at privacy@affprof.com"
     },
     {
-      "heading": "Data Retention",
-      "content": "We retain your personal information for as long as your account is active or as needed to provide you our services. If you close your account, we will delete or anonymize your personal data within 90 days, except where retention is required by law or for legitimate business purposes such as resolving disputes or enforcing our agreements. Aggregated, anonymized click analytics data may be retained indefinitely as it cannot be used to identify any individual."
+      "heading": "7. Security",
+      "content": "We implement industry-standard security measures including:\n\n• Encrypted connections (HTTPS/TLS)\n• Hashed passwords via our authentication system\n• Row-level security on our database"
     },
     {
-      "heading": "Your Rights",
-      "content": "Depending on your jurisdiction, you may have certain rights regarding your personal data. These may include the right to access the personal data we hold about you, the right to request correction of inaccurate data, the right to request deletion of your data, the right to restrict or object to processing, and the right to data portability. If you are located in the European Economic Area, the United Kingdom, or another jurisdiction with similar data protection laws, you may exercise these rights by contacting us at hello@affprof.com. We will respond to your request within 30 days."
+      "heading": "8. Children's Privacy",
+      "content": "AffProf is not directed to children under 13. We do not knowingly collect data from children."
     },
     {
-      "heading": "Children's Privacy",
-      "content": "AffProf is not intended for use by individuals under the age of 16. We do not knowingly collect personal information from children under 16. If we learn that we have inadvertently collected personal data from a child under 16, we will take steps to delete that information as promptly as possible. If you believe a child under 16 has provided us with personal data, please contact us at hello@affprof.com."
+      "heading": "9. Changes to This Policy",
+      "content": "We may update this policy periodically. We will notify you by email of significant changes."
     },
     {
-      "heading": "Changes to This Policy",
-      "content": "We may update this Privacy Policy from time to time to reflect changes in our practices, technologies, legal requirements, or other factors. When we make material changes, we will notify you by posting the updated policy on our website and updating the \"Last Updated\" date at the top of this page. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your data. Your continued use of our services after any changes constitutes your acceptance of the updated policy."
-    },
-    {
-      "heading": "Contact Us",
-      "content": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at hello@affprof.com. We will do our best to address your inquiry promptly."
+      "heading": "10. Contact",
+      "content": "For privacy-related questions: privacy@affprof.com"
     }
   ]
 }

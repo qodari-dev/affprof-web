@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "AffProf — Protect Every Dollar You Earn With Affiliate Links",
-    "description": "Organize your affiliate links, detect broken ones before you lose commissions, generate short links with QR codes, and track every click — all in one place."
+    "title": "AffProf — Stop Losing Affiliate Commissions",
+    "description": "Track, protect, and optimize your affiliate links. Detect broken links, generate short links and QR codes, and know exactly what content makes you money."
   },
   "nav": {
     "features": "Features",
@@ -11,13 +11,13 @@
     "getStarted": "Get Started Free"
   },
   "hero": {
-    "badge": "Affiliate Link Management, Simplified",
-    "titlePart1": "Protect Every Dollar You Earn With",
-    "titleHighlight": "Affiliate Links",
-    "subtitle": "Organize your affiliate links, detect broken ones before you lose commissions, generate short links with QR codes, and track every click — all in one place.",
+    "badge": "Affiliate Link Management for Creators",
+    "titlePart1": "Stop losing commissions from",
+    "titleHighlight": "affiliate links",
+    "subtitle": "Track, protect, and optimize all your affiliate links in one place. Get alerts when links break, generate short links and QR codes, and know exactly what content makes you money.",
     "ctaPrimary": "Start for Free",
     "ctaSecondary": "See How It Works",
-    "socialProof": "No credit card required · Free plan available · Setup in 2 minutes"
+    "socialProof": "Join early creators optimizing their affiliate links · No credit card required · Free plan available · Setup in 2 minutes"
   },
   "mockup": {
     "allLinks": "All links",
@@ -32,81 +32,81 @@
   },
   "problems": {
     "title": "Sound familiar?",
-    "subtitle": "The hidden costs of managing affiliate links the old way.",
+    "subtitle": "The hidden ways you're losing affiliate commissions",
     "cards": [
       {
         "title": "You don't know when a link breaks",
-        "desc": "Affiliate links go down silently. By the time you notice, you've lost weeks of commissions."
+        "desc": "Affiliate links fail silently. By the time you notice, you've already lost clicks and commissions."
       },
       {
         "title": "You have no idea which links convert",
-        "desc": "You're posting links everywhere but can't tell which platform, video or post drives the most clicks."
+        "desc": "You're posting links everywhere — but you can't tell which platform, post, or video actually makes you money."
       },
       {
         "title": "Your links are scattered everywhere",
-        "desc": "Spreadsheets, Notion docs, browser bookmarks — no single place to manage all your affiliate links."
+        "desc": "Spreadsheets, Notion docs, browser bookmarks — managing affiliate links becomes messy fast."
       }
     ]
   },
   "features": {
-    "title": "Everything you need to manage affiliate links like a pro",
+    "title": "Everything you need to grow your affiliate revenue",
     "subtitle": "Built specifically for content creators and affiliate marketers.",
     "cards": [
       {
-        "title": "Organize by product",
+        "title": "Organize everything in one place",
         "desc": "Group all your affiliate links under products. Add tags to filter and find any link instantly."
       },
       {
-        "title": "Automatic broken link monitoring",
-        "desc": "AffProf checks your links automatically. Get email alerts the moment a link goes down — before you lose a single commission."
+        "title": "Never lose commissions to broken links",
+        "desc": "AffProf checks your links automatically and alerts you the moment something breaks."
       },
       {
-        "title": "Branded short links",
-        "desc": "Turn long ugly affiliate URLs into clean short links. Use your own custom domain (Pro) so every link reinforces your brand."
+        "title": "Clean, branded links that build trust",
+        "desc": "Turn long affiliate URLs into clean short links. Use your own custom domain (Pro) so every link reinforces your brand."
       },
       {
-        "title": "QR codes with your branding",
+        "title": "Turn offline traffic into clicks",
         "desc": "Every link gets a QR code automatically. Add your logo to QR codes (Pro) for a professional look on videos, thumbnails, and printed materials."
       },
       {
-        "title": "Know exactly where your clicks come from",
+        "title": "See what actually makes you money",
         "desc": "See clicks by country, device, browser, and referrer source. Know which platform drives the most traffic to your affiliate links."
       },
       {
-        "title": "Fallback links (Pro)",
-        "desc": "When a link breaks, automatically redirect traffic to a backup URL instead of a dead page. Never lose a click again."
+        "title": "Protect every click (Pro)",
+        "desc": "When a link breaks, automatically redirect traffic to a backup URL instead of a dead page."
       },
       {
-        "title": "Import links in bulk",
+        "title": "Import everything in seconds",
         "desc": "Already have hundreds of links? Upload a CSV file and import everything at once. No manual entry needed."
       },
       {
-        "title": "UTM tag generation",
+        "title": "Better tracking with UTM tags",
         "desc": "Automatically add UTM parameters to your short links for better tracking in Google Analytics and other platforms."
       }
     ]
   },
   "howItWorks": {
     "title": "Up and running in minutes",
-    "subtitle": "Three steps from scattered links to a system that earns for you.",
+    "subtitle": "From scattered links to a revenue system in 3 steps",
     "steps": [
       {
         "title": "Add your products and links",
-        "desc": "Create a product (e.g. Blue Yeti Mic) and add all its affiliate links from Amazon, ShareASale, etc."
+        "desc": "Create a product (e.g. Blue Yeti Mic) and add all its affiliate links from Amazon, ShareASale, and more."
       },
       {
-        "title": "AffProf does the work",
-        "desc": "We generate your short link and QR code, then monitor every link automatically every day."
+        "title": "AffProf tracks and monitors everything",
+        "desc": "We generate your short link and QR code, then monitor every link automatically."
       },
       {
-        "title": "Get alerts, track clicks, earn more",
+        "title": "Get insights and protect your revenue",
         "desc": "Receive instant email alerts when links break and see which ones drive the most traffic."
       }
     ]
   },
   "pricing": {
     "title": "Simple, transparent pricing",
-    "subtitle": "Start free. Upgrade when you're ready.",
+    "subtitle": "One broken affiliate link can cost you more than $9/month",
     "monthly": "Monthly",
     "yearly": "Yearly",
     "yearlyBadge": "2 months free",
@@ -115,7 +115,7 @@
       "badge": "Get Started",
       "price": "$0",
       "suffix": "/month",
-      "desc": "Forever free. No credit card.",
+      "desc": "Forever free. No credit card required.",
       "cta": "Start for Free",
       "features": [
         { "label": "2 products", "included": true },
@@ -150,9 +150,15 @@
         { "label": "Short link generation", "included": true },
         { "label": "QR with your logo/branding", "included": true },
         { "label": "Custom domain for short links", "included": true },
-        { "label": "Full click analytics (country, device, referrer, QR vs link)", "included": true },
+        {
+          "label": "Full click analytics (country, device, referrer, QR vs link)",
+          "included": true
+        },
         { "label": "Link monitoring 4x per day", "included": true },
-        { "label": "Fallback links (auto-redirect on broken)", "included": true },
+        {
+          "label": "Fallback links (auto-redirect on broken)",
+          "included": true
+        },
         { "label": "Bulk import via CSV", "included": true },
         { "label": "UTM parameter generation", "included": true },
         { "label": "Priority email support", "included": true }
@@ -161,42 +167,46 @@
     "note": "No credit card required for free plan. Cancel anytime. 14-day free trial on Pro."
   },
   "faq": {
-    "title": "Frequently asked questions",
-    "subtitle": "Everything you need to know about AffProf.",
+    "title": "Preguntas frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre AffProf.",
     "items": [
       {
-        "q": "What happens when a link breaks?",
-        "a": "AffProf detects it automatically and sends you an email alert with the broken link details and a link to your dashboard to fix it. Pro users also get automatic fallback redirects to a backup URL."
+        "q": "¿Qué pasa cuando un enlace se rompe?",
+        "a": "AffProf lo detecta automáticamente y te avisa de inmediato. En el plan Pro, tu tráfico se redirige automáticamente a un enlace alternativo — así nunca pierdes un clic, incluso mientras duermes."
       },
       {
-        "q": "What is a short link?",
-        "a": "Instead of sharing a long ugly affiliate URL, AffProf gives you a clean short link like affprof.com/go/blueyeti (or yourdomain.com/go/blueyeti on Pro). Every click on that short link is tracked before redirecting to the original affiliate URL."
+        "q": "¿Qué es un link corto y por qué lo necesito?",
+        "a": "En lugar de compartir un enlace largo y desordenado, AffProf te da un link limpio como affprof.com/go/blueyeti (o tudominio.com en Pro). Cada clic se registra antes de redirigir — así sabes exactamente de dónde viene tu tráfico."
       },
       {
-        "q": "Can I use my own domain for short links?",
-        "a": "Yes, on the Pro plan you can connect your own domain so your short links look like go.yourbrand.com/productname."
+        "q": "¿Con qué frecuencia se revisan mis enlaces?",
+        "a": "En el plan Gratis, los enlaces se revisan una vez al día. En Pro, se revisan 4 veces al día para una detección más rápida y mayor protección."
       },
       {
-        "q": "How does QR branding work?",
-        "a": "On the Pro plan you can add your logo to the center of every QR code. Perfect for YouTube thumbnails, Instagram stories, and printed materials."
+        "q": "¿Tengo que cambiar mis enlaces de afiliado actuales?",
+        "a": "No. Mantienes tus enlaces originales. AffProf los envuelve en un link corto y monitorea todo en segundo plano."
       },
       {
-        "q": "What platforms does AffProf support?",
-        "a": "Any affiliate platform — Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, and any custom URL."
+        "q": "¿Puedo usar mi propio dominio para los links cortos?",
+        "a": "Sí — en el plan Pro puedes conectar tu propio dominio para que tus enlaces se vean como go.tumarca.com/producto."
       },
       {
-        "q": "Can I import my existing links?",
-        "a": "Yes, on Pro you can upload a CSV file with all your existing links and import them in bulk."
+        "q": "¿Qué plataformas de afiliados soporta AffProf?",
+        "a": "Cualquier plataforma — incluyendo Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, Hotmart, Eduzz, Monetizze o cualquier enlace personalizado."
       },
       {
-        "q": "Is there a free trial for Pro?",
-        "a": "Yes, Pro comes with a 14-day free trial. No credit card required to start."
+        "q": "¿Puedo importar mis enlaces actuales?",
+        "a": "Sí. En el plan Pro puedes subir un archivo CSV con todos tus enlaces e importarlos en segundos."
+      },
+      {
+        "q": "¿Hay prueba gratuita del plan Pro?",
+        "a": "Sí — el plan Pro incluye una prueba gratuita de 14 días. No necesitas tarjeta de crédito para comenzar."
       }
     ]
   },
   "cta": {
-    "title": "Stop losing commissions to broken links",
-    "subtitle": "Join AffProf free today. No credit card required. Setup in 2 minutes.",
+    "title": "Stop losing affiliate commissions starting today",
+    "subtitle": "Join early creators using AffProf to protect and grow their revenue. No credit card required. Setup in 2 minutes.",
     "button": "Get Started for Free"
   },
   "footer": {

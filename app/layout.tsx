@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
-import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg-dark text-text-primary">
-        <GoogleAnalytics />
+        {process.env.NEXT_PUBLIC_GA_ID ? (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        ) : null}
         {children}
       </body>
     </html>
