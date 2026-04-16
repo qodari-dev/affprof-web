@@ -4,7 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function Navbar() {
+type NavDict = {
+  features: string;
+  pricing: string;
+  faq: string;
+  login: string;
+  getStarted: string;
+};
+
+export default function Navbar({ dict, lang }: { dict: NavDict; lang: string }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -16,10 +24,13 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "#features", label: "Features" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#faq", label: "FAQ" },
+    { href: "#features", label: dict.features },
+    { href: "#pricing", label: dict.pricing },
+    { href: "#faq", label: dict.faq },
   ];
+
+  const otherLang = lang === "en" ? "es" : "en";
+  const otherLabel = lang === "en" ? "ES" : "EN";
 
   return (
     <header
@@ -30,7 +41,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href={`/${lang}`} className="flex items-center gap-2">
           <Image
             src="/logo-close.png"
             alt="AffProf"
@@ -57,17 +68,23 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
+          <Link
+            href={`/${otherLang}`}
+            className="text-sm text-text-secondary hover:text-text-primary transition-colors border border-border-subtle rounded-md px-2 py-1"
+          >
+            {otherLabel}
+          </Link>
           <a
             href="https://app.affprof.com/login"
             className="text-sm text-text-secondary hover:text-text-primary transition-colors"
           >
-            Log in
+            {dict.login}
           </a>
           <a
             href="https://app.affprof.com/register"
             className="inline-flex items-center rounded-lg bg-primary hover:bg-primary-dark text-white text-sm font-medium px-4 py-2 transition-colors"
           >
-            Get Started Free
+            {dict.getStarted}
           </a>
         </div>
 
@@ -107,17 +124,23 @@ export default function Navbar() {
               </a>
             ))}
             <div className="h-px bg-border-subtle my-2" />
+            <Link
+              href={`/${otherLang}`}
+              className="px-3 py-2 rounded-lg text-sm text-text-secondary hover:text-text-primary hover:bg-bg-card transition-colors"
+            >
+              {otherLabel === "ES" ? "Español" : "English"}
+            </Link>
             <a
               href="https://app.affprof.com/login"
               className="px-3 py-2 rounded-lg text-sm text-text-secondary hover:text-text-primary hover:bg-bg-card transition-colors"
             >
-              Log in
+              {dict.login}
             </a>
             <a
               href="https://app.affprof.com/register"
               className="mt-1 inline-flex items-center justify-center rounded-lg bg-primary hover:bg-primary-dark text-white text-sm font-medium px-4 py-2.5 transition-colors"
             >
-              Get Started Free
+              {dict.getStarted}
             </a>
           </div>
         </div>

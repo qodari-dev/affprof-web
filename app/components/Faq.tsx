@@ -2,38 +2,13 @@
 
 import { useState } from "react";
 
-const items = [
-  {
-    q: "What happens when a link breaks?",
-    a: "AffProf detects it automatically and sends you an email alert with the broken link details and a link to your dashboard to fix it. Pro users also get automatic fallback redirects to a backup URL.",
-  },
-  {
-    q: "What is a short link?",
-    a: "Instead of sharing a long ugly affiliate URL, AffProf gives you a clean short link like affprof.com/go/blueyeti (or yourdomain.com/go/blueyeti on Pro). Every click on that short link is tracked before redirecting to the original affiliate URL.",
-  },
-  {
-    q: "Can I use my own domain for short links?",
-    a: "Yes, on the Pro plan you can connect your own domain so your short links look like go.yourbrand.com/productname.",
-  },
-  {
-    q: "How does QR branding work?",
-    a: "On the Pro plan you can add your logo to the center of every QR code. Perfect for YouTube thumbnails, Instagram stories, and printed materials.",
-  },
-  {
-    q: "What platforms does AffProf support?",
-    a: "Any affiliate platform — Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, and any custom URL.",
-  },
-  {
-    q: "Can I import my existing links?",
-    a: "Yes, on Pro you can upload a CSV file with all your existing links and import them in bulk.",
-  },
-  {
-    q: "Is there a free trial for Pro?",
-    a: "Yes, Pro comes with a 14-day free trial. No credit card required to start.",
-  },
-];
+type FaqDict = {
+  title: string;
+  subtitle: string;
+  items: { q: string; a: string }[];
+};
 
-export default function Faq() {
+export default function Faq({ dict }: { dict: FaqDict }) {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
@@ -41,15 +16,15 @@ export default function Faq() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Frequently asked questions
+            {dict.title}
           </h2>
           <p className="mt-4 text-text-secondary text-lg">
-            Everything you need to know about AffProf.
+            {dict.subtitle}
           </p>
         </div>
 
         <div className="mt-12 space-y-3">
-          {items.map((item, i) => {
+          {dict.items.map((item, i) => {
             const open = openIdx === i;
             return (
               <div

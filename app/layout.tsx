@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -9,9 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AffProf — Protect Every Dollar You Earn With Affiliate Links",
-  description:
-    "Organize your affiliate links, detect broken ones before you lose commissions, generate short links with QR codes, and track every click — all in one place.",
+  metadataBase: new URL("https://affprof.com"),
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg-dark text-text-primary">
+        <GoogleAnalytics />
         {children}
       </body>
     </html>

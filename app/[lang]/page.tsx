@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "./components/Navbar";
-import Pricing from "./components/Pricing";
-import Faq from "./components/Faq";
+import { notFound } from "next/navigation";
+import Navbar from "../components/Navbar";
+import Pricing from "../components/Pricing";
+import Faq from "../components/Faq";
+import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 
-/* ---------- Icons (inline, no external libs) ---------- */
+/* ---------- Icons (inline SVG, no external libs) ---------- */
 
 function IconBrokenLink() {
   return (
@@ -72,9 +74,6 @@ function IconQr() {
     </svg>
   );
 }
-function IconBarChart() {
-  return <IconChart />;
-}
 function IconRedirect() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -140,90 +139,16 @@ function IconLinkedIn() {
   );
 }
 
-/* ---------- Data ---------- */
-
-const problems = [
-  {
-    icon: <IconBrokenLink />,
-    title: "You don't know when a link breaks",
-    desc: "Affiliate links go down silently. By the time you notice, you've lost weeks of commissions.",
-  },
-  {
-    icon: <IconChart />,
-    title: "You have no idea which links convert",
-    desc: "You're posting links everywhere but can't tell which platform, video or post drives the most clicks.",
-  },
-  {
-    icon: <IconChaos />,
-    title: "Your links are scattered everywhere",
-    desc: "Spreadsheets, Notion docs, browser bookmarks — no single place to manage all your affiliate links.",
-  },
+const problemIcons = [<IconBrokenLink key="bl" />, <IconChart key="ch" />, <IconChaos key="ca" />];
+const featureIcons = [
+  <IconFolders key="fo" />, <IconShield key="sh" />, <IconLink key="li" />, <IconQr key="qr" />,
+  <IconChart key="bc" />, <IconRedirect key="re" />, <IconUpload key="up" />, <IconTag key="ta" />,
 ];
-
-const features = [
-  {
-    icon: <IconFolders />,
-    title: "Organize by product",
-    desc: "Group all your affiliate links under products. Add tags to filter and find any link instantly.",
-  },
-  {
-    icon: <IconShield />,
-    title: "Automatic broken link monitoring",
-    desc: "AffProf checks your links automatically. Get email alerts the moment a link goes down — before you lose a single commission.",
-  },
-  {
-    icon: <IconLink />,
-    title: "Branded short links",
-    desc: "Turn long ugly affiliate URLs into clean short links. Use your own custom domain (Pro) so every link reinforces your brand.",
-  },
-  {
-    icon: <IconQr />,
-    title: "QR codes with your branding",
-    desc: "Every link gets a QR code automatically. Add your logo to QR codes (Pro) for a professional look on videos, thumbnails, and printed materials.",
-  },
-  {
-    icon: <IconBarChart />,
-    title: "Know exactly where your clicks come from",
-    desc: "See clicks by country, device, browser, and referrer source. Know which platform drives the most traffic to your affiliate links.",
-  },
-  {
-    icon: <IconRedirect />,
-    title: "Fallback links (Pro)",
-    desc: "When a link breaks, automatically redirect traffic to a backup URL instead of a dead page. Never lose a click again.",
-  },
-  {
-    icon: <IconUpload />,
-    title: "Import links in bulk",
-    desc: "Already have hundreds of links? Upload a CSV file and import everything at once. No manual entry needed.",
-  },
-  {
-    icon: <IconTag />,
-    title: "UTM tag generation",
-    desc: "Automatically add UTM parameters to your short links for better tracking in Google Analytics and other platforms.",
-  },
-];
-
-const steps = [
-  {
-    icon: <IconPlus />,
-    title: "Add your products and links",
-    desc: "Create a product (e.g. Blue Yeti Mic) and add all its affiliate links from Amazon, ShareASale, etc.",
-  },
-  {
-    icon: <IconWand />,
-    title: "AffProf does the work",
-    desc: "We generate your short link and QR code, then monitor every link automatically every day.",
-  },
-  {
-    icon: <IconBell />,
-    title: "Get alerts, track clicks, earn more",
-    desc: "Receive instant email alerts when links break and see which ones drive the most traffic.",
-  },
-];
+const stepIcons = [<IconPlus key="pl" />, <IconWand key="wa" />, <IconBell key="be" />];
 
 /* ---------- Hero Mockup ---------- */
 
-function HeroMockup() {
+function HeroMockup({ dict }: { dict: { allLinks: string; title: string; newLink: string; headerProduct: string; headerShortUrl: string; headerClicks: string; headerStatus: string; active: string; broken: string } }) {
   const rows = [
     { name: "Blue Yeti Microphone", url: "amzn.to/3xY2k9p", status: "active", clicks: "1,284" },
     { name: "Sony WH-1000XM5", url: "amzn.to/4aBc2d1", status: "active", clicks: "892" },
@@ -233,10 +158,8 @@ function HeroMockup() {
   ];
   return (
     <div className="relative mx-auto w-full max-w-5xl">
-      {/* Green glow */}
       <div aria-hidden className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-40" />
       <div className="relative rounded-2xl border border-border-subtle bg-bg-card shadow-2xl overflow-hidden">
-        {/* Window chrome */}
         <div className="flex items-center gap-1.5 px-4 py-3 border-b border-border-subtle bg-bg-dark/60">
           <span className="w-3 h-3 rounded-full bg-error/60" />
           <span className="w-3 h-3 rounded-full bg-warning/60" />
@@ -246,19 +169,19 @@ function HeroMockup() {
         <div className="p-5 sm:p-6">
           <div className="flex items-center justify-between mb-5">
             <div>
-              <div className="text-sm text-text-secondary">All links</div>
-              <div className="text-2xl font-semibold">Your affiliate links</div>
+              <div className="text-sm text-text-secondary">{dict.allLinks}</div>
+              <div className="text-2xl font-semibold">{dict.title}</div>
             </div>
             <div className="hidden sm:inline-flex items-center rounded-lg bg-primary text-white text-xs font-medium px-3 py-2">
-              + New link
+              {dict.newLink}
             </div>
           </div>
           <div className="rounded-xl border border-border-subtle overflow-hidden">
             <div className="hidden sm:grid grid-cols-12 text-xs font-medium text-text-muted uppercase tracking-wider bg-bg-dark/40 px-4 py-2.5 border-b border-border-subtle">
-              <div className="col-span-5">Product</div>
-              <div className="col-span-4">Short URL</div>
-              <div className="col-span-2">Clicks</div>
-              <div className="col-span-1 text-right">Status</div>
+              <div className="col-span-5">{dict.headerProduct}</div>
+              <div className="col-span-4">{dict.headerShortUrl}</div>
+              <div className="col-span-2">{dict.headerClicks}</div>
+              <div className="col-span-1 text-right">{dict.headerStatus}</div>
             </div>
             {rows.map((r) => (
               <div
@@ -271,17 +194,11 @@ function HeroMockup() {
                 <div className="sm:col-span-1 sm:text-right">
                   <span
                     className={`inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-xs font-medium ${
-                      r.status === "active"
-                        ? "bg-success/10 text-success"
-                        : "bg-error/10 text-error"
+                      r.status === "active" ? "bg-success/10 text-success" : "bg-error/10 text-error"
                     }`}
                   >
-                    <span
-                      className={`w-1.5 h-1.5 rounded-full ${
-                        r.status === "active" ? "bg-success" : "bg-error"
-                      }`}
-                    />
-                    {r.status === "active" ? "Active" : "Broken"}
+                    <span className={`w-1.5 h-1.5 rounded-full ${r.status === "active" ? "bg-success" : "bg-error"}`} />
+                    {r.status === "active" ? dict.active : dict.broken}
                   </span>
                 </div>
               </div>
@@ -295,10 +212,20 @@ function HeroMockup() {
 
 /* ---------- Page ---------- */
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  if (!hasLocale(lang)) notFound();
+
+  const dict = await getDictionary(lang as Locale);
+  const stepLabel = lang === "es" ? "Paso" : "Step";
+
   return (
     <>
-      <Navbar />
+      <Navbar dict={dict.nav} lang={lang} />
 
       <main className="flex-1 pt-16">
         {/* HERO */}
@@ -308,59 +235,57 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary-light">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                Affiliate Link Management, Simplified
+                {dict.hero.badge}
               </span>
               <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-                Protect Every Dollar You Earn With{" "}
+                {dict.hero.titlePart1}{" "}
                 <span className="bg-gradient-to-r from-primary-light to-primary-dark bg-clip-text text-transparent">
-                  Affiliate Links
+                  {dict.hero.titleHighlight}
                 </span>
               </h1>
               <p className="mt-6 text-lg sm:text-xl text-text-secondary leading-relaxed">
-                Organize your affiliate links, detect broken ones before you lose commissions, generate short links with QR codes, and track every click — all in one place.
+                {dict.hero.subtitle}
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
                   href="https://app.affprof.com/register"
                   className="inline-flex items-center justify-center rounded-lg bg-primary hover:bg-primary-dark text-white text-base font-medium px-6 py-3 transition-colors w-full sm:w-auto"
                 >
-                  Start for Free
+                  {dict.hero.ctaPrimary}
                 </a>
                 <a
                   href="#features"
                   className="inline-flex items-center justify-center rounded-lg border border-border-subtle hover:border-primary/40 bg-bg-card hover:bg-bg-card/70 text-text-primary text-base font-medium px-6 py-3 transition-colors w-full sm:w-auto"
                 >
-                  See How It Works
+                  {dict.hero.ctaSecondary}
                 </a>
               </div>
               <p className="mt-5 text-sm text-text-muted">
-                No credit card required · Free plan available · Setup in 2 minutes
+                {dict.hero.socialProof}
               </p>
             </div>
 
             <div className="mt-16 sm:mt-20">
-              <HeroMockup />
+              <HeroMockup dict={dict.mockup} />
             </div>
           </div>
         </section>
 
-        {/* PROBLEM */}
+        {/* PROBLEMS */}
         <section className="py-20 sm:py-28 border-t border-border-subtle">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Sound familiar?</h2>
-              <p className="mt-4 text-text-secondary text-lg">
-                The hidden costs of managing affiliate links the old way.
-              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">{dict.problems.title}</h2>
+              <p className="mt-4 text-text-secondary text-lg">{dict.problems.subtitle}</p>
             </div>
             <div className="mt-14 grid gap-6 md:grid-cols-3">
-              {problems.map((p) => (
+              {dict.problems.cards.map((p, i) => (
                 <div
                   key={p.title}
                   className="rounded-2xl border border-border-subtle bg-bg-card p-6 hover:border-primary/30 transition-colors"
                 >
                   <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-error/10 text-error">
-                    {p.icon}
+                    {problemIcons[i]}
                   </div>
                   <h3 className="mt-5 text-lg font-semibold">{p.title}</h3>
                   <p className="mt-2 text-sm text-text-secondary leading-relaxed">{p.desc}</p>
@@ -374,21 +299,17 @@ export default function Home() {
         <section id="features" className="py-20 sm:py-28 border-t border-border-subtle">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-                Everything you need to manage affiliate links like a pro
-              </h2>
-              <p className="mt-4 text-text-secondary text-lg">
-                Built specifically for content creators and affiliate marketers.
-              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">{dict.features.title}</h2>
+              <p className="mt-4 text-text-secondary text-lg">{dict.features.subtitle}</p>
             </div>
             <div className="mt-14 grid gap-6 sm:grid-cols-2">
-              {features.map((f) => (
+              {dict.features.cards.map((f, i) => (
                 <div
                   key={f.title}
                   className="rounded-2xl border border-border-subtle bg-bg-card p-6 hover:border-primary/30 transition-colors"
                 >
                   <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 text-primary">
-                    {f.icon}
+                    {featureIcons[i]}
                   </div>
                   <h3 className="mt-5 text-lg font-semibold">{f.title}</h3>
                   <p className="mt-2 text-sm text-text-secondary leading-relaxed">{f.desc}</p>
@@ -402,22 +323,18 @@ export default function Home() {
         <section className="py-20 sm:py-28 border-t border-border-subtle">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-                Up and running in minutes
-              </h2>
-              <p className="mt-4 text-text-secondary text-lg">
-                Three steps from scattered links to a system that earns for you.
-              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">{dict.howItWorks.title}</h2>
+              <p className="mt-4 text-text-secondary text-lg">{dict.howItWorks.subtitle}</p>
             </div>
             <div className="mt-14 grid gap-8 md:grid-cols-3 relative">
-              {steps.map((s, i) => (
+              {dict.howItWorks.steps.map((s, i) => (
                 <div key={s.title} className="relative">
                   <div className="flex items-center gap-3">
                     <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 text-primary">
-                      {s.icon}
+                      {stepIcons[i]}
                     </div>
                     <span className="text-xs font-semibold text-text-muted uppercase tracking-wider">
-                      Step {i + 1}
+                      {stepLabel} {i + 1}
                     </span>
                   </div>
                   <h3 className="mt-5 text-xl font-semibold">{s.title}</h3>
@@ -429,10 +346,10 @@ export default function Home() {
         </section>
 
         {/* PRICING */}
-        <Pricing />
+        <Pricing dict={dict.pricing} />
 
         {/* FAQ */}
-        <Faq />
+        <Faq dict={dict.faq} />
 
         {/* FINAL CTA */}
         <section className="py-20 sm:py-28 border-t border-border-subtle">
@@ -444,17 +361,17 @@ export default function Home() {
               <div aria-hidden className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_20%,white,transparent_50%)]" />
               <div className="relative">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
-                  Stop losing commissions to broken links
+                  {dict.cta.title}
                 </h2>
                 <p className="mt-4 text-white/90 text-lg max-w-2xl mx-auto">
-                  Join AffProf free today. No credit card required. Setup in 2 minutes.
+                  {dict.cta.subtitle}
                 </p>
                 <div className="mt-8">
                   <a
                     href="https://app.affprof.com/register"
                     className="inline-flex items-center justify-center rounded-lg bg-white hover:bg-white/90 text-primary-dark text-base font-semibold px-6 py-3 transition-colors shadow-lg"
                   >
-                    Get Started for Free
+                    {dict.cta.button}
                   </a>
                 </div>
               </div>
@@ -478,42 +395,32 @@ export default function Home() {
                 />
                 <span className="text-base font-semibold tracking-tight">AffProf</span>
               </div>
-              <p className="mt-4 text-sm text-text-muted">
-                © 2025 AffProf. All rights reserved.
-              </p>
+              <p className="mt-4 text-sm text-text-muted">{dict.footer.copyright}</p>
               <p className="mt-2 text-sm text-text-secondary">hello@affprof.com</p>
             </div>
             <div>
-              <div className="text-sm font-semibold text-text-primary">Product</div>
+              <div className="text-sm font-semibold text-text-primary">{dict.footer.product}</div>
               <ul className="mt-4 space-y-2 text-sm text-text-secondary">
-                <li><a href="#features" className="hover:text-text-primary transition-colors">Features</a></li>
-                <li><a href="#pricing" className="hover:text-text-primary transition-colors">Pricing</a></li>
-                <li><a href="#faq" className="hover:text-text-primary transition-colors">FAQ</a></li>
+                <li><a href="#features" className="hover:text-text-primary transition-colors">{dict.nav.features}</a></li>
+                <li><a href="#pricing" className="hover:text-text-primary transition-colors">{dict.nav.pricing}</a></li>
+                <li><a href="#faq" className="hover:text-text-primary transition-colors">{dict.nav.faq}</a></li>
               </ul>
             </div>
             <div>
-              <div className="text-sm font-semibold text-text-primary">Legal</div>
+              <div className="text-sm font-semibold text-text-primary">{dict.footer.legal}</div>
               <ul className="mt-4 space-y-2 text-sm text-text-secondary">
-                <li><Link href="/privacy" className="hover:text-text-primary transition-colors">Privacy Policy</Link></li>
-                <li><Link href="/terms" className="hover:text-text-primary transition-colors">Terms of Service</Link></li>
+                <li><Link href={`/${lang}/privacy`} className="hover:text-text-primary transition-colors">{dict.footer.privacy}</Link></li>
+                <li><Link href={`/${lang}/terms`} className="hover:text-text-primary transition-colors">{dict.footer.terms}</Link></li>
               </ul>
             </div>
           </div>
           <div className="mt-10 pt-6 border-t border-border-subtle flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-text-muted">Built for creators and affiliate marketers.</p>
+            <p className="text-xs text-text-muted">{dict.footer.tagline}</p>
             <div className="flex items-center gap-3">
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="inline-flex items-center justify-center w-9 h-9 rounded-lg border border-border-subtle text-text-secondary hover:text-text-primary hover:border-primary/40 transition-colors"
-              >
+              <a href="#" aria-label="Twitter" className="inline-flex items-center justify-center w-9 h-9 rounded-lg border border-border-subtle text-text-secondary hover:text-text-primary hover:border-primary/40 transition-colors">
                 <IconTwitter />
               </a>
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="inline-flex items-center justify-center w-9 h-9 rounded-lg border border-border-subtle text-text-secondary hover:text-text-primary hover:border-primary/40 transition-colors"
-              >
+              <a href="#" aria-label="LinkedIn" className="inline-flex items-center justify-center w-9 h-9 rounded-lg border border-border-subtle text-text-secondary hover:text-text-primary hover:border-primary/40 transition-colors">
                 <IconLinkedIn />
               </a>
             </div>
