@@ -1,20 +1,19 @@
-"use client";
-
-import { useState } from "react";
+import { SITE_URLS } from "../site-config";
 
 function Check({ className = "" }: { className?: string }) {
   return (
-    <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      className={className}
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <polyline points="20 6 9 17 4 12" />
-    </svg>
-  );
-}
-
-function Cross({ className = "" }: { className?: string }) {
-  return (
-    <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-      <line x1="18" y1="6" x2="6" y2="18" />
-      <line x1="6" y1="6" x2="18" y2="18" />
     </svg>
   );
 }
@@ -26,7 +25,7 @@ type PricingDict = {
   subtitle: string;
   monthly: string;
   yearly: string;
-  yearlyBadge: string;
+  note: string;
   free: {
     name: string;
     badge: string;
@@ -46,138 +45,143 @@ type PricingDict = {
     descMonthly: string;
     descYearly: string;
     save: string;
-    cta: string;
+    ctaMonthly: string;
+    ctaYearly: string;
     features: Feature[];
   };
-  note: string;
 };
 
 export default function Pricing({ dict }: { dict: PricingDict }) {
-  const [yearly, setYearly] = useState(false);
-
-  const proPrice = yearly ? dict.pro.priceYearly : dict.pro.priceMonthly;
-  const proSuffix = yearly ? dict.pro.suffixYearly : dict.pro.suffixMonthly;
-
   return (
-    <section id="pricing" className="py-20 sm:py-28 border-t border-border-subtle">
+    <section id="pricing" className="border-t border-white/8 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-primary-light">
+            Pricing
+          </span>
+          <h2 className="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl">
             {dict.title}
           </h2>
-          <p className="mt-4 text-text-secondary text-lg">
+          <p className="mt-4 text-lg leading-relaxed text-text-secondary">
             {dict.subtitle}
           </p>
         </div>
 
-        <div className="mt-10 flex items-center justify-center">
-          <div className="inline-flex items-center rounded-full border border-border-subtle bg-bg-card p-1">
-            <button
-              type="button"
-              onClick={() => setYearly(false)}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                !yearly ? "bg-primary text-white" : "text-text-secondary hover:text-text-primary"
-              }`}
-            >
-              {dict.monthly}
-            </button>
-            <button
-              type="button"
-              onClick={() => setYearly(true)}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors flex items-center gap-2 ${
-                yearly ? "bg-primary text-white" : "text-text-secondary hover:text-text-primary"
-              }`}
-            >
-              {dict.yearly}
-              <span className={`text-xs px-1.5 py-0.5 rounded ${yearly ? "bg-white/20 text-white" : "bg-primary/10 text-primary"}`}>
-                {dict.yearlyBadge}
-              </span>
-            </button>
-          </div>
-        </div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
-          {/* FREE */}
-          <div className="rounded-2xl border border-border-subtle bg-bg-card p-8 flex flex-col">
-            <div className="flex items-center justify-between">
-              <h3 className="text-xl font-semibold">{dict.free.name}</h3>
-              <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-bg-dark border border-border-subtle text-text-secondary">
-                {dict.free.badge}
-              </span>
+        <div className="mt-14 grid gap-6 xl:grid-cols-[0.9fr,1.1fr]">
+          <div className="rounded-[28px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-8 shadow-[0_30px_80px_-50px_rgba(0,0,0,0.8)]">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-text-muted">
+                  {dict.free.badge}
+                </p>
+                <h3 className="mt-3 text-2xl font-semibold">{dict.free.name}</h3>
+              </div>
+              <div className="text-right">
+                <div className="text-4xl font-semibold tracking-tight">{dict.free.price}</div>
+                <div className="text-sm text-text-secondary">{dict.free.suffix}</div>
+              </div>
             </div>
-            <div className="mt-6 flex items-baseline gap-1">
-              <span className="text-5xl font-bold tracking-tight">{dict.free.price}</span>
-              <span className="text-text-secondary">{dict.free.suffix}</span>
-            </div>
-            <p className="mt-2 text-sm text-text-muted">{dict.free.desc}</p>
 
-            <ul className="mt-8 space-y-3 flex-1">
-              {dict.free.features.map((f) => (
-                <li key={f.label} className="flex items-start gap-3 text-sm">
-                  {f.included ? (
-                    <Check className="text-primary shrink-0 mt-0.5" />
-                  ) : (
-                    <Cross className="text-text-muted shrink-0 mt-0.5" />
-                  )}
-                  <span className={f.included ? "text-text-primary" : "text-text-muted line-through"}>
-                    {f.label}
-                  </span>
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-text-secondary">
+              {dict.free.desc}
+            </p>
+
+            <ul className="mt-8 space-y-3">
+              {dict.free.features.map((feature) => (
+                <li key={feature.label} className="flex items-start gap-3 text-sm">
+                  <Check className="mt-0.5 shrink-0 text-primary" />
+                  <span>{feature.label}</span>
                 </li>
               ))}
             </ul>
 
             <a
-              href="https://app.affprof.com/register"
-              className="mt-8 inline-flex items-center justify-center rounded-lg border border-border-subtle hover:border-primary/40 hover:bg-bg-dark text-text-primary text-sm font-medium px-4 py-3 transition-colors"
+              href={SITE_URLS.register}
+              className="mt-8 inline-flex w-full items-center justify-center rounded-2xl border border-white/10 bg-white/3 px-4 py-3 text-sm font-semibold text-text-primary transition-colors hover:border-primary/35 hover:bg-white/6"
             >
               {dict.free.cta}
             </a>
           </div>
 
-          {/* PRO */}
-          <div className="relative rounded-2xl border-2 border-primary bg-bg-card p-8 flex flex-col shadow-[0_0_0_1px_rgba(34,197,94,0.1),0_20px_40px_-20px_rgba(34,197,94,0.25)]">
-            <div className="absolute -top-3 left-8">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-primary text-white">
-                {dict.pro.badge}
-              </span>
-            </div>
-            <div className="flex items-center justify-between">
-              <h3 className="text-xl font-semibold">{dict.pro.name}</h3>
-              {yearly && (
-                <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-primary/10 text-primary">
+          <div className="relative overflow-hidden rounded-[32px] border border-primary/25 bg-[linear-gradient(145deg,rgba(34,197,94,0.16),rgba(10,15,20,0.9)_40%,rgba(10,15,20,1))] p-8 shadow-[0_45px_120px_-60px_rgba(34,197,94,0.6)] sm:p-10">
+            <div
+              aria-hidden
+              className="absolute inset-x-0 top-0 h-32 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_60%)]"
+            />
+            <div className="relative">
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-primary-light">
+                    {dict.pro.badge}
+                  </span>
+                  <h3 className="mt-4 text-3xl font-semibold tracking-tight">{dict.pro.name}</h3>
+                </div>
+                <span className="inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary-light">
                   {dict.pro.save}
                 </span>
-              )}
-            </div>
-            <div className="mt-6 flex items-baseline gap-1">
-              <span className="text-5xl font-bold tracking-tight">{proPrice}</span>
-              <span className="text-text-secondary">{proSuffix}</span>
-            </div>
-            <p className="mt-2 text-sm text-text-muted">
-              {yearly ? dict.pro.descYearly : dict.pro.descMonthly}
-            </p>
+              </div>
 
-            <ul className="mt-8 space-y-3 flex-1">
-              {dict.pro.features.map((f) => (
-                <li key={f.label} className="flex items-start gap-3 text-sm">
-                  <Check className="text-primary shrink-0 mt-0.5" />
-                  <span className="text-text-primary">{f.label}</span>
-                </li>
-              ))}
-            </ul>
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-3xl border border-white/8 bg-black/20 p-5">
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-text-muted">
+                    {dict.monthly}
+                  </div>
+                  <div className="mt-3 flex items-end gap-2">
+                    <span className="text-4xl font-semibold tracking-tight">
+                      {dict.pro.priceMonthly}
+                    </span>
+                    <span className="pb-1 text-sm text-text-secondary">
+                      {dict.pro.suffixMonthly}
+                    </span>
+                  </div>
+                  <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                    {dict.pro.descMonthly}
+                  </p>
+                  <a
+                    href={SITE_URLS.registerPro}
+                    className="mt-5 inline-flex w-full items-center justify-center rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-sm font-semibold text-text-primary transition-colors hover:bg-white/10"
+                  >
+                    {dict.pro.ctaMonthly}
+                  </a>
+                </div>
 
-            <a
-              href="https://app.affprof.com/register?plan=pro"
-              className="mt-8 inline-flex items-center justify-center rounded-lg bg-primary hover:bg-primary-dark text-white text-sm font-medium px-4 py-3 transition-colors"
-            >
-              {dict.pro.cta}
-            </a>
+                <div className="rounded-3xl border border-primary/30 bg-primary/10 p-5">
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-light">
+                    {dict.yearly}
+                  </div>
+                  <div className="mt-3 flex items-end gap-2">
+                    <span className="text-4xl font-semibold tracking-tight">
+                      {dict.pro.priceYearly}
+                    </span>
+                    <span className="pb-1 text-sm text-text-secondary">
+                      {dict.pro.suffixYearly}
+                    </span>
+                  </div>
+                  <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                    {dict.pro.descYearly}
+                  </p>
+                  <a
+                    href={SITE_URLS.registerProAnnual}
+                    className="mt-5 inline-flex w-full items-center justify-center rounded-2xl bg-primary px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
+                  >
+                    {dict.pro.ctaYearly}
+                  </a>
+                </div>
+              </div>
+
+              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+                {dict.pro.features.map((feature) => (
+                  <li key={feature.label} className="flex items-start gap-3 rounded-2xl border border-white/8 bg-white/4 px-4 py-3 text-sm">
+                    <Check className="mt-0.5 shrink-0 text-primary-light" />
+                    <span>{feature.label}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
-        <p className="mt-8 text-center text-sm text-text-muted">
-          {dict.note}
-        </p>
+        <p className="mt-8 text-center text-sm text-text-muted">{dict.note}</p>
       </div>
     </section>
   );

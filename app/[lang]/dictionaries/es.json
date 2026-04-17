@@ -1,27 +1,54 @@
 {
   "meta": {
-    "title": "AffProf — Deja de perder comisiones de afiliados",
-    "description": "Organiza, protege y optimiza tus enlaces de afiliados. Detecta enlaces caídos, genera links cortos y códigos QR, y entiende qué contenido te genera ingresos."
+    "title": "AffProf — Operaciones de enlaces de afiliado para creadores",
+    "description": "Gestiona enlaces de afiliado, URLs cortas, códigos QR, monitoreo, analítica, UTM y dominios personalizados desde un solo workspace."
   },
   "nav": {
     "features": "Funciones",
-    "pricing": "Precios",
+    "pricing": "Planes",
     "faq": "FAQ",
     "login": "Iniciar sesión",
     "getStarted": "Empezar gratis"
   },
   "hero": {
-    "badge": "Gestión de enlaces de afiliados para creadores",
-    "titlePart1": "Deja de perder comisiones con tus",
-    "titleHighlight": "enlaces de afiliados",
-    "subtitle": "Organiza, protege y optimiza todos tus enlaces en un solo lugar. Recibe alertas cuando un enlace falla, genera links cortos y códigos QR, y descubre qué contenido realmente genera ingresos.",
+    "badge": "Operaciones de enlaces de afiliado para creadores",
+    "titlePart1": "Deja de perder comisiones por",
+    "titleHighlight": "enlaces rotos.",
+    "titlePart2": "Gestiona todo desde un solo workspace.",
+    "subtitle": "AffProf detecta enlaces rotos, protege tu tráfico con fallbacks y muestra exactamente qué contenido genera ingresos.",
     "ctaPrimary": "Empezar gratis",
     "ctaSecondary": "Ver cómo funciona",
-    "socialProof": "Únete a los primeros creadores optimizando sus enlaces · Sin tarjeta de crédito · Configuración en 2 minutos"
+    "microNote": "Sin tarjeta de crédito · Configuración en 2 minutos",
+    "socialProof": "Pensado para creadores, sitios de afiliación y equipos pequeños que necesitan operaciones más limpias y mejor atribución.",
+    "points": [
+      "Organiza enlaces por producto, campaña o tag en lugar de saltar entre hojas de cálculo y notas sueltas.",
+      "Monitorea enlaces rotos y protege tráfico con alertas, fallbacks y flujos de redirección más limpios.",
+      "Analiza clics por fuente, dispositivo, país, referrer y canal desde el mismo dashboard."
+    ]
+  },
+  "heroMockup": {
+    "workspace": "Workspace de AffProf",
+    "monitoring": "Monitoreo",
+    "tracking": "Tracking",
+    "brandedLinks": "Links de marca",
+    "fallbackReady": "Fallback activo",
+    "health": "4 veces al día",
+    "sourceLabel": "UTM + referrer"
+  },
+  "proof": {
+    "items": [
+      "Links cortos",
+      "Códigos QR",
+      "Monitoreo",
+      "Redirección fallback",
+      "Tracking UTM",
+      "Importación CSV",
+      "Dominios personalizados"
+    ]
   },
   "mockup": {
     "allLinks": "Todos los enlaces",
-    "title": "Tus enlaces de afiliados",
+    "title": "Workspace de enlaces de afiliado",
     "newLink": "+ Nuevo enlace",
     "headerProduct": "Producto",
     "headerShortUrl": "URL corta",
@@ -31,106 +58,110 @@
     "broken": "Roto"
   },
   "problems": {
-    "title": "¿Te suena familiar?",
-    "subtitle": "Las formas ocultas en las que estás perdiendo comisiones",
+    "title": "La mayoría de las fugas de ingresos de afiliado pasan en silencio",
+    "subtitle": "Enlaces rotos, atribución incompleta y documentos dispersos vuelven las operaciones de afiliación más difíciles de lo necesario.",
     "cards": [
       {
-        "title": "No sabes cuándo un enlace deja de funcionar",
-        "desc": "Los enlaces fallan en silencio. Cuando te das cuenta, ya perdiste clics y comisiones."
+        "title": "Un enlace roto te cuesta dinero antes de que alguien lo vea",
+        "desc": "Los enlaces de afiliado fallan en silencio. Si nadie los revisa, los clics siguen saliendo y las comisiones se pierden en segundo plano."
       },
       {
-        "title": "No sabes qué enlaces convierten",
-        "desc": "Publicas enlaces en todos lados, pero no sabes qué contenido realmente genera ingresos."
+        "title": "La atribución se pierde entre canales",
+        "desc": "Publicas en YouTube, Instagram, blogs, newsletters y PDFs, pero aun así no sabes qué canal genera los clics que realmente importan."
       },
       {
-        "title": "Tus enlaces están por todas partes",
-        "desc": "Hojas de cálculo, Notion, marcadores… gestionar enlaces se vuelve un caos rápidamente."
+        "title": "La operación vive repartida en demasiadas herramientas",
+        "desc": "Productos en una hoja, enlaces en otra, QR en otro sitio y dominios en un flujo separado es la forma más rápida de perder control."
       }
     ]
   },
+  "audience": {
+    "items": [
+      "Creadores que generan ingresos de afiliado desde video, redes, blogs o newsletters.",
+      "Sitios de afiliación que necesitan gobernanza más limpia y cambios más rápidos.",
+      "Equipos pequeños que quieren un solo workspace para tracking, redirecciones, importaciones y reporting.",
+      "Operadores que necesitan links de marca y mejor analítica sin complejidad enterprise."
+    ]
+  },
   "features": {
-    "title": "Todo lo que necesitas para aumentar tus ingresos de afiliado",
-    "subtitle": "Diseñado para creadores y marketers que quieren resultados reales.",
+    "title": "Construido alrededor del workflow real de AffProf",
+    "subtitle": "La landing ahora refleja lo que de verdad hace el producto en affprof-app, con una historia más clara enfocada en workflow, control y conversión.",
     "cards": [
       {
-        "title": "Organiza todo en un solo lugar",
-        "desc": "Agrupa tus enlaces por producto y encuentra cualquier link al instante."
+        "title": "Organiza enlaces por producto y campaña",
+        "desc": "Guarda cada URL de afiliado en un solo workspace, agrupa enlaces por producto y usa tags para que nada se pierda."
       },
       {
-        "title": "Nunca pierdas comisiones por enlaces caídos",
-        "desc": "AffProf monitorea tus enlaces y te alerta en el momento en que algo falla."
+        "title": "Monitorea la salud de cada enlace",
+        "desc": "AffProf revisa tus enlaces automáticamente para detectar fallos antes de que sigas perdiendo clics y comisiones."
       },
       {
-        "title": "Links limpios que generan confianza",
-        "desc": "Convierte URLs largas en enlaces cortos usando tu propio dominio."
+        "title": "Crea links cortos en los que tu audiencia confíe",
+        "desc": "Convierte URLs largas en links cortos limpios y fáciles de compartir sin tocar tu enlace de afiliado original."
       },
       {
-        "title": "Convierte tráfico offline en clics",
-        "desc": "Genera códigos QR para usar en videos, thumbnails o material impreso."
+        "title": "Usa tu propio dominio para reforzar tu marca",
+        "desc": "En Pro puedes conectar un dominio personalizado para que tus enlaces se vean como parte natural de tu marca."
       },
       {
-        "title": "Descubre qué realmente te genera dinero",
-        "desc": "Analiza clics por país, dispositivo y fuente de tráfico."
+        "title": "Genera QR para tráfico offline e híbrido",
+        "desc": "Añade códigos QR a videos, presentaciones, PDFs, packaging o impresos sin montar workflows separados."
       },
       {
-        "title": "Protege cada clic (Pro)",
-        "desc": "Redirige automáticamente a un enlace alternativo si uno falla."
+        "title": "Descubre qué canales generan clics reales",
+        "desc": "Revisa tráfico por país, dispositivo, navegador, referrer, uso de QR y contexto de campaña desde un solo lugar."
       },
       {
-        "title": "Importa todo en segundos",
-        "desc": "Sube un CSV con tus enlaces y empieza en minutos."
+        "title": "Protege cada clic con fallback automático",
+        "desc": "Cuando un enlace falla, redirige automáticamente el tráfico a una URL de respaldo en lugar de enviarlo a una página muerta."
       },
       {
-        "title": "Mejor tracking con UTM",
-        "desc": "Sabe exactamente de dónde viene tu tráfico en Google Analytics."
+        "title": "Escala onboarding con importación CSV",
+        "desc": "Si ya tienes una librería grande de enlaces, impórtala en bloque en lugar de reconstruir todo manualmente."
+      },
+      {
+        "title": "Mantén limpia la atribución con soporte UTM",
+        "desc": "Añade o conserva parámetros UTM para que tus links cortos sigan siendo útiles dentro de tus herramientas de analítica."
       }
     ]
   },
   "howItWorks": {
-    "title": "Listo en minutos",
-    "subtitle": "De enlaces desordenados a un sistema que genera ingresos en 3 pasos",
+    "title": "De enlaces desordenados a un sistema que funciona",
+    "subtitle": "La configuración es directa: centralizas los enlaces, defines la capa de tracking y dejas que AffProf mantenga el sistema saludable.",
     "steps": [
       {
-        "title": "Agrega tus productos y enlaces",
-        "desc": "Importa o agrega manualmente tus enlaces de afiliado en segundos."
+        "title": "Agrega tus productos, enlaces y tags",
+        "desc": "Crea productos manualmente o impórtalos en bloque, y después conecta las URLs y etiquetas que realmente usas en tu workflow."
       },
       {
-        "title": "AffProf hace el trabajo",
-        "desc": "Generamos links cortos, códigos QR y monitoreamos tus enlaces automáticamente."
+        "title": "Genera la capa de distribución",
+        "desc": "AffProf crea links cortos y QR, aplica tu configuración de tracking y mantiene consistentes las redirecciones."
       },
       {
-        "title": "Protege tus ingresos y optimiza",
-        "desc": "Recibe alertas, analiza resultados y deja de perder comisiones."
+        "title": "Monitorea, optimiza y protege los clics",
+        "desc": "Usa alertas, reporting y destinos fallback para proteger tráfico y entender qué contenido está funcionando."
       }
     ]
   },
   "pricing": {
-    "title": "Precios simples y transparentes",
-    "subtitle": "Un solo enlace roto puede costarte más de $9 al mes",
+    "title": "Empieza gratis y sube de plan cuando el workflow lo justifique",
+    "subtitle": "Puedes comenzar con una cuenta gratis y pasar a Pro cuando necesites links de marca, analítica más profunda, redirecciones fallback e importación masiva.",
     "monthly": "Mensual",
     "yearly": "Anual",
-    "yearlyBadge": "2 meses gratis",
     "free": {
       "name": "Gratis",
-      "badge": "Comenzar",
+      "badge": "Empezar",
       "price": "$0",
       "suffix": "/mes",
-      "desc": "Perfecto para empezar. Sin tarjeta de crédito.",
-      "cta": "Empezar gratis",
+      "desc": "Un punto de partida práctico para probar el workflow y gestionar un catálogo pequeño.",
+      "cta": "Crear cuenta gratis",
       "features": [
         { "label": "2 productos", "included": true },
         { "label": "10 enlaces en total", "included": true },
         { "label": "Generación de links cortos", "included": true },
-        { "label": "Códigos QR (sin branding)", "included": true },
+        { "label": "Códigos QR estándar", "included": true },
         { "label": "Conteo básico de clics", "included": true },
-        { "label": "Monitoreo 1 vez al día", "included": true },
-        { "label": "Alertas por email", "included": true },
-        { "label": "Dashboard", "included": true },
-        { "label": "Dominio personalizado", "included": false },
-        { "label": "Branding en QR", "included": false },
-        { "label": "Fallback links", "included": false },
-        { "label": "Importación CSV", "included": false },
-        { "label": "Analítica completa", "included": false }
+        { "label": "Monitoreo diario y alertas por email", "included": true }
       ]
     },
     "pro": {
@@ -139,26 +170,22 @@
       "priceMonthly": "$9",
       "suffixMonthly": "/mes",
       "priceYearly": "$6.58",
-      "suffixYearly": "/mes (facturado anual)",
-      "descMonthly": "O $79/año (ahorra 27%)",
-      "descYearly": "$79/año — ahorra 27%",
+      "suffixYearly": "/mes facturado anual",
+      "descMonthly": "Facturación mensual para equipos que quieren todas las funciones sin comprometerse de entrada.",
+      "descYearly": "$79 al año con todo el set de funciones Pro y un costo mensual efectivo más bajo.",
       "save": "Ahorra 27%",
-      "cta": "Probar Pro — 14 días gratis",
+      "ctaMonthly": "Empezar Pro mensual",
+      "ctaYearly": "Empezar Pro anual",
       "features": [
-        { "label": "Productos ilimitados", "included": true },
-        { "label": "Enlaces ilimitados", "included": true },
-        { "label": "Links cortos", "included": true },
-        { "label": "QR con tu branding", "included": true },
-        { "label": "Dominio personalizado", "included": true },
-        { "label": "Analítica completa", "included": true },
-        { "label": "Monitoreo 4 veces al día", "included": true },
-        { "label": "Redirección automática (fallback)", "included": true },
-        { "label": "Importación CSV", "included": true },
-        { "label": "UTM automático", "included": true },
-        { "label": "Soporte prioritario", "included": true }
+        { "label": "Productos y enlaces ilimitados", "included": true },
+        { "label": "QR con branding y dominios personalizados", "included": true },
+        { "label": "Analítica completa y atribución", "included": true },
+        { "label": "Redirección fallback para enlaces rotos", "included": true },
+        { "label": "Importación CSV para catálogos grandes", "included": true },
+        { "label": "Soporte UTM y soporte prioritario por email", "included": true }
       ]
     },
-    "note": "Cancela cuando quieras. Prueba gratis de 14 días en Pro."
+    "note": "Sin tarjeta para el plan Gratis. Cancela cuando quieras. Prueba gratis de 14 días en Pro."
   },
   "faq": {
     "title": "Preguntas frecuentes",
@@ -166,45 +193,49 @@
     "items": [
       {
         "q": "¿Qué pasa cuando un enlace se rompe?",
-        "a": "AffProf lo detecta automáticamente y te notifica. En Pro, el tráfico se redirige automáticamente a un enlace alternativo."
+        "a": "AffProf lo detecta automáticamente y te avisa de inmediato. En el plan Pro, tu tráfico se redirige automáticamente a un enlace alternativo, así nunca pierdes un clic incluso mientras duermes."
       },
       {
-        "q": "¿Qué es un link corto?",
-        "a": "Es un enlace limpio y fácil de compartir que redirige a tu link de afiliado original mientras registra los clics."
+        "q": "¿Qué es un link corto y por qué lo necesito?",
+        "a": "En lugar de compartir un enlace largo y desordenado, AffProf te da un link limpio como affprof.com/go/blueyeti o tu propio dominio en Pro. Cada clic se registra antes de redirigir, así sabes exactamente de dónde viene tu tráfico."
       },
       {
-        "q": "¿Puedo usar mi propio dominio?",
-        "a": "Sí, en el plan Pro puedes conectar tu dominio."
+        "q": "¿Con qué frecuencia se revisan mis enlaces?",
+        "a": "En el plan Gratis, los enlaces se revisan una vez al día. En Pro, se revisan 4 veces al día para una detección más rápida y mayor protección."
       },
       {
-        "q": "¿Cómo funciona el branding en QR?",
-        "a": "Puedes añadir tu logo al centro del QR para usarlo en contenido o impresos."
+        "q": "¿Tengo que cambiar mis enlaces de afiliado actuales?",
+        "a": "No. Mantienes tus enlaces originales. AffProf los envuelve en un link corto y monitorea todo en segundo plano."
       },
       {
-        "q": "¿Qué plataformas soporta?",
-        "a": "Todas: Amazon, ShareASale, ClickBank, etc."
+        "q": "¿Puedo usar mi propio dominio para los links cortos?",
+        "a": "Sí. En el plan Pro puedes conectar tu propio dominio para que tus enlaces se vean como go.tumarca.com/producto."
       },
       {
-        "q": "¿Puedo importar mis enlaces?",
-        "a": "Sí, con CSV en el plan Pro."
+        "q": "¿Qué plataformas de afiliados soporta AffProf?",
+        "a": "Cualquier plataforma, incluyendo Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, Hotmart, Eduzz, Monetizze o cualquier enlace personalizado."
       },
       {
-        "q": "¿Hay prueba gratis?",
-        "a": "Sí, 14 días gratis en Pro sin tarjeta."
+        "q": "¿Puedo importar mis enlaces actuales?",
+        "a": "Sí. En el plan Pro puedes subir un archivo CSV con todos tus enlaces e importarlos en segundos."
+      },
+      {
+        "q": "¿Hay prueba gratuita del plan Pro?",
+        "a": "Sí. El plan Pro incluye una prueba gratuita de 14 días. No necesitas tarjeta de crédito para comenzar."
       }
     ]
   },
   "cta": {
-    "title": "Deja de perder comisiones desde hoy",
-    "subtitle": "Únete a los primeros creadores que están optimizando sus ingresos.",
-    "button": "Empezar gratis"
+    "title": "¿Listo para ordenar tu workflow de afiliación?",
+    "subtitle": "Crea tu cuenta, agrega tus primeros productos y centraliza cada enlace de afiliado en un solo lugar.",
+    "button": "Ir al registro"
   },
   "footer": {
     "product": "Producto",
     "legal": "Legal",
     "privacy": "Política de privacidad",
     "terms": "Términos de servicio",
-    "tagline": "Hecho para creadores y afiliados.",
-    "copyright": "© 2025 AffProf. Todos los derechos reservados."
+    "tagline": "AffProf ayuda a creadores y equipos de afiliación a operar enlaces de forma más limpia, sin depender de hojas de cálculo, herramientas de QR separadas y atajos para redirecciones.",
+    "rights": "Todos los derechos reservados."
   }
 }

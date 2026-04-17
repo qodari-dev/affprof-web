@@ -1,27 +1,54 @@
 {
   "meta": {
-    "title": "AffProf — Stop Losing Affiliate Commissions",
-    "description": "Track, protect, and optimize your affiliate links. Detect broken links, generate short links and QR codes, and know exactly what content makes you money."
+    "title": "AffProf — Affiliate Link Operations for Creators",
+    "description": "Manage affiliate links, short URLs, QR codes, link monitoring, analytics, UTMs, and custom domains from one clean workspace."
   },
   "nav": {
     "features": "Features",
-    "pricing": "Pricing",
+    "pricing": "Plans",
     "faq": "FAQ",
     "login": "Log in",
-    "getStarted": "Get Started Free"
+    "getStarted": "Start free"
   },
   "hero": {
-    "badge": "Affiliate Link Management for Creators",
+    "badge": "Affiliate link operations for creators",
     "titlePart1": "Stop losing commissions from",
-    "titleHighlight": "affiliate links",
-    "subtitle": "Track, protect, and optimize all your affiliate links in one place. Get alerts when links break, generate short links and QR codes, and know exactly what content makes you money.",
-    "ctaPrimary": "Start for Free",
-    "ctaSecondary": "See How It Works",
-    "socialProof": "Join early creators optimizing their affiliate links · No credit card required · Free plan available · Setup in 2 minutes"
+    "titleHighlight": "broken links.",
+    "titlePart2": "Run everything from one workspace.",
+    "subtitle": "AffProf detects broken links, protects your traffic with fallbacks, and shows exactly what content drives revenue.",
+    "ctaPrimary": "Start free",
+    "ctaSecondary": "See how it works",
+    "microNote": "No credit card required · Setup in 2 minutes",
+    "socialProof": "Built for creators, affiliate sites, and lean marketing teams that need cleaner operations and better attribution.",
+    "points": [
+      "Organize links by product, campaign, or tag instead of bouncing between spreadsheets and notes.",
+      "Monitor broken links and protect traffic with alerts, fallbacks, and cleaner redirect flows.",
+      "Track clicks by source, device, country, referrer, and channel from the same dashboard."
+    ]
+  },
+  "heroMockup": {
+    "workspace": "AffProf workspace",
+    "monitoring": "Monitoring",
+    "tracking": "Tracking",
+    "brandedLinks": "Branded links",
+    "fallbackReady": "Fallback ready",
+    "health": "4x daily",
+    "sourceLabel": "UTM + referrer"
+  },
+  "proof": {
+    "items": [
+      "Short links",
+      "QR codes",
+      "Link monitoring",
+      "Fallback redirects",
+      "UTM tracking",
+      "CSV import",
+      "Custom domains"
+    ]
   },
   "mockup": {
     "allLinks": "All links",
-    "title": "Your affiliate links",
+    "title": "Affiliate link workspace",
     "newLink": "+ New link",
     "headerProduct": "Product",
     "headerShortUrl": "Short URL",
@@ -31,190 +58,184 @@
     "broken": "Broken"
   },
   "problems": {
-    "title": "Sound familiar?",
-    "subtitle": "The hidden ways you're losing affiliate commissions",
+    "title": "Most affiliate revenue leaks happen quietly",
+    "subtitle": "Broken links, missing attribution, and scattered docs make affiliate operations harder than they should be.",
     "cards": [
       {
-        "title": "You don't know when a link breaks",
-        "desc": "Affiliate links fail silently. By the time you notice, you've already lost clicks and commissions."
+        "title": "Broken links cost money before anyone notices",
+        "desc": "Affiliate links fail silently. If nobody is checking them, clicks keep leaving and commissions disappear in the background."
       },
       {
-        "title": "You have no idea which links convert",
-        "desc": "You're posting links everywhere — but you can't tell which platform, post, or video actually makes you money."
+        "title": "Attribution gets lost across channels",
+        "desc": "You publish on YouTube, Instagram, blogs, newsletters, and PDFs, but you still cannot tell which channel is creating the clicks that matter."
       },
       {
-        "title": "Your links are scattered everywhere",
-        "desc": "Spreadsheets, Notion docs, browser bookmarks — managing affiliate links becomes messy fast."
+        "title": "Operations live in scattered tools",
+        "desc": "Products in one spreadsheet, links in another, QR codes somewhere else, and brand domains in a separate workflow is how teams lose momentum."
       }
     ]
   },
+  "audience": {
+    "items": [
+      "Creators building affiliate revenue across video, social, blogs, or newsletters.",
+      "Affiliate sites that need cleaner link governance and faster updates.",
+      "Small teams that want one workspace for tracking, redirects, imports, and reporting.",
+      "Operators who need branded links and better analytics without enterprise bloat."
+    ]
+  },
   "features": {
-    "title": "Everything you need to grow your affiliate revenue",
-    "subtitle": "Built specifically for content creators and affiliate marketers.",
+    "title": "Built around the real AffProf workflow",
+    "subtitle": "The landing now reflects what the actual product does inside affprof-app, with a cleaner story focused on workflow, control, and conversion.",
     "cards": [
       {
-        "title": "Organize everything in one place",
-        "desc": "Group all your affiliate links under products. Add tags to filter and find any link instantly."
+        "title": "Organize links around products and campaigns",
+        "desc": "Store every affiliate URL in one workspace, group links by product, and add tags so nothing gets buried."
       },
       {
-        "title": "Never lose commissions to broken links",
-        "desc": "AffProf checks your links automatically and alerts you the moment something breaks."
+        "title": "Monitor the health of every link",
+        "desc": "AffProf checks your links automatically so you can catch failures before they keep burning clicks and commissions."
       },
       {
-        "title": "Clean, branded links that build trust",
-        "desc": "Turn long affiliate URLs into clean short links. Use your own custom domain (Pro) so every link reinforces your brand."
+        "title": "Create short links your audience can trust",
+        "desc": "Turn long affiliate URLs into clean short links that are easier to share without changing your original affiliate destination."
       },
       {
-        "title": "Turn offline traffic into clicks",
-        "desc": "Every link gets a QR code automatically. Add your logo to QR codes (Pro) for a professional look on videos, thumbnails, and printed materials."
+        "title": "Use your own domain to reinforce your brand",
+        "desc": "On Pro, connect a custom domain so your short links feel like a natural part of your brand."
       },
       {
-        "title": "See what actually makes you money",
-        "desc": "See clicks by country, device, browser, and referrer source. Know which platform drives the most traffic to your affiliate links."
+        "title": "Generate QR codes for offline and hybrid traffic",
+        "desc": "Attach QR codes to videos, presentations, PDFs, packaging, or print assets without building separate workflows."
       },
       {
-        "title": "Protect every click (Pro)",
+        "title": "See what channels actually drive clicks",
+        "desc": "Review traffic by country, device, browser, referrer, QR usage, and campaign context from one place."
+      },
+      {
+        "title": "Protect every click with automatic fallback",
         "desc": "When a link breaks, automatically redirect traffic to a backup URL instead of a dead page."
       },
       {
-        "title": "Import everything in seconds",
-        "desc": "Already have hundreds of links? Upload a CSV file and import everything at once. No manual entry needed."
+        "title": "Scale onboarding with CSV import",
+        "desc": "If you already have a large link library, import it in bulk instead of rebuilding your setup manually."
       },
       {
-        "title": "Better tracking with UTM tags",
-        "desc": "Automatically add UTM parameters to your short links for better tracking in Google Analytics and other platforms."
+        "title": "Keep attribution clean with UTM support",
+        "desc": "Add or preserve UTM parameters so your short links stay useful inside analytics and reporting stacks."
       }
     ]
   },
   "howItWorks": {
-    "title": "Up and running in minutes",
-    "subtitle": "From scattered links to a revenue system in 3 steps",
+    "title": "From messy links to a working system",
+    "subtitle": "The setup is straightforward: centralize the links, configure the tracking logic, then let AffProf keep the system healthy.",
     "steps": [
       {
-        "title": "Add your products and links",
-        "desc": "Create a product (e.g. Blue Yeti Mic) and add all its affiliate links from Amazon, ShareASale, and more."
+        "title": "Add your products, links, and tags",
+        "desc": "Create products manually or import in bulk, then attach the affiliate URLs and labels you actually use in your content workflow."
       },
       {
-        "title": "AffProf tracks and monitors everything",
-        "desc": "We generate your short link and QR code, then monitor every link automatically."
+        "title": "Generate the distribution layer",
+        "desc": "AffProf creates short links and QR codes, applies your tracking setup, and keeps redirects consistent."
       },
       {
-        "title": "Get insights and protect your revenue",
-        "desc": "Receive instant email alerts when links break and see which ones drive the most traffic."
+        "title": "Monitor, optimize, and keep clicks moving",
+        "desc": "Use alerts, reporting, and fallback destinations to protect traffic and understand what content is performing."
       }
     ]
   },
   "pricing": {
-    "title": "Simple, transparent pricing",
-    "subtitle": "One broken affiliate link can cost you more than $9/month",
+    "title": "Start free and upgrade when the workflow proves itself",
+    "subtitle": "You can begin with a free account and move to Pro when you need branded links, deeper analytics, fallback redirects, and bulk import.",
     "monthly": "Monthly",
     "yearly": "Yearly",
-    "yearlyBadge": "2 months free",
     "free": {
       "name": "Free",
-      "badge": "Get Started",
+      "badge": "Get started",
       "price": "$0",
       "suffix": "/month",
-      "desc": "Forever free. No credit card required.",
-      "cta": "Start for Free",
+      "desc": "A practical starting point for testing the workflow and managing a smaller catalog.",
+      "cta": "Create free account",
       "features": [
         { "label": "2 products", "included": true },
-        { "label": "10 links total", "included": true },
+        { "label": "10 total links", "included": true },
         { "label": "Short link generation", "included": true },
-        { "label": "QR code generation (no branding)", "included": true },
-        { "label": "Basic click count", "included": true },
-        { "label": "Link monitoring once per day", "included": true },
-        { "label": "Email alerts for broken links", "included": true },
-        { "label": "Dashboard", "included": true },
-        { "label": "Custom domain", "included": false },
-        { "label": "QR branding", "included": false },
-        { "label": "Fallback links", "included": false },
-        { "label": "Bulk CSV import", "included": false },
-        { "label": "Full click analytics", "included": false }
+        { "label": "Standard QR codes", "included": true },
+        { "label": "Basic click counts", "included": true },
+        { "label": "Daily monitoring and email alerts", "included": true }
       ]
     },
     "pro": {
       "name": "Pro",
-      "badge": "Most Popular",
+      "badge": "Most popular",
       "priceMonthly": "$9",
       "suffixMonthly": "/month",
       "priceYearly": "$6.58",
-      "suffixYearly": "/mo, billed yearly",
-      "descMonthly": "Or $79/year ($6.58/mo, save 27%)",
-      "descYearly": "$79/year — save 27%",
+      "suffixYearly": "/month billed yearly",
+      "descMonthly": "Monthly billing for teams that want the full feature set without committing upfront.",
+      "descYearly": "$79 per year with the full Pro feature set and a lower effective monthly price.",
       "save": "Save 27%",
-      "cta": "Start Pro — 14 days free",
+      "ctaMonthly": "Start Pro monthly",
+      "ctaYearly": "Start Pro yearly",
       "features": [
-        { "label": "Unlimited products", "included": true },
-        { "label": "Unlimited links", "included": true },
-        { "label": "Short link generation", "included": true },
-        { "label": "QR with your logo/branding", "included": true },
-        { "label": "Custom domain for short links", "included": true },
-        {
-          "label": "Full click analytics (country, device, referrer, QR vs link)",
-          "included": true
-        },
-        { "label": "Link monitoring 4x per day", "included": true },
-        {
-          "label": "Fallback links (auto-redirect on broken)",
-          "included": true
-        },
-        { "label": "Bulk import via CSV", "included": true },
-        { "label": "UTM parameter generation", "included": true },
-        { "label": "Priority email support", "included": true }
+        { "label": "Unlimited products and links", "included": true },
+        { "label": "Branded QR codes and custom domains", "included": true },
+        { "label": "Full click analytics and attribution", "included": true },
+        { "label": "Fallback redirects for broken links", "included": true },
+        { "label": "CSV import for larger catalogs", "included": true },
+        { "label": "UTM support and priority email support", "included": true }
       ]
     },
     "note": "No credit card required for free plan. Cancel anytime. 14-day free trial on Pro."
   },
   "faq": {
-    "title": "Preguntas frecuentes",
-    "subtitle": "Todo lo que necesitas saber sobre AffProf.",
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know about AffProf.",
     "items": [
       {
-        "q": "¿Qué pasa cuando un enlace se rompe?",
-        "a": "AffProf lo detecta automáticamente y te avisa de inmediato. En el plan Pro, tu tráfico se redirige automáticamente a un enlace alternativo — así nunca pierdes un clic, incluso mientras duermes."
+        "q": "What happens when a link breaks?",
+        "a": "AffProf detects it automatically and alerts you right away. On Pro, your traffic can be redirected automatically to a fallback link so you do not lose clicks while you are offline."
       },
       {
-        "q": "¿Qué es un link corto y por qué lo necesito?",
-        "a": "En lugar de compartir un enlace largo y desordenado, AffProf te da un link limpio como affprof.com/go/blueyeti (o tudominio.com en Pro). Cada clic se registra antes de redirigir — así sabes exactamente de dónde viene tu tráfico."
+        "q": "What is a short link and why do I need it?",
+        "a": "Instead of sharing a long messy affiliate URL, AffProf gives you a clean link like affprof.com/go/blueyeti or your own branded domain on Pro. Every click is recorded before redirecting so you know where traffic comes from."
       },
       {
-        "q": "¿Con qué frecuencia se revisan mis enlaces?",
-        "a": "En el plan Gratis, los enlaces se revisan una vez al día. En Pro, se revisan 4 veces al día para una detección más rápida y mayor protección."
+        "q": "How often are my links checked?",
+        "a": "On the Free plan, links are checked once per day. On Pro, they are checked 4 times per day for faster detection and stronger protection."
       },
       {
-        "q": "¿Tengo que cambiar mis enlaces de afiliado actuales?",
-        "a": "No. Mantienes tus enlaces originales. AffProf los envuelve en un link corto y monitorea todo en segundo plano."
+        "q": "Do I need to change my current affiliate links?",
+        "a": "No. You keep your original affiliate URLs. AffProf wraps them with a short link layer and monitors everything in the background."
       },
       {
-        "q": "¿Puedo usar mi propio dominio para los links cortos?",
-        "a": "Sí — en el plan Pro puedes conectar tu propio dominio para que tus enlaces se vean como go.tumarca.com/producto."
+        "q": "Can I use my own domain for short links?",
+        "a": "Yes. On Pro you can connect your own domain so your links can look like go.yourbrand.com/product."
       },
       {
-        "q": "¿Qué plataformas de afiliados soporta AffProf?",
-        "a": "Cualquier plataforma — incluyendo Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, Hotmart, Eduzz, Monetizze o cualquier enlace personalizado."
+        "q": "What affiliate platforms does AffProf support?",
+        "a": "Any platform, including Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, Hotmart, Eduzz, Monetizze, or any custom affiliate URL."
       },
       {
-        "q": "¿Puedo importar mis enlaces actuales?",
-        "a": "Sí. En el plan Pro puedes subir un archivo CSV con todos tus enlaces e importarlos en segundos."
+        "q": "Can I import my existing links?",
+        "a": "Yes. On Pro you can upload a CSV file with your existing links and import everything in seconds."
       },
       {
-        "q": "¿Hay prueba gratuita del plan Pro?",
-        "a": "Sí — el plan Pro incluye una prueba gratuita de 14 días. No necesitas tarjeta de crédito para comenzar."
+        "q": "Is there a free trial for Pro?",
+        "a": "Yes. The Pro plan includes a 14-day free trial, and you do not need a credit card to get started."
       }
     ]
   },
   "cta": {
-    "title": "Stop losing affiliate commissions starting today",
-    "subtitle": "Join early creators using AffProf to protect and grow their revenue. No credit card required. Setup in 2 minutes.",
-    "button": "Get Started for Free"
+    "title": "Ready to clean up your affiliate workflow?",
+    "subtitle": "Create your account, add your first products, and centralize every affiliate link in one place.",
+    "button": "Go to register"
   },
   "footer": {
     "product": "Product",
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "tagline": "Built for creators and affiliate marketers.",
-    "copyright": "© 2025 AffProf. All rights reserved."
+    "tagline": "AffProf helps creators and affiliate teams run cleaner link operations without patching together spreadsheets, QR tools, and redirect workarounds.",
+    "rights": "All rights reserved."
   }
 }
