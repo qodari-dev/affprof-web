@@ -61,14 +61,17 @@
     "subtitle": "Los enlaces rotos, la atribución perdida y las herramientas dispersas te van drenando las comisiones sin que te enteres.",
     "cards": [
       {
+        "icon": "broken-link",
         "title": "Los enlaces rotos te cuestan dinero antes de que nadie lo note",
         "desc": "Los enlaces de afiliados fallan en silencio. Si nadie los revisa, los clics se siguen perdiendo y las comisiones desaparecen sin que te des cuenta."
       },
       {
+        "icon": "analytics",
         "title": "No sabes qué es lo que realmente te hace ganar",
         "desc": "Publicas en YouTube, Instagram, blogs, newsletters y PDFs, pero sigues sin saber qué canal está generando los clics que de verdad importan."
       },
       {
+        "icon": "organization",
         "title": "Cada cosa vive en una herramienta distinta",
         "desc": "Los productos en una hoja de cálculo, los enlaces en otra, los códigos QR en otro lado y los dominios de marca en un flujo aparte. Así es como se pierde el ritmo."
       }
@@ -87,38 +90,47 @@
     },
     "cards": [
       {
+        "icon": "short-link",
         "title": "Convierte URLs largas de afiliados en enlaces cortos y limpios",
         "desc": "Genera enlaces cortos con tu marca que tu audiencia quiera realmente clickear, sin cambiar el destino original de tu enlace de afiliado."
       },
       {
+        "icon": "custom-domain",
         "title": "Usa tu propio dominio para reforzar tu marca",
         "desc": "En el plan Pro, conecta un dominio personalizado para que tus enlaces cortos se sientan parte natural de tu marca y no como un redirect genérico."
       },
       {
+        "icon": "qr",
         "title": "Genera códigos QR para tráfico offline e híbrido",
         "desc": "Agrega códigos QR a videos, presentaciones, PDFs, packaging o material impreso sin tener que armar flujos por separado."
       },
       {
+        "icon": "monitoring",
         "title": "Monitorea la salud de cada enlace",
         "desc": "AffProf revisa tus enlaces de forma automática para que detectes fallas antes de que sigan quemando clics y comisiones."
       },
       {
+        "icon": "fallback",
         "title": "Nunca envíes tráfico a una página caída",
         "desc": "Cuando un enlace se rompe, AffProf redirige el tráfico automáticamente a una URL de respaldo para que tus visitantes lleguen a algo útil en vez de a un 404."
       },
       {
+        "icon": "analytics",
         "title": "Descubre qué canales generan los clics que importan",
         "desc": "Revisa el tráfico por país, dispositivo, navegador, referrer, uso de QR y contexto de campaña, todo desde un solo lugar."
       },
       {
+        "icon": "utm",
         "title": "Mantén tus UTMs intactos en cada redirect",
         "desc": "Agrega o preserva los parámetros UTM automáticamente para que tus enlaces cortos sigan siendo útiles dentro de Google Analytics, Plausible o cualquier herramienta que ya uses."
       },
       {
+        "icon": "organization",
         "title": "Organiza tus enlaces por producto y campaña",
         "desc": "Guarda cada URL de afiliado en un solo workspace, agrupa los enlaces por producto y agrega etiquetas para que nada se pierda."
       },
       {
+        "icon": "import",
         "title": "Importa toda tu librería de enlaces de una vez",
         "desc": "¿Ya tienes una colección grande de enlaces de afiliados en hojas de cálculo? Tráelos vía CSV en vez de reconstruir todo a mano."
       }
@@ -129,14 +141,17 @@
     "subtitle": "Centraliza tus enlaces de afiliados, deja que AffProf los genere y los personalice con tu marca, y mantén el ojo puesto en lo que está generando ingresos — sin tener que andar saltando entre hojas de cálculo.",
     "steps": [
       {
+        "icon": "add",
         "title": "Agrega los productos y enlaces que promocionas",
         "desc": "Crea tus productos manualmente o impórtalos en bulk, después adjunta las URLs de afiliados y las etiquetas que ya usas en tu contenido."
       },
       {
+        "icon": "automation",
         "title": "Deja que AffProf se encargue de los enlaces cortos y los QR",
         "desc": "AffProf convierte cada URL de afiliado en un enlace corto, genera códigos QR cuando los necesitas y mantiene tus UTMs y redirects consistentes."
       },
       {
+        "icon": "alerts",
         "title": "Monitorea lo que funciona y protege lo que se rompe",
         "desc": "Recibe alertas cuando un enlace se cae, redirige el tráfico muerto a una URL de respaldo y descubre qué canales están generando realmente clics y comisiones."
       }

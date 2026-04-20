@@ -62,14 +62,17 @@
     "subtitle": "Broken links, missing attribution, and scattered tools quietly drain your affiliate revenue.",
     "cards": [
       {
+        "icon": "broken-link",
         "title": "Broken links cost money before anyone notices",
         "desc": "Affiliate links fail silently. If nobody is checking them, clicks keep leaving and commissions disappear in the background."
       },
       {
+        "icon": "analytics",
         "title": "You can't tell what's actually earning",
         "desc": "You publish on YouTube, Instagram, blogs, newsletters, and PDFs, but you still cannot tell which channel is creating the clicks that matter."
       },
       {
+        "icon": "organization",
         "title": "Everything lives in a different tool",
         "desc": "Products in one spreadsheet, links in another, QR codes somewhere else, and brand domains in a separate workflow is how teams lose momentum."
       }
@@ -88,38 +91,47 @@
     },
     "cards": [
       {
+        "icon": "short-link",
         "title": "Turn long affiliate URLs into clean short links",
         "desc": "Generate branded short links your audience actually wants to click, without changing your original affiliate destination."
       },
       {
+        "icon": "custom-domain",
         "title": "Use your own domain to reinforce your brand",
         "desc": "On Pro, connect a custom domain so your short links feel like a natural part of your brand instead of a generic redirect."
       },
       {
+        "icon": "qr",
         "title": "Generate QR codes for offline and hybrid traffic",
         "desc": "Attach QR codes to videos, presentations, PDFs, packaging, or print assets without building separate workflows."
       },
       {
+        "icon": "monitoring",
         "title": "Monitor the health of every link",
         "desc": "AffProf checks your links automatically so you can catch failures before they keep burning clicks and commissions."
       },
       {
+        "icon": "fallback",
         "title": "Never send traffic to a dead page",
         "desc": "When a link breaks, AffProf automatically redirects traffic to a backup URL so visitors land somewhere useful instead of a 404."
       },
       {
+        "icon": "analytics",
         "title": "See what channels actually drive clicks",
         "desc": "Review traffic by country, device, browser, referrer, QR usage, and campaign context from one place."
       },
       {
+        "icon": "utm",
         "title": "Keep your UTMs intact across every redirect",
         "desc": "Add or preserve UTM parameters automatically so your short links stay useful inside Google Analytics, Plausible, or whatever you already use."
       },
       {
+        "icon": "organization",
         "title": "Organize links around products and campaigns",
         "desc": "Store every affiliate URL in one workspace, group links by product, and add tags so nothing gets buried."
       },
       {
+        "icon": "import",
         "title": "Import your whole link library in one go",
         "desc": "Already have a big collection of affiliate links in spreadsheets? Bring them in via CSV instead of rebuilding everything by hand."
       }
@@ -130,14 +142,17 @@
     "subtitle": "Centralize your affiliate links, let AffProf generate and brand them, and keep an eye on what's earning — without juggling spreadsheets.",
     "steps": [
       {
+        "icon": "add",
         "title": "Add the products and links you promote",
         "desc": "Create your products manually or import them in bulk, then attach the affiliate URLs and tags you actually use in your content."
       },
       {
+        "icon": "automation",
         "title": "Let AffProf handle the short links and QR codes",
         "desc": "AffProf turns every affiliate URL into a short link, generates QR codes when you need them, and keeps your UTMs and redirects consistent."
       },
       {
+        "icon": "alerts",
         "title": "Monitor what's working and protect what breaks",
         "desc": "Get alerts when a link goes down, redirect dead traffic to a fallback, and see which channels are actually driving clicks and commissions."
       }

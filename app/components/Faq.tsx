@@ -1,3 +1,5 @@
+import { ChevronDownIcon } from "./icons";
+
 type FaqDict = {
   title: string;
   subtitle: string;
@@ -32,18 +34,7 @@ export default function Faq({ dict }: { dict: FaqDict }) {
                   {item.q}
                 </span>
                 <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/8 bg-white/4 text-text-secondary transition-transform duration-200 group-open:rotate-180">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
+                  <ChevronDownIcon />
                 </span>
               </summary>
               <div className="px-6 pb-6 text-sm leading-relaxed text-text-secondary">
