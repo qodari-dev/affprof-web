@@ -25,6 +25,7 @@ export async function generateMetadata({
   for (const l of locales) {
     languages[l] = `${BASE_URL}/${l}/terms`;
   }
+  languages["x-default"] = `${BASE_URL}/en/terms`;
 
   return {
     title: dict.meta.title,

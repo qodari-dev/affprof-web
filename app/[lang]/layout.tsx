@@ -18,13 +18,13 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
 
   const dict = await getDictionary(lang as Locale);
-  const url = lang === "en" ? BASE_URL : `${BASE_URL}/${lang}`;
+  const url = `${BASE_URL}/${lang}`;
 
   const languages: Record<string, string> = {};
   for (const l of locales) {
-    languages[l] = l === "en" ? BASE_URL : `${BASE_URL}/${l}`;
+    languages[l] = `${BASE_URL}/${l}`;
   }
-  languages["x-default"] = BASE_URL;
+  languages["x-default"] = `${BASE_URL}/en`;
 
   return {
     title: {
