@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "AffProf — Affiliate Link Toolkit for Creators",
-    "description": "Manage affiliate links, short URLs, QR codes, link monitoring, analytics, UTMs, and custom domains from one clean workspace."
+    "title": "AffProf — Affiliate revenue protection for creators",
+    "description": "Affiliate link management tool with broken link monitoring, revenue tracking, and click analytics."
   },
   "nav": {
     "features": "Features",
@@ -11,13 +11,13 @@
     "getStarted": "Start free"
   },
   "hero": {
-    "badge": "The affiliate link toolkit for creators",
-    "titlePart1": "Stop losing commissions from",
+    "badge": "Affiliate revenue protection for creators",
+    "titlePart1": "Stop losing money from",
     "titleHighlight": "broken links.",
     "subtitle": "AffProf detects broken links, protects your traffic with fallbacks, and shows exactly what content drives revenue.",
-    "ctaPrimary": "Start free",
+    "ctaPrimary": "Protect your links now — Free",
     "ctaSecondary": "See how it works",
-    "microNote": "No credit card required · Setup in 2 minutes",
+    "microNote": "No credit card required · Setup in 2 minutes · Cancel anytime",
     "socialProof": "Built for creators and affiliate sites that want to stop babysitting their links and start seeing what actually earns.",
     "points": [
       "Organize links by product, campaign, or tag instead of bouncing between spreadsheets and notes.",
@@ -57,7 +57,7 @@
     "broken": "Broken"
   },
   "problems": {
-    "title": "Most affiliate revenue leaks happen quietly",
+    "title": "You’re losing affiliate revenue — and you don’t even notice",
     "subtitle": "Broken links, missing attribution, and scattered tools quietly drain your affiliate revenue.",
     "cards": [
       {
@@ -67,7 +67,7 @@
       },
       {
         "icon": "analytics",
-        "title": "You can't tell what's actually earning",
+        "title": "You don’t know what’s actually making you money",
         "desc": "You publish on YouTube, Instagram, blogs, newsletters, and PDFs, but you still cannot tell which channel is creating the clicks that matter."
       },
       {
@@ -101,7 +101,7 @@
       },
       {
         "icon": "qr",
-        "title": "Generate QR codes for offline and hybrid traffic",
+        "title": "Capture traffic from anywhere with QR codes",
         "desc": "Attach QR codes to videos, presentations, PDFs, packaging, or print assets without building separate workflows."
       },
       {
@@ -158,7 +158,7 @@
     ]
   },
   "pricing": {
-    "title": "Start free and upgrade when the workflow proves itself",
+    "title": "Start free. Upgrade when you start seeing results.",
     "subtitle": "Begin with a free account and move to Pro when you need branded links, full analytics, fallback redirects, and bulk import.",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -210,7 +210,7 @@
         { "label": "Faster monitoring (4x a day)", "included": true },
         { "label": "Priority email support", "included": true }
       ],
-      "note": "Try Pro free for 14 days — cancel anytime."
+      "note": "Try Pro free for 14 days — cancel anytime. No risk."
     }
   },
   "faq": {
@@ -218,7 +218,7 @@
     "subtitle": "Everything you need to know about AffProf.",
     "items": [
       {
-        "q": "How is AffProf different from regular link shortener?",
+        "q": "How is AffProf different from a typical link shortener?",
         "a": "AffProf is built specifically for affiliate links. Beyond shortening, it monitors your links for breakage, redirects traffic to a backup when something fails, organizes links by product and campaign, and shows you which channels are actually earning commissions. Generic shorteners don't do any of that."
       },
       {
@@ -260,9 +260,9 @@
     ]
   },
   "cta": {
-    "title": "Stop losing commissions to broken links",
+    "title": "Protect every click before you lose another commission",
     "subtitle": "Create your account, import your links, and start protecting every click in under 2 minutes.",
-    "button": "Start free"
+    "button": "Start protecting your links"
   },
   "footer": {
     "product": "Product",

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "AffProf — Operaciones de enlaces de afiliado para creadores",
-    "description": "Gestiona enlaces de afiliado, URLs cortas, códigos QR, monitoreo, analítica, UTM y dominios personalizados desde un solo workspace."
+    "title": "AffProf — Protección de ingresos de afiliados para creadores",
+    "description": "Herramienta para gestionar enlaces de afiliados con monitoreo de enlaces rotos, tracking de ingresos y analítica de clics."
   },
   "nav": {
     "features": "Funciones",
@@ -11,13 +11,13 @@
     "getStarted": "Empezar gratis"
   },
   "hero": {
-    "badge": "El kit de herramientas de enlaces de afiliados para creadores",
-    "titlePart1": "Deja de perder comisiones por",
+    "badge": "Protección de ingresos de afiliados para creadores",
+    "titlePart1": "Deja de perder dinero por",
     "titleHighlight": "enlaces rotos.",
     "subtitle": "AffProf detecta enlaces rotos, protege tu tráfico con fallbacks y muestra exactamente qué contenido genera ingresos.",
-    "ctaPrimary": "Empezar gratis",
+    "ctaPrimary": "Protege tus enlaces ahora — Gratis",
     "ctaSecondary": "Ver cómo funciona",
-    "microNote": "Sin tarjeta de crédito · Configuración en 2 minutos",
+    "microNote": "Sin tarjeta de crédito · Configuración en 2 minutos · Cancela cuando quieras",
     "socialProof": "Pensado para creadores y sitios de afiliados que quieren dejar de estar pendientes de sus enlaces y empezar a ver qué les genera ingresos realmente.",
     "points": [
       "Organiza enlaces por producto, campaña o tag en lugar de saltar entre hojas de cálculo y notas sueltas.",
@@ -57,7 +57,7 @@
     "broken": "Roto"
   },
   "problems": {
-    "title": "La mayoría de las pérdidas en afiliación pasan en silencio",
+    "title": "Estás perdiendo ingresos de afiliados — y ni siquiera lo notas",
     "subtitle": "Los enlaces rotos, la atribución perdida y las herramientas dispersas te van drenando las comisiones sin que te enteres.",
     "cards": [
       {
@@ -67,7 +67,7 @@
       },
       {
         "icon": "analytics",
-        "title": "No sabes qué es lo que realmente te hace ganar",
+        "title": "No sabes qué contenido realmente te está generando dinero",
         "desc": "Publicas en YouTube, Instagram, blogs, newsletters y PDFs, pero sigues sin saber qué canal está generando los clics que de verdad importan."
       },
       {
@@ -101,7 +101,7 @@
       },
       {
         "icon": "qr",
-        "title": "Genera códigos QR para tráfico offline e híbrido",
+        "title": "Captura tráfico desde cualquier lugar con códigos QR",
         "desc": "Agrega códigos QR a videos, presentaciones, PDFs, packaging o material impreso sin tener que armar flujos por separado."
       },
       {
@@ -158,7 +158,7 @@
     ]
   },
   "pricing": {
-    "title": "Empieza gratis y sube de plan cuando el workflow lo justifique",
+    "title": "Empieza gratis y sube de plan cuando empieces a ver resultados",
     "subtitle": "Puedes comenzar con una cuenta gratis y pasar a Pro cuando necesites links de marca, analítica más profunda, redirecciones fallback e importación masiva.",
     "monthly": "Mensual",
     "yearly": "Anual",
@@ -216,7 +216,7 @@
         { "label": "Monitoreo más rápido (4 veces al día)", "included": true },
         { "label": "Soporte prioritario por email", "included": true }
       ],
-      "note": "Prueba Pro gratis por 14 días — cancela cuando quieras."
+      "note": "Prueba Pro gratis por 14 días — cancela cuando quieras. Sin riesgo."
     }
   },
   "faq": {
@@ -224,7 +224,7 @@
     "subtitle": "Todo lo que necesitas saber sobre AffProf.",
     "items": [
       {
-        "q": "¿En qué se diferencia AffProf de un acortador de enlaces común?",
+        "q": "¿En qué se diferencia AffProf de un acortador de enlaces tradicional?",
         "a": "AffProf está hecho específicamente para enlaces de afiliados. Más allá de acortar, monitorea tus enlaces para detectar cuándo se rompen, redirige el tráfico a una URL de respaldo cuando algo falla, organiza los enlaces por producto y campaña, y te muestra qué canales están generando comisiones de verdad. Los acortadores genéricos no hacen nada de eso."
       },
       {
@@ -266,9 +266,9 @@
     ]
   },
   "cta": {
-    "title": "Deja de perder comisiones por enlaces rotos",
+    "title": "Protege cada clic antes de perder otra comisión",
     "subtitle": "Crea tu cuenta, importa tus enlaces y empieza a proteger cada clic en menos de 2 minutos.",
-    "button": "Empezar gratis"
+    "button": "Empieza a proteger tus enlaces"
   },
   "footer": {
     "product": "Producto",
