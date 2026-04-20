@@ -472,8 +472,7 @@ export default async function Home({
                 {dict.hero.titlePart1}{" "}
                 <span className="bg-[linear-gradient(135deg,#9AE6B4_0%,#22C55E_45%,#16A34A_100%)] bg-clip-text text-transparent">
                   {dict.hero.titleHighlight}
-                </span>{" "}
-                {dict.hero.titlePart2}
+                </span>
               </h1>
 
               <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-text-secondary sm:text-xl">
@@ -610,7 +609,7 @@ export default async function Home({
 
               <div className="rounded-[28px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] p-6">
                 <div className="grid gap-4 sm:grid-cols-2">
-                  {dict.audience.items.map((item: string) => (
+                  {dict.features.audience.items.map((item: string) => (
                     <div
                       key={item}
                       className="rounded-2xl border border-white/8 bg-white/4 px-4 py-4 text-sm text-text-secondary"
