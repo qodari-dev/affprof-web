@@ -185,7 +185,7 @@
         { "label": "Importación masiva vía CSV", "included": false },
         { "label": "Monitoreo más rápido (4 veces al día)", "included": false }
       ],
-      "note": "Sin tarjeta para el plan Gratis. Cancela cuando quieras. Prueba gratis de 14 días en Pro."
+      "note": "Sin tarjeta para el plan Gratis. Cancela cuando quieras."
     },
     "pro": {
       "name": "Pro",
@@ -216,7 +216,7 @@
         { "label": "Monitoreo más rápido (4 veces al día)", "included": true },
         { "label": "Soporte prioritario por email", "included": true }
       ],
-      "note": " Prueba Pro gratis por 14 días — cancela cuando quieras."
+      "note": "Prueba Pro gratis por 14 días — cancela cuando quieras."
     }
   },
   "faq": {
