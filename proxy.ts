@@ -25,6 +25,11 @@ export function proxy(request: NextRequest) {
 
   if (pathnameHasLocale) return;
 
+  if (pathname === "/") {
+    request.nextUrl.pathname = `/${defaultLocale}`;
+    return NextResponse.redirect(request.nextUrl, 308);
+  }
+
   // Redirect to locale-prefixed path
   const locale = getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;
