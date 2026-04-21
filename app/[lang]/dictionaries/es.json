@@ -29,14 +29,14 @@
     "workspace": "Workspace de AffProf",
     "monitoring": "Monitoreo",
     "tracking": "Tracking",
-    "brandedLinks": "Links de marca",
+    "brandedLinks": "Enlaces de marca",
     "fallbackReady": "Fallback activo",
     "health": "4 veces al día",
     "sourceLabel": "UTM + referrer"
   },
   "proof": {
     "items": [
-      "Links cortos",
+      "Enlaces cortos",
       "Códigos QR",
       "Monitoreo",
       "Redirección fallback",
@@ -92,7 +92,7 @@
       {
         "icon": "short-link",
         "title": "Convierte URLs largas de afiliados en enlaces cortos y limpios",
-        "desc": "Genera enlaces cortos con tu marca que tu audiencia quiera realmente clickear, sin cambiar el destino original de tu enlace de afiliado."
+        "desc": "Genera enlaces cortos con tu marca que tu audiencia quiera realmente hacer clic, sin cambiar el destino original de tu enlace de afiliado."
       },
       {
         "icon": "custom-domain",
@@ -143,7 +143,7 @@
       {
         "icon": "add",
         "title": "Agrega los productos y enlaces que promocionas",
-        "desc": "Crea tus productos manualmente o impórtalos en bulk, después adjunta las URLs de afiliados y las etiquetas que ya usas en tu contenido."
+        "desc": "Crea tus productos manualmente o impórtalos en lote, después adjunta las URLs de afiliados y las etiquetas que ya usas en tu contenido."
       },
       {
         "icon": "automation",
@@ -159,7 +159,7 @@
   },
   "pricing": {
     "title": "Empieza gratis y sube de plan cuando empieces a ver resultados",
-    "subtitle": "Puedes comenzar con una cuenta gratis y pasar a Pro cuando necesites links de marca, analítica más profunda, redirecciones fallback e importación masiva.",
+    "subtitle": "Puedes comenzar con una cuenta gratis y pasar a Pro cuando necesites enlaces de marca, analítica más profunda, redirecciones fallback e importación masiva.",
     "monthly": "Mensual",
     "yearly": "Anual",
     "free": {
@@ -185,7 +185,7 @@
         { "label": "Importación masiva vía CSV", "included": false },
         { "label": "Monitoreo más rápido (4 veces al día)", "included": false }
       ],
-      "note": "Sin tarjeta para el plan Gratis. Cancela cuando quieras."
+      "note": "Sin tarjeta de crédito. Cancela cuando quieras."
     },
     "pro": {
       "name": "Pro",
@@ -195,8 +195,8 @@
       "priceYearly": "$79",
       "suffixYearly": "/año",
       "yearlyEquivalent": "Equivale a $6.58/mes",
-      "descMonthly": "Paga mes a mes. Todas las features, sin compromiso.",
-      "descYearly": "Dos meses gratis. Las mismas features, con un solo pago al año.",
+      "descMonthly": "Paga mes a mes. Todas las funciones, sin compromiso.",
+      "descYearly": "Dos meses gratis. Las mismas funciones, con un solo pago al año.",
       "save": "Ahorra 27%",
       "ctaMonthly": "Empezar Pro mensual",
       "ctaYearly": "Empezar Pro anual",
