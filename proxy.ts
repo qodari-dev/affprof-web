@@ -6,9 +6,9 @@ const defaultLocale = "en";
 
 function getLocale(request: NextRequest): string {
   const acceptLang = request.headers.get("accept-language") || "";
-  // Simple matching: find first locale that appears in accept-language
+  const primary = acceptLang.split(",")[0].split(";")[0].trim().toLowerCase();
   for (const locale of locales) {
-    if (acceptLang.toLowerCase().includes(locale)) {
+    if (primary === locale || primary.startsWith(`${locale}-`)) {
       return locale;
     }
   }
