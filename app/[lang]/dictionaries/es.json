@@ -42,7 +42,7 @@
       "Redirección fallback",
       "Tracking UTM",
       "Importación CSV",
-      "Dominios personalizados"
+      "Dominio personalizado"
     ]
   },
   "mockup": {
@@ -180,7 +180,7 @@
           "included": true
         },
         { "label": "Códigos QR con tu marca", "included": false },
-        { "label": "Dominios personalizados", "included": false },
+        { "label": "Dominio personalizado", "included": false },
         { "label": "URL de respaldo para enlaces rotos", "included": false },
         { "label": "Importación masiva vía CSV", "included": false },
         { "label": "Monitoreo más rápido (4 veces al día)", "included": false }
@@ -205,7 +205,7 @@
         { "label": "Productos y enlaces ilimitados", "included": true },
         { "label": "Códigos QR con tu marca y colores", "included": true },
         {
-          "label": "Dominios personalizados para tus enlaces",
+          "label": "Dominio personalizado para tus enlaces",
           "included": true
         },
         {

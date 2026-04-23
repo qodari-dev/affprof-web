@@ -42,7 +42,7 @@
       "Fallback redirects",
       "UTM tracking",
       "CSV import",
-      "Custom domains"
+      "Custom domain"
     ]
   },
   "mockup": {
@@ -180,7 +180,7 @@
           "included": true
         },
         { "label": "Branded QR codes", "included": false },
-        { "label": "Custom domains", "included": false },
+        { "label": "Custom domain", "included": false },
         { "label": "Fallback URL for broken links", "included": false },
         { "label": "Bulk import via CSV", "included": false },
         { "label": "Faster monitoring (4x a day)", "included": false }
@@ -204,7 +204,7 @@
         { "label": "Everything in Free, plus:", "included": true },
         { "label": "Unlimited products and links", "included": true },
         { "label": "Branded QR codes with your colors", "included": true },
-        { "label": "Custom domains for your short links", "included": true },
+        { "label": "Custom domain for your short links", "included": true },
         { "label": "Fallback URL when a link breaks", "included": true },
         { "label": "Bulk import via CSV", "included": true },
         { "label": "Faster monitoring (4x a day)", "included": true },
