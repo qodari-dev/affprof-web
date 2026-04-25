@@ -4,55 +4,55 @@
     "description": "Lee los términos y condiciones que rigen el uso del servicio de gestión de enlaces de afiliado de AffProf."
   },
   "title": "Términos de Servicio",
-  "lastUpdated": "15 de abril de 2025",
+  "lastUpdated": "25 de abril de 2026",
   "sections": [
     {
-      "heading": "1. Aceptación de los Términos",
-      "content": "Al crear una cuenta o utilizar AffProf (\"Servicio\"), aceptas estos Términos de Servicio. Si no estás de acuerdo, no utilices el Servicio."
+      "heading": "1. Requisitos de Elegibilidad",
+      "content": "• Debes tener al menos 18 años para usar el Servicio.\n• Debes proporcionar información precisa al registrarte.\n• Eres responsable de mantener la seguridad de las credenciales de tu cuenta.\n• Una persona no puede mantener múltiples cuentas gratuitas.\n\nEstos Términos de Servicio (\"Términos\") rigen el uso de AffProf (\"Servicio\"), operado por Carlos Sanchez bajo el nombre AffProf, con sede en Ottawa, Ontario, Canadá. Al crear una cuenta o usar el Servicio, aceptas estos Términos."
     },
     {
       "heading": "2. Descripción del Servicio",
-      "content": "AffProf proporciona herramientas de gestión de enlaces de afiliado que incluyen:\n\n• Generación y seguimiento de enlaces cortos\n• Generación de códigos QR\n• Monitoreo de enlaces de afiliado\n• Analíticas de clics"
+      "content": "AffProf proporciona herramientas de gestión de enlaces de afiliado que incluyen:\n• Generación y redirección de enlaces cortos\n• Generación y personalización de códigos QR\n• Monitoreo automatizado del estado de los enlaces de afiliado\n• Analíticas e informes de clics\n• Soporte de dominio personalizado (plan Pro)"
     },
     {
-      "heading": "3. Registro de Cuenta",
-      "content": "• Debes proporcionar información precisa al registrarte\n• Eres responsable de mantener la seguridad de las credenciales de tu cuenta\n• Debes tener al menos 18 años para usar el Servicio\n• Una persona no puede mantener múltiples cuentas gratuitas"
+      "heading": "3. Planes, Pruebas y Facturación",
+      "content": "Plan gratuito\n• No requiere pago. No requiere tarjeta de crédito.\n• Sujeto a límites de funciones y cantidades descritos en la página de Precios.\n• Podemos modificar los límites del plan gratuito con aviso razonable.\n\nPlan Pro\n• Se factura mensual o anualmente a través de Stripe.\n• Hay disponible una prueba gratuita de 14 días. La prueba requiere un método de pago válido, el cual autorizas a cobrar automáticamente cuando finalice la prueba a menos que canceles antes.\n• Las suscripciones se renuevan automáticamente al final de cada período de facturación a menos que se cancelen.\n• Puedes cancelar en cualquier momento desde la configuración de tu cuenta. La cancelación tiene efecto al final de tu período de facturación actual; mantienes el acceso Pro hasta entonces.\n• Nos reservamos el derecho de cambiar los precios con al menos 30 días de aviso a los suscriptores existentes.\n\nPolítica de reembolso\n• Ofrecemos un reembolso completo en tu primer cargo pagado si lo solicitas dentro de los 7 días posteriores a ese cargo. Envía un correo a hello@affprof.com para solicitar tu reembolso.\n• Después de este período de 7 días, no ofrecemos reembolsos por períodos de facturación parciales."
     },
     {
       "heading": "4. Uso Aceptable",
-      "content": "Aceptas NO:\n\n• Usar el Servicio para fines ilegales\n• Usar enlaces cortos para redirigir a contenido malicioso, engañoso o dañino\n• Hacer spam o abusar del sistema de redirección de enlaces cortos\n• Intentar realizar ingeniería inversa o comprometer el Servicio\n• Revender o sublicenciar el Servicio sin autorización\n• Crear enlaces cortos que suplanten a otras marcas o personas\n\nNos reservamos el derecho de cancelar cuentas que violen estos términos sin previo aviso."
+      "content": "Aceptas NO usar el Servicio para:\n• Realizar actividades ilegales o violar cualquier ley aplicable.\n• Redirigir tráfico a contenido malicioso, engañoso, fraudulento o dañino.\n• Distribuir malware, virus u otro código dañino.\n• Hacer spam, abusar o intentar sobrecargar el sistema de redirección.\n• Suplantar a otras marcas, empresas o personas.\n• Realizar ingeniería inversa, descompilar o intentar comprometer el Servicio.\n• Revender, sublicenciar o redistribuir el Servicio sin nuestro permiso por escrito.\n• Rastrear, indexar o acceder al Servicio de forma automatizada que supere el uso razonable.\n\nNos reservamos el derecho de suspender o cancelar cuentas que violen estos términos, con o sin previo aviso según la gravedad."
     },
     {
-      "heading": "5. Suscripción y Facturación",
-      "content": "• El plan gratuito está disponible con limitaciones descritas en la página de Precios\n• El plan Pro se factura mensual o anualmente a través de Stripe\n• Las suscripciones se renuevan automáticamente a menos que se cancelen\n• Puedes cancelar en cualquier momento desde la configuración de tu cuenta\n• Las cancelaciones tienen efecto al final del período de facturación\n• No ofrecemos reembolsos por períodos de facturación parciales\n• Nos reservamos el derecho de cambiar los precios con 30 días de aviso"
+      "heading": "5. Tu Contenido",
+      "content": "• Conservas la propiedad total de todo el contenido que creas en el Servicio, incluyendo enlaces, productos, etiquetas y recursos subidos.\n• Otorgas a AffProf una licencia limitada y no exclusiva para almacenar, procesar y mostrar tu contenido únicamente para prestarte el Servicio.\n• Eres el único responsable del contenido que creas y los destinos a los que redirige tu tráfico."
     },
     {
-      "heading": "6. Prueba Gratuita",
-      "content": "• El plan Pro incluye una prueba gratuita de 14 días\n• No se requiere tarjeta de crédito para iniciar la prueba\n• Después de la prueba, se te cobrará a menos que canceles"
+      "heading": "6. Propiedad Intelectual de AffProf",
+      "content": "• AffProf, el logotipo de AffProf y el Servicio en sí son propiedad de AffProf.\n• No puedes copiar, modificar ni crear obras derivadas del Servicio."
     },
     {
-      "heading": "7. Propiedad Intelectual",
-      "content": "• AffProf y su logotipo son marcas registradas de AffProf\n• Conservas la propiedad de todo el contenido que creas (enlaces, productos, datos)\n• Otorgas a AffProf una licencia para almacenar y procesar tus datos con el fin de prestar el Servicio"
+      "heading": "7. Terminación de Cuenta y Exportación de Datos",
+      "content": "Puedes terminar tu cuenta en cualquier momento desde tu página de configuración. Antes de terminar, te recomendamos exportar tus enlaces mediante la función de exportación CSV.\n\nAl terminar tu cuenta:\n• Cualquier suscripción activa en Stripe se cancela de inmediato.\n• Tus datos, enlaces, analíticas de clics y recursos de marca subidos se eliminan permanentemente en un plazo de 30 días.\n• Los enlaces cortos activos dejan de redirigir.\n\nPodemos suspender o cancelar tu cuenta si:\n• Violas estos Términos.\n• Realizas actividades fraudulentas o abusivas.\n• No pagas las cuotas de suscripción tras aviso razonable."
     },
     {
-      "heading": "8. Exclusión de Garantías",
-      "content": "EL SERVICIO SE PROPORCIONA \"TAL CUAL\" SIN GARANTÍAS DE NINGÚN TIPO. NO GARANTIZAMOS:\n\n• Disponibilidad o tiempo de actividad del 100%\n• Que el monitoreo de enlaces detecte cada enlace roto de forma instantánea\n• La exactitud de los datos de analíticas de clics"
+      "heading": "8. Disponibilidad del Servicio",
+      "content": "Aspiramos a una alta disponibilidad pero no garantizamos un tiempo de actividad del 100%. El Servicio se proporciona \"TAL CUAL\" y \"SEGÚN DISPONIBILIDAD\" sin garantías de ningún tipo, expresas o implícitas, incluyendo comerciabilidad, idoneidad para un propósito particular y no infracción. No garantizamos que:\n• El monitoreo de enlaces detecte cada enlace roto de forma instantánea.\n• Las analíticas de clics sean 100% precisas.\n• El Servicio sea ininterrumpido, seguro o libre de errores."
     },
     {
       "heading": "9. Limitación de Responsabilidad",
-      "content": "EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, AFFPROF NO SERÁ RESPONSABLE DE NINGÚN DAÑO INDIRECTO, INCIDENTAL O CONSECUENTE QUE SURJA DEL USO DEL SERVICIO, INCLUYENDO LA PÉRDIDA DE COMISIONES DE AFILIADO."
+      "content": "EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY, AFFPROF Y SUS OPERADORES NO SERÁN RESPONSABLES DE NINGÚN DAÑO INDIRECTO, INCIDENTAL, ESPECIAL, CONSECUENTE O PUNITIVO DERIVADO O RELACIONADO CON EL USO DEL SERVICIO, INCLUYENDO ENTRE OTROS LA PÉRDIDA DE COMISIONES DE AFILIADO, PÉRDIDA DE INGRESOS O PÉRDIDA DE DATOS.\n\nNUESTRA RESPONSABILIDAD TOTAL ACUMULADA NO SUPERARÁ EL MAYOR DE (A) EL IMPORTE QUE NOS HAYAS PAGADO EN LOS 12 MESES ANTERIORES A LA RECLAMACIÓN, O (B) USD $50."
     },
     {
-      "heading": "10. Terminación",
-      "content": "Podemos suspender o cancelar tu cuenta si:\n\n• Violas estos Términos\n• Realizas actividades fraudulentas\n• No pagas las cuotas de suscripción\n\nPuedes eliminar tu cuenta en cualquier momento desde Configuración."
+      "heading": "10. Indemnización",
+      "content": "Aceptas indemnizar y eximir a AffProf de cualquier reclamación, daño o gasto derivado de tu uso del Servicio en violación de estos Términos o de la ley aplicable."
     },
     {
-      "heading": "11. Ley Aplicable",
-      "content": "Estos Términos se rigen por las leyes de Ontario, Canadá, sin tener en cuenta los principios de conflicto de leyes."
+      "heading": "11. Ley Aplicable y Jurisdicción",
+      "content": "Estos Términos se rigen por las leyes de la provincia de Ontario, Canadá, sin tener en cuenta los principios de conflicto de leyes. Cualquier disputa se resolverá en los tribunales ubicados en Ontario, Canadá."
     },
     {
-      "heading": "12. Cambios en los Términos",
-      "content": "Podemos actualizar estos Términos. Te notificaremos por correo electrónico al menos 14 días antes de que los cambios significativos entren en vigor. El uso continuado tras los cambios constituye aceptación."
+      "heading": "12. Cambios en estos Términos",
+      "content": "Podemos actualizar estos Términos periódicamente. Te notificaremos por correo electrónico al menos 14 días antes de que los cambios significativos entren en vigor. El uso continuado del Servicio tras la entrada en vigor de los cambios constituye aceptación."
     },
     {
       "heading": "13. Contacto",

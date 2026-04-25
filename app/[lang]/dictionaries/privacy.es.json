@@ -4,47 +4,55 @@
     "description": "Conoce cómo AffProf recopila, utiliza y protege tu información cuando usas nuestro servicio de gestión de enlaces de afiliado."
   },
   "title": "Política de Privacidad",
-  "lastUpdated": "15 de abril de 2025",
+  "lastUpdated": "25 de abril de 2026",
   "sections": [
     {
       "heading": "1. Información que Recopilamos",
-      "content": "AffProf (\"nosotros\", \"nos\", \"nuestro\") recopila la siguiente información cuando usas nuestro servicio:\n\n• Información de cuenta: dirección de correo electrónico y nombre al registrarte\n• Datos de uso: enlaces que creas, productos que agregas, eventos de clic en tus enlaces cortos\n• Analíticas de clics: país, tipo de dispositivo, navegador y fuente de referencia de los clics en tus enlaces cortos (no se almacena información personal identificable de los visitantes)\n• Información de pago: gestionada completamente por Stripe. Nunca almacenamos datos de tarjetas de crédito.\n• Direcciones IP: almacenadas solo en formato hash, nunca en formato sin procesar"
+      "content": "AffProf (\"AffProf\", \"nosotros\", \"nos\", \"nuestro\") es operado por Carlos Sanchez bajo el nombre AffProf, con sede en Ottawa, Ontario, Canadá.\n\nInformación de cuenta\n• Dirección de correo electrónico y nombre al registrarte\n• Hash de contraseña (nunca vemos tu contraseña en texto plano)\n\nDatos de uso\n• Enlaces, productos, etiquetas y configuraciones que creas\n• Eventos de clic en tus enlaces cortos\n• Recursos de marca que subes (logos, imágenes para códigos QR)\n\nAnalíticas de clics (visitantes de tus enlaces cortos)\n• País (derivado de la dirección IP)\n• Tipo de dispositivo, navegador y sistema operativo\n• Fuente de referencia\n• No almacenamos información de identificación personal de los visitantes. Las direcciones IP se hashean antes de almacenarse y nunca se retienen en formato sin procesar.\n\nInformación de pago\n• Gestionada completamente por Stripe. Nunca almacenamos datos de tarjetas de crédito en nuestros servidores.\n• Solo conservamos los identificadores de cliente y suscripción de Stripe necesarios para gestionar tu suscripción.\n\nDatos operacionales\n• Registros del servidor con marcas de tiempo, rutas de solicitud y trazas de error\n• Registros de entrega de correo electrónico de Resend"
     },
     {
       "heading": "2. Cómo Usamos tu Información",
-      "content": "Usamos tu información para:\n\n• Proporcionar y operar el servicio de AffProf\n• Enviar alertas por correo electrónico cuando tus enlaces de afiliado se rompen\n• Enviar correos transaccionales (recibos, avisos de cuenta)\n• Mejorar y desarrollar nuevas funcionalidades\n• Responder a solicitudes de soporte\n\nNo vendemos tus datos personales a terceros."
+      "content": "• Para proporcionar y operar el Servicio\n• Para enviar alertas por correo electrónico cuando tus enlaces de afiliado se rompen\n• Para enviar correos transaccionales (confirmación de cuenta, recibos de facturación, notificaciones de seguridad)\n• Para mejorar y desarrollar nuevas funcionalidades\n• Para responder a solicitudes de soporte\n• Para detectar y prevenir fraude o abuso\n\nNo vendemos tus datos personales. No usamos tus datos para entrenar modelos de IA."
     },
     {
       "heading": "3. Compartición de Datos",
-      "content": "Compartimos datos únicamente con:\n\n• Stripe: para el procesamiento de pagos\n• Resend: para el envío de correos transaccionales\n• Neon/Supabase: para alojamiento de base de datos\n• Vercel: para alojamiento de la aplicación\n\nTodos los proveedores están contractualmente obligados a proteger tus datos."
+      "content": "Compartimos datos únicamente con los siguientes proveedores, cada uno contractualmente obligado a proteger tus datos:\n\n• Stripe — Procesamiento de pagos para suscripciones Pro (correo, nombre, dirección de facturación)\n• Resend — Entrega de correos transaccionales (correo, nombre, contenido del mensaje)\n• Neon — Alojamiento de base de datos, todos los datos operacionales\n• DigitalOcean — Alojamiento de la aplicación en app.affprof.com, todos los datos operacionales\n• Vercel — Alojamiento del sitio de marketing en affprof.com, solo datos de visitantes del sitio de marketing\n\nNunca compartimos tus datos con anunciantes ni redes de marketing."
     },
     {
       "heading": "4. Retención de Datos",
-      "content": "• Los datos de cuenta se retienen mientras tu cuenta esté activa\n• Tras la eliminación de la cuenta, los datos se eliminan en un plazo de 30 días\n• Las analíticas de clics se retienen durante 12 meses"
+      "content": "• Los datos de cuenta se retienen mientras tu cuenta esté activa.\n• Las analíticas de clics se retienen durante 12 meses, luego se agregan y anonimizan.\n• Los registros del servidor se retienen durante 30 días.\n• Tras la eliminación de la cuenta, todos los datos personales se eliminan permanentemente en un plazo de 30 días. Las métricas agregadas y anonimizadas pueden conservarse."
     },
     {
       "heading": "5. Cookies",
-      "content": "AffProf utiliza únicamente cookies esenciales necesarias para la autenticación y la gestión de sesiones. No utilizamos cookies publicitarias ni cookies de seguimiento de terceros."
+      "content": "AffProf utiliza únicamente cookies esenciales necesarias para la autenticación y la gestión de sesiones. No utilizamos cookies publicitarias, cookies de analíticas de terceros, ni ninguna cookie que identifique a los visitantes individuales de tus enlaces cortos."
     },
     {
       "heading": "6. Tus Derechos",
-      "content": "Tienes derecho a:\n\n• Acceder a los datos personales que tenemos sobre ti\n• Solicitar la corrección de datos inexactos\n• Solicitar la eliminación de tu cuenta y datos\n• Exportar tus datos en un formato portable\n\nPara ejercer estos derechos, contáctanos en privacy@affprof.com"
+      "content": "Según tu ubicación, puedes tener los siguientes derechos:\n• Acceder a los datos personales que tenemos sobre ti\n• Solicitar la corrección de datos inexactos\n• Solicitar la eliminación de tu cuenta y datos\n• Exportar tus datos en un formato portable (CSV)\n• Oponerte o restringir el procesamiento\n• Retirar el consentimiento en cualquier momento\n\nPara ejercer estos derechos, contáctanos en privacy@affprof.com.\n\nSi te encuentras en el Espacio Económico Europeo, el Reino Unido o Canadá, tienes derechos adicionales bajo el RGPD, UK GDPR o PIPEDA respectivamente, incluyendo el derecho a presentar una queja ante tu autoridad local de protección de datos."
     },
     {
-      "heading": "7. Seguridad",
-      "content": "Implementamos medidas de seguridad estándar de la industria que incluyen:\n\n• Conexiones encriptadas (HTTPS/TLS)\n• Contraseñas hasheadas a través de nuestro sistema de autenticación\n• Seguridad a nivel de fila en nuestra base de datos"
+      "heading": "7. Eliminación de Cuenta",
+      "content": "Puedes eliminar tu cuenta en cualquier momento desde tu página de configuración. Antes de eliminarla, te recomendamos exportar tus enlaces mediante la función de exportación CSV disponible en el menú de enlaces.\n\nCuando eliminas tu cuenta:\n• Cualquier suscripción activa en Stripe se cancela de inmediato.\n• Tus datos de cuenta, enlaces, productos, analíticas de clics y recursos de marca subidos se eliminan permanentemente en un plazo de 30 días.\n• Los enlaces cortos activos dejan de redirigir.\n• Las métricas agregadas y anonimizadas pueden conservarse para la mejora del servicio."
     },
     {
-      "heading": "8. Privacidad de Menores",
-      "content": "AffProf no está dirigido a menores de 13 años. No recopilamos datos de menores de forma consciente."
+      "heading": "8. Seguridad",
+      "content": "Implementamos medidas de seguridad estándar de la industria que incluyen:\n• Conexiones encriptadas (HTTPS/TLS) para todo el tráfico\n• Contraseñas hasheadas usando algoritmos de hash modernos\n• Direcciones IP hasheadas antes de almacenarse\n• Acceso a la base de datos restringido mediante controles de acceso\n• Copias de seguridad automatizadas regulares\n\nNingún sistema es 100% seguro. Si detectamos un incidente de seguridad que afecte tus datos, te notificaremos sin demora indebida."
     },
     {
-      "heading": "9. Cambios en Esta Política",
-      "content": "Podemos actualizar esta política periódicamente. Te notificaremos por correo electrónico sobre cambios significativos."
+      "heading": "9. Transferencias Internacionales de Datos",
+      "content": "AffProf opera desde Canadá. Tus datos pueden ser procesados en Canadá, los Estados Unidos (Stripe, Vercel, Neon, Resend) y otras ubicaciones donde operan nuestros proveedores. Nos basamos en Cláusulas Contractuales Estándar y mecanismos equivalentes para las transferencias internacionales."
     },
     {
-      "heading": "10. Contacto",
-      "content": "Para consultas relacionadas con privacidad: privacy@affprof.com"
+      "heading": "10. Privacidad de Menores",
+      "content": "AffProf no está dirigido a menores de 16 años. No recopilamos datos de menores de forma consciente. Si crees que un menor nos ha proporcionado datos, contáctanos y los eliminaremos."
+    },
+    {
+      "heading": "11. Cambios en Esta Política",
+      "content": "Podemos actualizar esta política periódicamente. Te notificaremos por correo electrónico sobre cambios significativos al menos 14 días antes de que entren en vigor. El uso continuado del Servicio tras la entrada en vigor de los cambios constituye aceptación."
+    },
+    {
+      "heading": "12. Contacto",
+      "content": "Para consultas relacionadas con privacidad: privacy@affprof.com\nContacto general: hello@affprof.com"
     }
   ]
 }

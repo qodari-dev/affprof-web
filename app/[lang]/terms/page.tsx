@@ -83,7 +83,7 @@ export default async function TermsPage({
 
       <footer className="border-t border-border-subtle py-8">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center text-xs text-text-muted">
-          &copy; 2025 AffProf. All rights reserved. · hello@affprof.com
+          &copy; {new Date().getFullYear()} AffProf. All rights reserved. · hello@affprof.com
         </div>
       </footer>
     </>

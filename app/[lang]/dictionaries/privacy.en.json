@@ -4,47 +4,55 @@
     "description": "Learn how AffProf collects, uses, and protects your information when you use our affiliate link management service."
   },
   "title": "Privacy Policy",
-  "lastUpdated": "April 15, 2025",
+  "lastUpdated": "April 25, 2026",
   "sections": [
     {
       "heading": "1. Information We Collect",
-      "content": "AffProf (\"we\", \"us\", \"our\") collects the following information when you use our service:\n\n• Account information: email address and name when you register\n• Usage data: links you create, products you add, click events on your short links\n• Click analytics: country, device type, browser, and referrer source of clicks on your short links (no personally identifiable visitor information is stored)\n• Payment information: handled entirely by Stripe. We never store credit card details.\n• IP addresses: stored in hashed form only, never in raw format"
+      "content": "AffProf (\"AffProf\", \"we\", \"us\", \"our\") is operated by Carlos Sanchez operating as AffProf, based in Ottawa, Ontario, Canada.\n\nAccount information\n• Email address and name when you register\n• Password hash (we never see your plaintext password)\n\nUsage data\n• Links, products, tags, and settings you create\n• Click events on your short links\n• Brand assets you upload (logos, images for QR codes)\n\nClick analytics (visitors of your short links)\n• Country (derived from IP address)\n• Device type, browser, and operating system\n• Referrer source\n• We do not store personally identifiable information about visitors. IP addresses are hashed before storage and never retained in raw form.\n\nPayment information\n• Handled entirely by Stripe. We never store credit card details on our servers.\n• We retain only Stripe customer and subscription identifiers needed to manage your subscription.\n\nOperational data\n• Server logs containing timestamps, request paths, and error traces\n• Email delivery logs from Resend"
     },
     {
       "heading": "2. How We Use Your Information",
-      "content": "We use your information to:\n\n• Provide and operate the AffProf service\n• Send email alerts when your affiliate links break\n• Send transactional emails (receipts, account notices)\n• Improve and develop new features\n• Respond to support requests\n\nWe do not sell your personal data to third parties."
+      "content": "• To provide and operate the Service\n• To send email alerts when your affiliate links break\n• To send transactional emails (account confirmation, billing receipts, security notifications)\n• To improve and develop new features\n• To respond to support requests\n• To detect and prevent fraud or abuse\n\nWe do not sell your personal data. We do not use your data to train AI models."
     },
     {
       "heading": "3. Data Sharing",
-      "content": "We share data only with:\n\n• Stripe: for payment processing\n• Resend: for transactional email delivery\n• Neon/Supabase: for database hosting\n• Vercel: for application hosting\n\nAll providers are contractually bound to protect your data."
+      "content": "We share data only with the following processors, each contractually bound to protect your data:\n\n• Stripe — Payment processing for Pro subscriptions (email, name, billing address)\n• Resend — Transactional email delivery (email, name, message content)\n• Neon — Database hosting, all operational data\n• DigitalOcean — Application hosting at app.affprof.com, all operational data\n• Vercel — Marketing site hosting at affprof.com, marketing site visitor data only\n\nWe never share your data with advertisers or marketing networks."
     },
     {
       "heading": "4. Data Retention",
-      "content": "• Account data is retained while your account is active\n• After account deletion, data is removed within 30 days\n• Click analytics are retained for 12 months"
+      "content": "• Account data is retained while your account is active.\n• Click analytics are retained for 12 months, then aggregated and anonymized.\n• Server logs are retained for 30 days.\n• After account deletion, all personal data is permanently removed within 30 days. Anonymized aggregated metrics may be retained."
     },
     {
       "heading": "5. Cookies",
-      "content": "AffProf uses only essential cookies required for authentication and session management. We do not use advertising cookies or third-party tracking cookies."
+      "content": "AffProf uses only essential cookies required for authentication and session management. We do not use advertising cookies, third-party analytics cookies, or any cookies that identify individual visitors of your short links."
     },
     {
       "heading": "6. Your Rights",
-      "content": "You have the right to:\n\n• Access the personal data we hold about you\n• Request correction of inaccurate data\n• Request deletion of your account and data\n• Export your data in a portable format\n\nTo exercise these rights, contact us at privacy@affprof.com"
+      "content": "Depending on your location, you may have the following rights:\n• Access the personal data we hold about you\n• Request correction of inaccurate data\n• Request deletion of your account and data\n• Export your data in a portable format (CSV)\n• Object to or restrict processing\n• Withdraw consent at any time\n\nTo exercise these rights, contact us at privacy@affprof.com.\n\nIf you are in the European Economic Area, the United Kingdom, or Canada, you have additional rights under GDPR, UK GDPR, or PIPEDA respectively, including the right to lodge a complaint with your local data protection authority."
     },
     {
-      "heading": "7. Security",
-      "content": "We implement industry-standard security measures including:\n\n• Encrypted connections (HTTPS/TLS)\n• Hashed passwords via our authentication system\n• Row-level security on our database"
+      "heading": "7. Account Deletion",
+      "content": "You can delete your account at any time from your settings page. Before deleting, we recommend exporting your links via the CSV export feature available in the links menu.\n\nWhen you delete your account:\n• Any active Stripe subscription is cancelled immediately.\n• Your account data, links, products, click analytics, and uploaded brand assets are permanently deleted within 30 days.\n• Active short links stop redirecting.\n• Aggregated, anonymized metrics may be retained for service improvement."
     },
     {
-      "heading": "8. Children's Privacy",
-      "content": "AffProf is not directed to children under 13. We do not knowingly collect data from children."
+      "heading": "8. Security",
+      "content": "We implement industry-standard security measures including:\n• Encrypted connections (HTTPS/TLS) for all traffic\n• Hashed passwords using modern hashing algorithms\n• IP addresses hashed before storage\n• Database access restricted via access controls\n• Regular automated backups\n\nNo system is 100% secure. If we detect a security incident affecting your data, we will notify you without undue delay."
     },
     {
-      "heading": "9. Changes to This Policy",
-      "content": "We may update this policy periodically. We will notify you by email of significant changes."
+      "heading": "9. International Data Transfers",
+      "content": "AffProf is operated from Canada. Your data may be processed in Canada, the United States (Stripe, Vercel, Neon, Resend), and other locations where our processors operate. We rely on Standard Contractual Clauses and equivalent mechanisms for international transfers."
     },
     {
-      "heading": "10. Contact",
-      "content": "For privacy-related questions: privacy@affprof.com"
+      "heading": "10. Children's Privacy",
+      "content": "AffProf is not directed to children under 16. We do not knowingly collect data from children. If you believe a child has provided us data, contact us and we will delete it."
+    },
+    {
+      "heading": "11. Changes to This Policy",
+      "content": "We may update this policy periodically. We will notify you by email of significant changes at least 14 days before they take effect. Continued use of the Service after changes take effect constitutes acceptance."
+    },
+    {
+      "heading": "12. Contact",
+      "content": "For privacy-related questions: privacy@affprof.com\nGeneral contact: hello@affprof.com"
     }
   ]
 }
