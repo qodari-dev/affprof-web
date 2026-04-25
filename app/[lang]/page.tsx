@@ -47,25 +47,25 @@ function HeroMockup({
   const rows = [
     {
       name: "Blue Yeti Microphone",
-      url: "go.affprof.com/blueyeti",
+      url: "links.sara.com/blueyeti",
       status: "active",
       clicks: "1,284",
     },
     {
       name: "Sony WH-1000XM5",
-      url: "go.affprof.com/sony-xm5",
+      url: "links.sara.com/sony-xm5",
       status: "active",
       clicks: "892",
     },
     {
       name: "Logitech MX Master 3S",
-      url: "go.affprof.com/mx-master",
+      url: "affprof.com/go/sara/mx-master",
       status: "broken",
       clicks: "341",
     },
     {
       name: "LG UltraFine 5K Display",
-      url: "go.affprof.com/lg-5k",
+      url: "affprof.com/go/sara/lg-5k",
       status: "active",
       clicks: "612",
     },
@@ -191,7 +191,7 @@ export default async function Home({
   const currentYear = new Date().getFullYear();
   const stepLabel = lang === "es" ? "Paso" : "Step";
   const problemCards = dict.problems.cards as MarketingCard[];
-  const featureCards = dict.features.cards as MarketingCard[];
+  const featureGroups = dict.features.groups as { label: string; cards: MarketingCard[] }[];
   const workflowSteps = dict.howItWorks.steps as MarketingCard[];
 
   return (
@@ -211,14 +211,14 @@ export default async function Home({
                 {dict.hero.badge}
               </span>
 
-              <h1 className="mx-auto mt-6 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-[5rem] lg:leading-[0.98]">
+              <h1 className="mx-auto mt-6 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-[4.25rem] lg:leading-[0.98]">
                 {dict.hero.titlePart1}{" "}
                 <span className="bg-[linear-gradient(135deg,#9AE6B4_0%,#22C55E_45%,#16A34A_100%)] bg-clip-text text-transparent">
                   {dict.hero.titleHighlight}
                 </span>
               </h1>
 
-              <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-text-secondary sm:text-xl">
+              <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-text-secondary sm:text-xl text-balance">
                 {dict.hero.subtitle}
               </p>
 
@@ -331,7 +331,7 @@ export default async function Home({
                 <span className="inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-primary-light">
                   Product
                 </span>
-                <h2 className="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl">
+                <h2 className="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl text-balance">
                   {dict.features.title}
                 </h2>
                 <p className="mt-4 text-lg leading-relaxed text-text-secondary">
@@ -340,6 +340,9 @@ export default async function Home({
               </div>
 
               <div className="rounded-[28px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] p-6">
+                <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-text-muted">
+                  {dict.features.whoTitle}
+                </p>
                 <div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
                   {dict.features.audience.items.map((item: string) => (
                     <div
@@ -353,25 +356,42 @@ export default async function Home({
               </div>
             </div>
 
-            <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-              {featureCards.map((card) => {
-                const Icon = marketingIcons[card.icon];
-
-                return (
-                  <div
-                    key={card.title}
-                    className="flex h-full flex-col rounded-[28px] border border-white/8 bg-white/[0.03] p-6 transition-transform duration-300 hover:-translate-y-1 hover:border-primary/25"
-                  >
-                    <IconTile icon={Icon} />
-                    <h3 className="mt-5 text-xl font-semibold tracking-tight">
-                      {card.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-                      {card.desc}
+            <div className="mt-14">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="h-px flex-1 bg-white/8" />
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-text-muted">
+                  {dict.features.whatTitle}
+                </p>
+                <div className="h-px flex-1 bg-white/8" />
+              </div>
+              <div className="space-y-10">
+                {featureGroups.map((group) => (
+                  <div key={group.label}>
+                    <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-primary-light">
+                      {group.label}
                     </p>
+                    <div className="grid gap-6 md:grid-cols-3">
+                      {group.cards.map((card) => {
+                        const Icon = marketingIcons[card.icon];
+                        return (
+                          <div
+                            key={card.title}
+                            className="flex h-full flex-col rounded-[28px] border border-white/8 bg-white/[0.03] p-6 transition-transform duration-300 hover:-translate-y-1 hover:border-primary/25"
+                          >
+                            <IconTile icon={Icon} />
+                            <h3 className="mt-5 text-xl font-semibold tracking-tight">
+                              {card.title}
+                            </h3>
+                            <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                              {card.desc}
+                            </p>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                );
-              })}
+                ))}
+              </div>
             </div>
           </div>
         </section>

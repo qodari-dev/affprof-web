@@ -32,6 +32,7 @@ type PricingDict = {
     ctaYearly: string;
     features: Feature[];
     note: string;
+    refund: string;
   };
 };
 
@@ -193,6 +194,9 @@ export default function Pricing({ dict }: { dict: PricingDict }) {
 
         <p className="mt-8 text-center text-sm text-text-muted">
           {dict.pro.note}
+        </p>
+        <p className="mt-2 text-center text-xs text-primary-light font-medium">
+          {dict.pro.refund}
         </p>
       </div>
     </section>

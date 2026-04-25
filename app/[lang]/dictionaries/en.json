@@ -13,8 +13,8 @@
   "hero": {
     "badge": "Affiliate revenue protection for creators",
     "titlePart1": "Stop losing money from",
-    "titleHighlight": "broken links.",
-    "subtitle": "AffProf detects broken links, protects your traffic with fallbacks, and shows exactly what content drives revenue.",
+    "titleHighlight": "broken links and untracked clicks.",
+    "subtitle": "AffProf gives you short branded links, automatic broken-link monitoring with fallbacks, and click analytics — built specifically for affiliates, not generic shorteners.",
     "ctaPrimary": "Protect your links now — Free",
     "ctaSecondary": "See how it works",
     "microNote": "No credit card required · Setup in 2 minutes · Cancel anytime",
@@ -81,6 +81,8 @@
   "features": {
     "title": "Everything you need to run your affiliate links",
     "subtitle": "From creating and branding your links, to catching the broken ones, to seeing exactly what earns — every part of the workflow lives in one place.",
+    "whoTitle": "Who it's for",
+    "whatTitle": "What you get",
     "audience": {
       "items": [
         "Creators monetizing across video, social, blogs, and newsletters.",
@@ -88,51 +90,66 @@
         "Small teams that want tracking, redirects, and reporting in one place — without enterprise bloat."
       ]
     },
-    "cards": [
+    "groups": [
       {
-        "icon": "short-link",
-        "title": "Turn long affiliate URLs into clean short links",
-        "desc": "Generate branded short links your audience actually wants to click, without changing your original affiliate destination."
+        "label": "Branding & Links",
+        "cards": [
+          {
+            "icon": "short-link",
+            "title": "Turn long affiliate URLs into clean short links",
+            "desc": "Generate branded short links your audience actually wants to click, without changing your original affiliate destination."
+          },
+          {
+            "icon": "custom-domain",
+            "title": "Use your own domain to reinforce your brand",
+            "desc": "On Pro, connect a custom domain so your short links feel like a natural part of your brand instead of a generic redirect."
+          },
+          {
+            "icon": "qr",
+            "title": "Capture traffic from anywhere with QR codes",
+            "desc": "Attach QR codes to videos, presentations, PDFs, packaging, or print assets without building separate workflows."
+          }
+        ]
       },
       {
-        "icon": "custom-domain",
-        "title": "Use your own domain to reinforce your brand",
-        "desc": "On Pro, connect a custom domain so your short links feel like a natural part of your brand instead of a generic redirect."
+        "label": "Protection & Monitoring",
+        "cards": [
+          {
+            "icon": "monitoring",
+            "title": "Monitor the health of every link",
+            "desc": "AffProf checks your links automatically so you can catch failures before they keep burning clicks and commissions."
+          },
+          {
+            "icon": "fallback",
+            "title": "Never send traffic to a dead page",
+            "desc": "When a link breaks, AffProf automatically redirects traffic to a backup URL so visitors land somewhere useful instead of a 404."
+          },
+          {
+            "icon": "utm",
+            "title": "Keep your UTMs intact across every redirect",
+            "desc": "Add or preserve UTM parameters automatically so your short links stay useful inside Google Analytics, Plausible, or whatever you already use."
+          }
+        ]
       },
       {
-        "icon": "qr",
-        "title": "Capture traffic from anywhere with QR codes",
-        "desc": "Attach QR codes to videos, presentations, PDFs, packaging, or print assets without building separate workflows."
-      },
-      {
-        "icon": "monitoring",
-        "title": "Monitor the health of every link",
-        "desc": "AffProf checks your links automatically so you can catch failures before they keep burning clicks and commissions."
-      },
-      {
-        "icon": "fallback",
-        "title": "Never send traffic to a dead page",
-        "desc": "When a link breaks, AffProf automatically redirects traffic to a backup URL so visitors land somewhere useful instead of a 404."
-      },
-      {
-        "icon": "analytics",
-        "title": "See what channels actually drive clicks",
-        "desc": "Review traffic by country, device, browser, referrer, QR usage, and campaign context from one place."
-      },
-      {
-        "icon": "utm",
-        "title": "Keep your UTMs intact across every redirect",
-        "desc": "Add or preserve UTM parameters automatically so your short links stay useful inside Google Analytics, Plausible, or whatever you already use."
-      },
-      {
-        "icon": "organization",
-        "title": "Organize links around products and campaigns",
-        "desc": "Store every affiliate URL in one workspace, group links by product, and add tags so nothing gets buried."
-      },
-      {
-        "icon": "import",
-        "title": "Import your whole link library in one go",
-        "desc": "Already have a big collection of affiliate links in spreadsheets? Bring them in via CSV instead of rebuilding everything by hand."
+        "label": "Insights & Organization",
+        "cards": [
+          {
+            "icon": "analytics",
+            "title": "See what channels actually drive clicks",
+            "desc": "Review traffic by country, device, browser, referrer, QR usage, and campaign context from one place."
+          },
+          {
+            "icon": "organization",
+            "title": "Organize links around products and campaigns",
+            "desc": "Store every affiliate URL in one workspace, group links by product, and add tags so nothing gets buried."
+          },
+          {
+            "icon": "import",
+            "title": "Import your whole link library in one go",
+            "desc": "Already have a big collection of affiliate links in spreadsheets? Bring them in via CSV instead of rebuilding everything by hand."
+          }
+        ]
       }
     ]
   },
@@ -142,17 +159,17 @@
     "steps": [
       {
         "icon": "add",
-        "title": "Add the products and links you promote",
+        "title": "Add your products and import your links",
         "desc": "Create your products manually or import them in bulk, then attach the affiliate URLs and tags you actually use in your content."
       },
       {
         "icon": "automation",
-        "title": "Let AffProf handle the short links and QR codes",
+        "title": "AffProf brands your links and generates QRs",
         "desc": "AffProf turns every affiliate URL into a short link, generates QR codes when you need them, and keeps your UTMs and redirects consistent."
       },
       {
         "icon": "alerts",
-        "title": "Monitor what's working and protect what breaks",
+        "title": "Get alerts, fallbacks, and analytics — automatically",
         "desc": "Get alerts when a link goes down, redirect dead traffic to a fallback, and see which channels are actually driving clicks and commissions."
       }
     ]
@@ -210,7 +227,8 @@
         { "label": "Faster monitoring (4x a day)", "included": true },
         { "label": "Priority email support", "included": true }
       ],
-      "note": "Try Pro free for 14 days — cancel anytime. No risk."
+      "note": "Try Pro free for 14 days — cancel anytime. No risk.",
+      "refund": "7-day money-back guarantee on your first paid charge."
     }
   },
   "faq": {
@@ -256,6 +274,10 @@
       {
         "q": "Do I need a credit card to start?",
         "a": "No. The Free plan is genuinely free and you can use it as long as you want. You only enter payment info when you decide to upgrade to Pro."
+      },
+      {
+        "q": "Can I use AffProf with Amazon Associates or affiliate programs that prohibit cloaking?",
+        "a": "Yes. AffProf uses standard 302 redirects, not cloaking. This is permitted by most affiliate programs including Amazon Associates' standard terms. Always check your specific program's terms to be sure."
       }
     ]
   },
