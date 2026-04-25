@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Faq from "../components/Faq";
+import Footer from "../components/Footer";
 import {
   HeroCheckIcon,
   IconTile,
@@ -188,7 +189,6 @@ export default async function Home({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
-  const currentYear = new Date().getFullYear();
   const stepLabel = lang === "es" ? "Paso" : "Step";
   const problemCards = dict.problems.cards as MarketingCard[];
   const featureGroups = dict.features.groups as { label: string; cards: MarketingCard[] }[];
@@ -479,94 +479,7 @@ export default async function Home({
         </section>
       </main>
 
-      <footer className="border-t border-white/8 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-3">
-                <Image
-                  src="/logo-close.png"
-                  alt="AffProf"
-                  width={34}
-                  height={34}
-                  className="h-8 w-8 object-contain"
-                />
-                <span className="block text-base font-semibold tracking-tight">
-                  AffProf
-                </span>
-              </div>
-              <p className="mt-4 max-w-xl text-sm leading-relaxed text-text-secondary">
-                {dict.footer.tagline}
-              </p>
-              <a
-                href={`mailto:${SITE_URLS.supportEmail}`}
-                className="mt-4 inline-flex text-sm font-medium text-primary-light transition-colors hover:text-white"
-              >
-                {SITE_URLS.supportEmail}
-              </a>
-              <p className="mt-4 text-xs text-text-muted">
-                © {currentYear} AffProf. {dict.footer.rights}
-              </p>
-            </div>
-
-            <div className="lg:pl-6">
-              <div className="text-sm font-semibold uppercase tracking-[0.18em] text-text-primary">
-                {dict.footer.product}
-              </div>
-              <ul className="mt-4 space-y-3 text-sm text-text-secondary">
-                <li>
-                  <a
-                    href="#features"
-                    className="transition-colors hover:text-text-primary"
-                  >
-                    {dict.nav.features}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#pricing"
-                    className="transition-colors hover:text-text-primary"
-                  >
-                    {dict.nav.pricing}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#faq"
-                    className="transition-colors hover:text-text-primary"
-                  >
-                    {dict.nav.faq}
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="lg:pl-2">
-              <div className="text-sm font-semibold uppercase tracking-[0.18em] text-text-primary">
-                {dict.footer.legal}
-              </div>
-              <ul className="mt-4 space-y-3 text-sm text-text-secondary">
-                <li>
-                  <Link
-                    href={`/${lang}/privacy`}
-                    className="transition-colors hover:text-text-primary"
-                  >
-                    {dict.footer.privacy}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href={`/${lang}/terms`}
-                    className="transition-colors hover:text-text-primary"
-                  >
-                    {dict.footer.terms}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer dict={dict.footer} nav={dict.nav} lang={lang} />
     </>
   );
 }

@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Contáctanos — AffProf",
+    "description": "Ponte en contacto con AffProf. Envíanos una pregunta, reporta un bug o sugiere una funcionalidad."
+  },
+  "title": "Contáctanos",
+  "intro": "¿Tienes una pregunta, encontraste un bug o quieres sugerir una funcionalidad? Nos encantaría escucharte.",
+  "responseTime": "Normalmente respondemos en menos de 24 horas en días hábiles. Los suscriptores Pro reciben soporte prioritario.",
+  "directEmailPrefix": "Puedes escribirnos directamente a",
+  "directEmailSuffix": "o usar el formulario.",
+  "form": {
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "subjectLabel": "¿Sobre qué nos escribes?",
+    "subjectPlaceholder": "Elige un tema",
+    "subjects": {
+      "general": "Pregunta general",
+      "billing": "Facturación o suscripción",
+      "technical": "Problema técnico / Reportar bug",
+      "feature": "Sugerencia de funcionalidad",
+      "deletion": "Eliminar mi cuenta",
+      "press": "Prensa / Colaboraciones",
+      "other": "Otro"
+    },
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntanos qué tienes en mente…",
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando…",
+    "required": "Requerido",
+    "successTitle": "Mensaje enviado",
+    "successBody": "Gracias por escribirnos. Te responderemos en menos de 24 horas en días hábiles.",
+    "errorGeneric": "Algo salió mal. Escríbenos directamente a hello@affprof.com.",
+    "errorRateLimit": "Has enviado demasiados mensajes. Inténtalo de nuevo en una hora.",
+    "errorInvalid": "Revisa los campos del formulario e inténtalo de nuevo.",
+    "fieldErrors": {
+      "required": "Este campo es requerido.",
+      "email": "Por favor ingresa un email válido.",
+      "subject": "Por favor elige un tema.",
+      "tooLong": "Este campo es demasiado largo."
+    },
+    "consentPrefix": "Al enviar este formulario, aceptas nuestra",
+    "consentLink": "Política de Privacidad"
+  }
+}

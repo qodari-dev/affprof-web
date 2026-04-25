@@ -288,7 +288,13 @@
   },
   "footer": {
     "product": "Product",
+    "resources": "Resources",
     "legal": "Legal",
+    "contact": "Contact",
+    "gettingStarted": "Getting Started",
+    "customDomainSetup": "Custom Domain Setup",
+    "importingLinks": "Importing Links",
+    "contactForm": "Contact form",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "tagline": "AffProf helps creators run their affiliate links from one place — short links, QR codes, monitoring, and analytics, without patching together spreadsheets and shorteners.",

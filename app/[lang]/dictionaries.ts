@@ -15,6 +15,11 @@ const termsDictionaries = {
   es: () => import("./dictionaries/terms.es.json").then((m) => m.default),
 };
 
+const contactDictionaries = {
+  en: () => import("./dictionaries/contact.en.json").then((m) => m.default),
+  es: () => import("./dictionaries/contact.es.json").then((m) => m.default),
+};
+
 export type Locale = keyof typeof dictionaries;
 
 export const locales: Locale[] = ["en", "es"];
@@ -28,3 +33,5 @@ export const getPrivacyDictionary = async (locale: Locale) =>
   privacyDictionaries[locale]();
 export const getTermsDictionary = async (locale: Locale) =>
   termsDictionaries[locale]();
+export const getContactDictionary = async (locale: Locale) =>
+  contactDictionaries[locale]();

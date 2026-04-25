@@ -18,9 +18,9 @@ export default function Navbar({ dict, lang }: { dict: NavDict; lang: string }) 
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { href: "#features", label: dict.features },
-    { href: "#pricing", label: dict.pricing },
-    { href: "#faq", label: dict.faq },
+    { href: `/${lang}#features`, label: dict.features },
+    { href: `/${lang}#pricing`, label: dict.pricing },
+    { href: `/${lang}#faq`, label: dict.faq },
   ];
 
   const otherLang = lang === "en" ? "es" : "en";

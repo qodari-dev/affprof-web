@@ -294,7 +294,13 @@
   },
   "footer": {
     "product": "Producto",
+    "resources": "Recursos",
     "legal": "Legal",
+    "contact": "Contacto",
+    "gettingStarted": "Primeros pasos",
+    "customDomainSetup": "Configurar dominio propio",
+    "importingLinks": "Importar enlaces",
+    "contactForm": "Formulario de contacto",
     "privacy": "Política de privacidad",
     "terms": "Términos de servicio",
     "tagline": "AffProf ayuda a los creadores a manejar sus enlaces de afiliados desde un solo lugar — enlaces cortos, códigos QR, monitoreo y analíticas, sin tener que combinar hojas de cálculo y acortadores por separado.",
