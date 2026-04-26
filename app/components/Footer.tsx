@@ -165,12 +165,12 @@ export default function Footer({
                 </Link>
               </li>
               <li>
-                <a
+                <Link
                   href={`mailto:${SITE_URLS.supportEmail}`}
                   className="text-primary-light transition-colors hover:text-white"
                 >
                   {SITE_URLS.supportEmail}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

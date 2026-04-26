@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Faq from "../components/Faq";
@@ -191,7 +190,10 @@ export default async function Home({
   const dict = await getDictionary(lang as Locale);
   const stepLabel = lang === "es" ? "Paso" : "Step";
   const problemCards = dict.problems.cards as MarketingCard[];
-  const featureGroups = dict.features.groups as { label: string; cards: MarketingCard[] }[];
+  const featureGroups = dict.features.groups as {
+    label: string;
+    cards: MarketingCard[];
+  }[];
   const workflowSteps = dict.howItWorks.steps as MarketingCard[];
 
   return (
@@ -237,18 +239,18 @@ export default async function Home({
               </ul>
 
               <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-                <a
+                <Link
                   href={SITE_URLS.register}
                   className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3.5 text-base font-semibold text-white transition-transform transition-colors hover:bg-primary-dark hover:-translate-y-0.5"
                 >
                   {dict.hero.ctaPrimary}
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#how-it-works"
                   className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/4 px-6 py-3.5 text-base font-semibold text-text-primary transition-colors hover:border-primary/35 hover:bg-white/8"
                 >
                   {dict.hero.ctaSecondary}
-                </a>
+                </Link>
               </div>
 
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-text-secondary">
@@ -460,18 +462,18 @@ export default async function Home({
                 </div>
 
                 <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-                  <a
+                  <Link
                     href={SITE_URLS.register}
                     className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-base font-semibold text-primary-dark transition-colors hover:bg-white/92"
                   >
                     {dict.cta.button}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={SITE_URLS.login}
                     className="inline-flex items-center justify-center rounded-full border border-white/20 bg-black/12 px-6 py-3.5 text-base font-semibold text-white transition-colors hover:bg-black/20"
                   >
                     {dict.nav.login}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

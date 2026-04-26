@@ -14,7 +14,13 @@ type NavDict = {
   getStarted: string;
 };
 
-export default function Navbar({ dict, lang }: { dict: NavDict; lang: string }) {
+export default function Navbar({
+  dict,
+  lang,
+}: {
+  dict: NavDict;
+  lang: string;
+}) {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
@@ -45,13 +51,13 @@ export default function Navbar({ dict, lang }: { dict: NavDict; lang: string }) 
 
         <div className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -62,18 +68,18 @@ export default function Navbar({ dict, lang }: { dict: NavDict; lang: string }) 
           >
             {otherLabel}
           </Link>
-          <a
+          <Link
             href={SITE_URLS.login}
             className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
           >
             {dict.login}
-          </a>
-          <a
+          </Link>
+          <Link
             href={SITE_URLS.register}
             className="inline-flex items-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-transform transition-colors hover:bg-primary-dark hover:-translate-y-0.5"
           >
             {dict.getStarted}
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
@@ -90,11 +96,7 @@ export default function Navbar({ dict, lang }: { dict: NavDict; lang: string }) 
             aria-expanded={open}
             aria-label="Toggle menu"
           >
-            {open ? (
-              <CloseIcon />
-            ) : (
-              <MenuIcon />
-            )}
+            {open ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
       </nav>
@@ -105,30 +107,30 @@ export default function Navbar({ dict, lang }: { dict: NavDict; lang: string }) 
             <div className="rounded-[28px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.03))] p-3">
               <div className="flex flex-col gap-2">
                 {navLinks.map((link) => (
-                  <a
+                  <Link
                     key={link.href}
                     href={link.href}
                     onClick={() => setOpen(false)}
                     className="rounded-2xl border border-transparent px-4 py-3 text-sm font-medium text-text-secondary transition-colors hover:border-white/8 hover:bg-white/4 hover:text-text-primary"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
                 <div className="my-1 h-px bg-white/8" />
-                <a
+                <Link
                   href={SITE_URLS.login}
                   onClick={() => setOpen(false)}
                   className="rounded-2xl border border-transparent px-4 py-3 text-sm font-medium text-text-secondary transition-colors hover:border-white/8 hover:bg-white/4 hover:text-text-primary"
                 >
                   {dict.login}
-                </a>
-                <a
+                </Link>
+                <Link
                   href={SITE_URLS.register}
                   onClick={() => setOpen(false)}
                   className="mt-1 inline-flex items-center justify-center rounded-2xl bg-primary px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
                 >
                   {dict.getStarted}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
