@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import {
   CONTACT_SUBJECTS,
   ContactSchema,
@@ -11,7 +12,8 @@ import {
   type ContactFieldErrors,
 } from "../lib/contact-schema";
 
-type FieldErrorKey = "required" | "email" | "subject" | "tooLong";
+type FieldErrorKey = "required" | "email" | "subject" | "tooLong" | "recaptcha";
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 type FormDict = {
   nameLabel: string;
@@ -31,6 +33,7 @@ type FormDict = {
   errorGeneric: string;
   errorRateLimit: string;
   errorInvalid: string;
+  errorRecaptcha: string;
   fieldErrors: Record<FieldErrorKey, string>;
   consentPrefix: string;
   consentLink: string;
@@ -38,6 +41,7 @@ type FormDict = {
 
 type Status = "idle" | "submitting" | "success" | "error";
 type FormField = "name" | "email" | "subject" | "message";
+type ValidatableField = FormField | "recaptchaToken";
 
 export default function ContactForm({
   dict,
@@ -49,6 +53,9 @@ export default function ContactForm({
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [fieldErrors, setFieldErrors] = useState<ContactFieldErrors>({});
+  const [recaptchaToken, setRecaptchaToken] = useState("");
+  const [messageLength, setMessageLength] = useState(0);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   function localizeError(code: string | undefined): string {
     if (code && code in dict.fieldErrors) {
@@ -64,18 +71,21 @@ export default function ContactForm({
       email: String(data.get("email") ?? ""),
       subject: String(data.get("subject") ?? ""),
       message: String(data.get("message") ?? ""),
+      recaptchaToken,
       honeypot: String(data.get("company") ?? ""),
       lang,
     };
   }
 
-  function validate(payload: ReturnType<typeof readForm>): {
-    ok: true;
-    data: ReturnType<typeof readForm>;
-  } | {
-    ok: false;
-    errors: ContactFieldErrors;
-  } {
+  function validate(payload: ReturnType<typeof readForm>):
+    | {
+        ok: true;
+        data: ReturnType<typeof readForm>;
+      }
+    | {
+        ok: false;
+        errors: ContactFieldErrors;
+      } {
     const result = ContactSchema.safeParse(payload);
     if (result.success) return { ok: true, data: payload };
 
@@ -84,7 +94,7 @@ export default function ContactForm({
       const path = issue.path[0];
       if (typeof path !== "string") continue;
       if (path === "honeypot" || path === "lang") continue;
-      const field = path as FormField;
+      const field = path as ValidatableField;
       if (!errors[field]) {
         errors[field] = localizeError(issue.message);
       }
@@ -94,9 +104,12 @@ export default function ContactForm({
 
   function handleBlur(event: React.FocusEvent<HTMLFormElement>) {
     const target = event.target as HTMLElement;
-    if (!(target instanceof HTMLInputElement) &&
-        !(target instanceof HTMLTextAreaElement) &&
-        !(target instanceof HTMLSelectElement)) return;
+    if (
+      !(target instanceof HTMLInputElement) &&
+      !(target instanceof HTMLTextAreaElement) &&
+      !(target instanceof HTMLSelectElement)
+    )
+      return;
 
     const name = target.name as FormField;
     if (!["name", "email", "subject", "message"].includes(name)) return;
@@ -121,11 +134,18 @@ export default function ContactForm({
 
   function handleChange(event: React.ChangeEvent<HTMLFormElement>) {
     const target = event.target as HTMLElement;
-    if (!(target instanceof HTMLInputElement) &&
-        !(target instanceof HTMLTextAreaElement) &&
-        !(target instanceof HTMLSelectElement)) return;
+    if (
+      !(target instanceof HTMLInputElement) &&
+      !(target instanceof HTMLTextAreaElement) &&
+      !(target instanceof HTMLSelectElement)
+    )
+      return;
 
     const name = target.name as FormField;
+    if (name === "message" && target instanceof HTMLTextAreaElement) {
+      setMessageLength(target.value.length);
+    }
+
     if (!fieldErrors[name]) return;
 
     setFieldErrors((prev) => {
@@ -133,6 +153,38 @@ export default function ContactForm({
       delete next[name];
       return next;
     });
+  }
+
+  function resetRecaptcha() {
+    setRecaptchaToken("");
+    recaptchaRef.current?.reset();
+  }
+
+  function handleRecaptchaChange(token: string | null) {
+    setRecaptchaToken(token ?? "");
+    setFieldErrors((prev) => {
+      const next = { ...prev };
+      if (token) delete next.recaptchaToken;
+      return next;
+    });
+  }
+
+  function handleRecaptchaExpired() {
+    setRecaptchaToken("");
+    setFieldErrors((prev) => ({
+      ...prev,
+      recaptchaToken: dict.fieldErrors.recaptcha,
+    }));
+  }
+
+  function handleRecaptchaError() {
+    setRecaptchaToken("");
+    setFieldErrors((prev) => ({
+      ...prev,
+      recaptchaToken: dict.fieldErrors.recaptcha,
+    }));
+    setStatus("error");
+    setErrorMessage(dict.errorRecaptcha);
   }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -146,7 +198,12 @@ export default function ContactForm({
     if (!validation.ok) {
       setFieldErrors(validation.errors);
       setStatus("error");
-      setErrorMessage(dict.errorInvalid);
+      const hasFormFieldErrors = (
+        ["name", "email", "subject", "message"] as FormField[]
+      ).some((f) => validation.errors[f]);
+      setErrorMessage(
+        hasFormFieldErrors ? dict.errorInvalid : dict.errorRecaptcha,
+      );
       const firstField = (
         ["name", "email", "subject", "message"] as FormField[]
       ).find((f) => validation.errors[f]);
@@ -171,16 +228,21 @@ export default function ContactForm({
       if (response.ok) {
         setStatus("success");
         form.reset();
+        resetRecaptcha();
+        setMessageLength(0);
         return;
       }
 
       const body = await response.json().catch(() => ({}));
       const code = body?.error;
       if (code === "rate_limit") setErrorMessage(dict.errorRateLimit);
+      else if (code === "captcha") setErrorMessage(dict.errorRecaptcha);
       else if (code === "invalid") setErrorMessage(dict.errorInvalid);
       else setErrorMessage(dict.errorGeneric);
+      resetRecaptcha();
       setStatus("error");
     } catch {
+      resetRecaptcha();
       setErrorMessage(dict.errorGeneric);
       setStatus("error");
     }
@@ -221,115 +283,157 @@ export default function ContactForm({
       onSubmit={handleSubmit}
       onBlur={handleBlur}
       onChange={handleChange}
-      className="rounded-[28px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-8 space-y-5"
+      className="rounded-[28px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-4 shadow-[0_30px_80px_-60px_rgba(0,0,0,0.9)] sm:p-8"
       noValidate
     >
       <div aria-hidden className="absolute -left-[9999px] top-auto">
         <label>
           Company
-          <input
-            type="text"
-            name="company"
-            tabIndex={-1}
-            autoComplete="off"
-          />
+          <input type="text" name="company" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
 
-      <Field
-        label={dict.nameLabel}
-        htmlFor="name"
-        required={dict.required}
-        error={fieldErrors.name}
-      >
-        <input
-          id="name"
-          name="name"
-          type="text"
-          maxLength={NAME_MAX}
-          placeholder={dict.namePlaceholder}
-          autoComplete="name"
-          aria-invalid={fieldErrors.name ? true : undefined}
-          aria-describedby={fieldErrors.name ? "name-error" : undefined}
-          className={inputClass(!!fieldErrors.name)}
-        />
-      </Field>
+      <div className="space-y-5">
+        <div className="grid gap-5 sm:grid-cols-2">
+          <Field
+            label={dict.nameLabel}
+            htmlFor="name"
+            required={dict.required}
+            error={fieldErrors.name}
+          >
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              maxLength={NAME_MAX}
+              placeholder={dict.namePlaceholder}
+              autoComplete="name"
+              aria-invalid={fieldErrors.name ? true : undefined}
+              aria-describedby={fieldErrors.name ? "name-error" : undefined}
+              className={inputClass(!!fieldErrors.name)}
+            />
+          </Field>
 
-      <Field
-        label={dict.emailLabel}
-        htmlFor="email"
-        required={dict.required}
-        error={fieldErrors.email}
-      >
-        <input
-          id="email"
-          name="email"
-          type="email"
-          maxLength={EMAIL_MAX}
-          placeholder={dict.emailPlaceholder}
-          autoComplete="email"
-          aria-invalid={fieldErrors.email ? true : undefined}
-          aria-describedby={fieldErrors.email ? "email-error" : undefined}
-          className={inputClass(!!fieldErrors.email)}
-        />
-      </Field>
+          <Field
+            label={dict.emailLabel}
+            htmlFor="email"
+            required={dict.required}
+            error={fieldErrors.email}
+          >
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              maxLength={EMAIL_MAX}
+              placeholder={dict.emailPlaceholder}
+              autoComplete="email"
+              inputMode="email"
+              aria-invalid={fieldErrors.email ? true : undefined}
+              aria-describedby={fieldErrors.email ? "email-error" : undefined}
+              className={inputClass(!!fieldErrors.email)}
+            />
+          </Field>
+        </div>
 
-      <Field
-        label={dict.subjectLabel}
-        htmlFor="subject"
-        required={dict.required}
-        error={fieldErrors.subject}
-      >
-        <select
-          id="subject"
-          name="subject"
-          defaultValue=""
-          aria-invalid={fieldErrors.subject ? true : undefined}
-          aria-describedby={fieldErrors.subject ? "subject-error" : undefined}
-          className={`${inputClass(!!fieldErrors.subject)} appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20stroke%3D%22%2374797f%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%221%201%206%206%2011%201%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px_8px] bg-[right_18px_center] bg-no-repeat pr-10`}
+        <Field
+          label={dict.subjectLabel}
+          htmlFor="subject"
+          required={dict.required}
+          error={fieldErrors.subject}
         >
-          <option value="" disabled>
-            {dict.subjectPlaceholder}
-          </option>
-          {CONTACT_SUBJECTS.map((key) => (
-            <option key={key} value={key}>
-              {dict.subjects[key]}
+          <select
+            id="subject"
+            name="subject"
+            required
+            defaultValue=""
+            aria-invalid={fieldErrors.subject ? true : undefined}
+            aria-describedby={fieldErrors.subject ? "subject-error" : undefined}
+            className={`${inputClass(!!fieldErrors.subject)} appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20stroke%3D%22%2374797f%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%221%201%206%206%2011%201%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px_8px] bg-[right_18px_center] bg-no-repeat pr-10`}
+          >
+            <option value="" disabled>
+              {dict.subjectPlaceholder}
             </option>
-          ))}
-        </select>
-      </Field>
+            {CONTACT_SUBJECTS.map((key) => (
+              <option key={key} value={key}>
+                {dict.subjects[key]}
+              </option>
+            ))}
+          </select>
+        </Field>
 
-      <Field
-        label={dict.messageLabel}
-        htmlFor="message"
-        required={dict.required}
-        error={fieldErrors.message}
-      >
-        <textarea
-          id="message"
-          name="message"
-          rows={6}
-          maxLength={MESSAGE_MAX}
-          placeholder={dict.messagePlaceholder}
-          aria-invalid={fieldErrors.message ? true : undefined}
-          aria-describedby={fieldErrors.message ? "message-error" : undefined}
-          className={`${inputClass(!!fieldErrors.message)} resize-y min-h-[140px]`}
-        />
-      </Field>
+        <Field
+          label={dict.messageLabel}
+          htmlFor="message"
+          required={dict.required}
+          error={fieldErrors.message}
+        >
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows={7}
+            maxLength={MESSAGE_MAX}
+            placeholder={dict.messagePlaceholder}
+            aria-invalid={fieldErrors.message ? true : undefined}
+            aria-describedby={
+              fieldErrors.message
+                ? "message-error message-count"
+                : "message-count"
+            }
+            className={`${inputClass(!!fieldErrors.message)} min-h-[168px] resize-y leading-relaxed`}
+          />
+          <p
+            id="message-count"
+            className="mt-2 text-right text-xs text-text-muted"
+          >
+            {messageLength.toLocaleString(lang)} /{" "}
+            {MESSAGE_MAX.toLocaleString(lang)}
+          </p>
+        </Field>
+      </div>
+
+      <div className="mt-6">
+        {RECAPTCHA_SITE_KEY ? (
+          <div className="max-w-full overflow-hidden">
+            <div className="origin-top-left scale-[0.86] sm:scale-100">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={RECAPTCHA_SITE_KEY}
+                hl={lang}
+                theme="light"
+                onChange={handleRecaptchaChange}
+                onExpired={handleRecaptchaExpired}
+                onErrored={handleRecaptchaError}
+              />
+            </div>
+          </div>
+        ) : (
+          <p className="rounded-2xl border border-red-500/25 bg-red-500/10 px-4 py-3 text-sm text-red-300">
+            {dict.errorRecaptcha}
+          </p>
+        )}
+        {fieldErrors.recaptchaToken ? (
+          <p id="recaptcha-error" className="mt-2 text-xs text-red-300">
+            {fieldErrors.recaptchaToken}
+          </p>
+        ) : null}
+      </div>
 
       {status === "error" && errorMessage ? (
         <p
           role="alert"
-          className="rounded-2xl border border-red-500/25 bg-red-500/10 px-4 py-3 text-sm text-red-300"
+          className="rounded-2xl border border-red-500/25 bg-red-500/10 px-4 py-3 text-sm text-red-300 mt-4"
         >
           {errorMessage}
         </p>
       ) : null}
 
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="submit"
-          disabled={submitting}
+          disabled={submitting || !RECAPTCHA_SITE_KEY}
           className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-60"
         >
           {submitting ? dict.submitting : dict.submit}
@@ -375,10 +479,7 @@ function Field({
       </label>
       <div className="mt-2">{children}</div>
       {error ? (
-        <p
-          id={`${htmlFor}-error`}
-          className="mt-2 text-xs text-red-300"
-        >
+        <p id={`${htmlFor}-error`} className="mt-2 text-xs text-red-300">
           {error}
         </p>
       ) : null}

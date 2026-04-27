@@ -20,8 +20,6 @@
       "billing": "Facturación o suscripción",
       "technical": "Problema técnico / Reportar bug",
       "feature": "Sugerencia de funcionalidad",
-      "deletion": "Eliminar mi cuenta",
-      "press": "Prensa / Colaboraciones",
       "other": "Otro"
     },
     "messageLabel": "Mensaje",
@@ -34,11 +32,13 @@
     "errorGeneric": "Algo salió mal. Escríbenos directamente a hello@affprof.com.",
     "errorRateLimit": "Has enviado demasiados mensajes. Inténtalo de nuevo en una hora.",
     "errorInvalid": "Revisa los campos del formulario e inténtalo de nuevo.",
+    "errorRecaptcha": "Completa la verificación reCAPTCHA e inténtalo de nuevo.",
     "fieldErrors": {
       "required": "Este campo es requerido.",
       "email": "Por favor ingresa un email válido.",
       "subject": "Por favor elige un tema.",
-      "tooLong": "Este campo es demasiado largo."
+      "tooLong": "Este campo es demasiado largo.",
+      "recaptcha": "Completa la verificación reCAPTCHA."
     },
     "consentPrefix": "Al enviar este formulario, aceptas nuestra",
     "consentLink": "Política de Privacidad"

@@ -5,8 +5,6 @@ export const CONTACT_SUBJECTS = [
   "billing",
   "technical",
   "feature",
-  "deletion",
-  "press",
   "other",
 ] as const;
 
@@ -17,14 +15,13 @@ export const CONTACT_SUBJECT_LABELS: Record<ContactSubject, string> = {
   billing: "Billing or subscription",
   technical: "Technical issue / Bug report",
   feature: "Feature request",
-  deletion: "Account deletion",
-  press: "Press / Partnership",
   other: "Other",
 };
 
 export const NAME_MAX = 120;
 export const EMAIL_MAX = 254;
 export const MESSAGE_MAX = 5000;
+export const RECAPTCHA_TOKEN_MAX = 4096;
 
 export const ContactSchema = z.object({
   name: z
@@ -44,6 +41,11 @@ export const ContactSchema = z.object({
     .trim()
     .min(1, { message: "required" })
     .max(MESSAGE_MAX, { message: "tooLong" }),
+  recaptchaToken: z
+    .string()
+    .trim()
+    .min(1, { message: "recaptcha" })
+    .max(RECAPTCHA_TOKEN_MAX, { message: "recaptcha" }),
   honeypot: z.string().max(0).optional().or(z.literal("")),
   lang: z.enum(["en", "es"]).optional(),
 });
@@ -51,5 +53,5 @@ export const ContactSchema = z.object({
 export type ContactInput = z.infer<typeof ContactSchema>;
 
 export type ContactFieldErrors = Partial<
-  Record<"name" | "email" | "subject" | "message", string>
+  Record<"name" | "email" | "subject" | "message" | "recaptchaToken", string>
 >;

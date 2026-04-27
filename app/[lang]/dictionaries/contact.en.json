@@ -20,8 +20,6 @@
       "billing": "Billing or subscription",
       "technical": "Technical issue / Bug report",
       "feature": "Feature request",
-      "deletion": "Account deletion",
-      "press": "Press / Partnership",
       "other": "Other"
     },
     "messageLabel": "Message",
@@ -34,11 +32,13 @@
     "errorGeneric": "Something went wrong. Please email us directly at hello@affprof.com.",
     "errorRateLimit": "You've sent too many messages. Please try again in an hour.",
     "errorInvalid": "Please check the form fields and try again.",
+    "errorRecaptcha": "Please complete the reCAPTCHA check and try again.",
     "fieldErrors": {
       "required": "This field is required.",
       "email": "Please enter a valid email address.",
       "subject": "Please choose a topic.",
-      "tooLong": "This field is too long."
+      "tooLong": "This field is too long.",
+      "recaptcha": "Please complete the reCAPTCHA check."
     },
     "consentPrefix": "By submitting this form, you agree to our",
     "consentLink": "Privacy Policy"
