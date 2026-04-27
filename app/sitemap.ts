@@ -11,6 +11,26 @@ const pages = [
     priority: 1,
   },
   {
+    path: "/contact",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    path: "/guides/getting-started",
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    path: "/guides/custom-domain",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
+  {
+    path: "/guides/import-links",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
+  {
     path: "/privacy",
     changeFrequency: "yearly",
     priority: 0.3,

@@ -37,6 +37,27 @@ export async function generateMetadata({
     title: dict.meta.title,
     description: dict.meta.description,
     alternates: { canonical: url, languages },
+    openGraph: {
+      type: "website",
+      url,
+      siteName: "AffProf",
+      title: dict.meta.title,
+      description: dict.meta.description,
+      images: [
+        {
+          url: `${BASE_URL}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: "AffProf — Affiliate Link Management",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dict.meta.title,
+      description: dict.meta.description,
+      images: [`${BASE_URL}/og-image.png`],
+    },
   };
 }
 

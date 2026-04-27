@@ -50,6 +50,27 @@ export async function generateMetadata({
     title: c.meta.title,
     description: c.meta.description,
     alternates: { canonical: url, languages },
+    openGraph: {
+      type: "article",
+      url,
+      siteName: "AffProf",
+      title: c.meta.title,
+      description: c.meta.description,
+      images: [
+        {
+          url: `${BASE_URL}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: "AffProf — Affiliate Link Management",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: c.meta.title,
+      description: c.meta.description,
+      images: [`${BASE_URL}/og-image.png`],
+    },
   };
 }
 
