@@ -105,7 +105,15 @@ export function CodeBlock({
   );
 }
 
-export function Screenshot({ src, alt }: { src: string; alt: string }) {
+export function Screenshot({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+}) {
   return (
     <figure className="mt-6 overflow-hidden rounded-2xl border border-white/8 bg-white/[0.02]">
       <Image
@@ -113,7 +121,7 @@ export function Screenshot({ src, alt }: { src: string; alt: string }) {
         alt={alt}
         width={1600}
         height={1000}
-        className="h-auto w-full"
+        className={`h-auto w-full ${className}`}
         sizes="(max-width: 768px) 100vw, 768px"
       />
     </figure>
@@ -147,7 +155,10 @@ export function Table({ rows }: { rows: TableRow[] }) {
       <table className="w-full text-sm">
         <tbody>
           {rows.map((row, i) => (
-            <tr key={`${row.label}-${i}`} className={i > 0 ? "border-t border-white/8" : ""}>
+            <tr
+              key={`${row.label}-${i}`}
+              className={i > 0 ? "border-t border-white/8" : ""}
+            >
               <td className="w-1/3 bg-white/[0.02] px-4 py-3 align-top font-semibold text-text-primary">
                 {row.label}
               </td>

@@ -44,7 +44,7 @@ export default function Pricing({ dict }: { dict: PricingDict }) {
           <span className="inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-primary-light">
             Pricing
           </span>
-          <h2 className="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl text-balance">
             {dict.title}
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-text-secondary">

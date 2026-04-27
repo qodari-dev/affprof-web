@@ -162,10 +162,16 @@ export default async function GettingStartedGuide({
 
           <Hr />
 
-          <H2>{isEs ? "1. Crea tu cuenta gratuita" : "1. Create your free account"}</H2>
+          <H2>
+            {isEs
+              ? "1. Crea tu cuenta gratuita"
+              : "1. Create your free account"}
+          </H2>
           <P>
             {isEs ? "Ve a " : "Head to "}
-            <ExtLink href={SITE_URLS.register}>app.affprof.com/register</ExtLink>
+            <ExtLink href={SITE_URLS.register}>
+              app.affprof.com/register
+            </ExtLink>
             {isEs
               ? " y regístrate con tu email y una contraseña. No hay verificación por correo que te detenga, ni necesitas información de pago."
               : " and sign up with your email and a password. There's no email verification step holding you back, and no payment information needed."}
@@ -178,7 +184,9 @@ export default async function GettingStartedGuide({
 
           <Hr />
 
-          <H2>{isEs ? "2. Tu dashboard principal" : "2. Your home dashboard"}</H2>
+          <H2>
+            {isEs ? "2. Tu dashboard principal" : "2. Your home dashboard"}
+          </H2>
           <P>
             {isEs
               ? "Después de iniciar sesión, llegas a tu página "
@@ -189,9 +197,18 @@ export default async function GettingStartedGuide({
               : " page. This is your at-a-glance view:"}
           </P>
 
-          <Screenshot src="/getting-started/home.png" alt={isEs ? "Dashboard de inicio de AffProf" : "AffProf home dashboard"} />
+          <Screenshot
+            src="/getting-started/home.png"
+            alt={
+              isEs ? "Dashboard de inicio de AffProf" : "AffProf home dashboard"
+            }
+          />
 
-          <P>{isEs ? "Tres tarjetas muestran lo esencial:" : "Three cards show the essentials:"}</P>
+          <P>
+            {isEs
+              ? "Tres tarjetas muestran lo esencial:"
+              : "Three cards show the essentials:"}
+          </P>
           <Bullets>
             <li>
               <Strong>{isEs ? "Total de enlaces" : "Total links"}</Strong>
@@ -206,7 +223,9 @@ export default async function GettingStartedGuide({
                 : " — anything that needs your attention right now"}
             </li>
             <li>
-              <Strong>{isEs ? "Clics (últimos 30 días)" : "Clicks (last 30 days)"}</Strong>
+              <Strong>
+                {isEs ? "Clics (últimos 30 días)" : "Clicks (last 30 days)"}
+              </Strong>
               {isEs
                 ? " — tráfico total a través de todos tus enlaces"
                 : " — total traffic across all your links"}
@@ -220,7 +239,11 @@ export default async function GettingStartedGuide({
 
           <Hr />
 
-          <H2>{isEs ? "3. Configura tu marca (opcional)" : "3. Set up your brand (optional)"}</H2>
+          <H2>
+            {isEs
+              ? "3. Configura tu marca (opcional)"
+              : "3. Set up your brand (optional)"}
+          </H2>
           <P>
             {isEs
               ? "Antes de crear enlaces, puedes configurar una "
@@ -232,18 +255,31 @@ export default async function GettingStartedGuide({
           </P>
           <P>
             {isEs ? "Ve a " : "Go to "}
-            <Strong>{isEs ? "Configuración → Marcas → Agregar marca" : "Settings → Brands → Add brand"}</Strong>:
+            <Strong>
+              {isEs
+                ? "Configuración → Marcas → Agregar marca"
+                : "Settings → Brands → Add brand"}
+            </Strong>
+            :
           </P>
 
-          <Screenshot src="/getting-started/create-brand.png" alt={isEs ? "Crear una marca en AffProf" : "Creating a brand in AffProf"} />
+          <Screenshot
+            src="/getting-started/create-brand.png"
+            alt={
+              isEs
+                ? "Crear una marca en AffProf"
+                : "Creating a brand in AffProf"
+            }
+            className="max-w-md"
+          />
 
           <P>{isEs ? "Completa:" : "Fill in:"}</P>
           <Bullets>
             <li>
               <Strong>{isEs ? "Nombre" : "Name"}</Strong>
               {isEs
-                ? " — una etiqueta corta como \"Mi YouTube\" o \"Carlos Media\""
-                : " — a short label like \"My YouTube\" or \"Carlos Media\""}
+                ? ' — una etiqueta corta como "Mi YouTube" o "Carlos Media"'
+                : ' — a short label like "My YouTube" or "Carlos Media"'}
             </li>
             <li>
               <Strong>{isEs ? "Logo" : "Logo"}</Strong>
@@ -258,7 +294,9 @@ export default async function GettingStartedGuide({
                 : " — the main QR color. Darker colors scan more reliably"}
             </li>
             <li>
-              <Strong>{isEs ? "Color de fondo del QR" : "QR background"}</Strong>
+              <Strong>
+                {isEs ? "Color de fondo del QR" : "QR background"}
+              </Strong>
               {isEs
                 ? " — necesita suficiente contraste con el frontal"
                 : " — needs enough contrast against the foreground"}
@@ -266,7 +304,7 @@ export default async function GettingStartedGuide({
           </Bullets>
           <P>
             {isEs ? "Activa " : "Toggle "}
-            <Strong>{isEs ? "\"Marca por defecto\"" : "\"Default brand\""}</Strong>
+            <Strong>{isEs ? '"Marca por defecto"' : '"Default brand"'}</Strong>
             {isEs
               ? " si quieres que esta marca aparezca pre-seleccionada cada vez que abras el diálogo de QR."
               : " if you want this brand pre-selected every time you open the QR dialog."}
@@ -286,7 +324,9 @@ export default async function GettingStartedGuide({
               : "4. Create your first product, then your first link"}
           </H2>
           <P>
-            {isEs ? "En AffProf, cada enlace pertenece a un " : "In AffProf, every link belongs to a "}
+            {isEs
+              ? "En AffProf, cada enlace pertenece a un "
+              : "In AffProf, every link belongs to a "}
             <Strong>{isEs ? "producto" : "product"}</Strong>
             {isEs
               ? ". Un producto representa una marca, blog, canal o campaña que estás promocionando. Esta agrupación es lo que hace que tus analíticas sean significativas — puedes ver qué campañas generan más clics, qué productos tienen enlaces rotos, y así."
@@ -296,22 +336,36 @@ export default async function GettingStartedGuide({
           <H3>{isEs ? "Crea un producto" : "Create a product"}</H3>
           <P>
             {isEs ? "Ve a " : "Go to "}
-            <Strong>{isEs ? "Productos → Nuevo producto" : "Products → New product"}</Strong>
+            <Strong>
+              {isEs ? "Productos → Nuevo producto" : "Products → New product"}
+            </Strong>
             {isEs
-              ? " y dale un nombre (p.ej., \"Mi Blog Tech\", \"Canal de YouTube\", \"Programa de Afiliados de Notion\")."
-              : " and give it a name (e.g., \"My Tech Blog\", \"YouTube Channel\", \"Notion Affiliate Program\")."}
+              ? ' y dale un nombre (p.ej., "Mi Blog Tech", "Canal de YouTube", "Programa de Afiliados de Notion").'
+              : ' and give it a name (e.g., "My Tech Blog", "YouTube Channel", "Notion Affiliate Program").'}
           </P>
 
           <H3>{isEs ? "Crea tu primer enlace" : "Create your first link"}</H3>
           <P>
             {isEs ? "Ve a " : "Go to "}
-            <Strong>{isEs ? "Enlaces → Nuevo enlace" : "Links → New link"}</Strong>
+            <Strong>
+              {isEs ? "Enlaces → Nuevo enlace" : "Links → New link"}
+            </Strong>
             {isEs ? " y verás este formulario:" : " and you'll see this form:"}
           </P>
 
-          <Screenshot src="/getting-started/create-link.png" alt={isEs ? "Formulario de creación de enlace" : "Link creation form"} />
+          <Screenshot
+            src="/getting-started/create-link.png"
+            alt={
+              isEs ? "Formulario de creación de enlace" : "Link creation form"
+            }
+            className="max-w-md"
+          />
 
-          <P>{isEs ? "Repasemos cada sección:" : "Let's walk through each section:"}</P>
+          <P>
+            {isEs
+              ? "Repasemos cada sección:"
+              : "Let's walk through each section:"}
+          </P>
 
           <H3>{isEs ? "Información básica" : "Basic info"}</H3>
           <Bullets>
@@ -338,13 +392,17 @@ export default async function GettingStartedGuide({
               {isEs
                 ? ": esta es la parte que aparece en tu enlace corto. Escribe el tuyo (p.ej., "
                 : ": this is the part that appears in your short link. Type your own (e.g., "}
-              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">airpods-pro-review</code>
+              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+                airpods-pro-review
+              </code>
               {isEs ? ") o haz clic en " : ") or click "}
               <Strong>{isEs ? "Sugerir" : "Suggest"}</Strong>
               {isEs ? " para auto-generarlo" : " to auto-generate one"}
             </li>
             <li>
-              <Strong>{isEs ? "Disponibilidad del enlace" : "Link availability"}</Strong>
+              <Strong>
+                {isEs ? "Disponibilidad del enlace" : "Link availability"}
+              </Strong>
               {isEs
                 ? ": déjalo activado. Si alguna vez necesitas pausar un enlace sin borrarlo, desactívalo"
                 : ": leave on. If you ever need to pause a link without deleting it, toggle this off"}
@@ -406,10 +464,22 @@ export default async function GettingStartedGuide({
             {isEs
               ? " para facilitar el filtrado más adelante. Las etiquetas son labels flexibles como "
               : " to make filtering easier later. Tags are flexible labels like "}
-            <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">amazon</code>,{" "}
-            <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">tech</code>,{" "}
-            <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">black-friday</code>,{" "}
-            <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">youtube</code>.
+            <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+              amazon
+            </code>
+            ,{" "}
+            <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+              tech
+            </code>
+            ,{" "}
+            <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+              black-friday
+            </code>
+            ,{" "}
+            <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+              youtube
+            </code>
+            .
             {isEs
               ? " Un enlace puede tener múltiples etiquetas, y podrás filtrar las analíticas por ellas."
               : " A link can have multiple tags, and you'll be able to filter analytics by them."}
@@ -453,7 +523,11 @@ export default async function GettingStartedGuide({
 
           <Screenshot
             src="/getting-started/analytic-specific-link.png"
-            alt={isEs ? "Analíticas de un enlace específico" : "Specific link analytics"}
+            alt={
+              isEs
+                ? "Analíticas de un enlace específico"
+                : "Specific link analytics"
+            }
           />
 
           <P>
@@ -469,7 +543,9 @@ export default async function GettingStartedGuide({
                 : ", mobile share, QR scans, and unique countries"}
             </li>
             <li>
-              <Strong>{isEs ? "Clics en el tiempo" : "Clicks over time"}</Strong>
+              <Strong>
+                {isEs ? "Clics en el tiempo" : "Clicks over time"}
+              </Strong>
               {isEs
                 ? " — la línea de tiempo completa para que veas cuándo hay picos de tráfico"
                 : " — the full timeline so you can see when traffic spikes"}
@@ -482,9 +558,13 @@ export default async function GettingStartedGuide({
             </li>
             <li>
               <Strong>{isEs ? "Dispositivos" : "Devices"}</Strong>,{" "}
-              <Strong>{isEs ? "sistemas operativos" : "operating systems"}</Strong>,{" "}
-              <Strong>{isEs ? "navegadores" : "browsers"}</Strong>
-              {isEs ? " — el perfil de tu audiencia" : " — your audience profile"}
+              <Strong>
+                {isEs ? "sistemas operativos" : "operating systems"}
+              </Strong>
+              , <Strong>{isEs ? "navegadores" : "browsers"}</Strong>
+              {isEs
+                ? " — el perfil de tu audiencia"
+                : " — your audience profile"}
             </li>
             <li>
               <Strong>{isEs ? "Países" : "Countries"}</Strong>
@@ -534,7 +614,12 @@ export default async function GettingStartedGuide({
 
           <Screenshot
             src="/getting-started/link-actions.png"
-            alt={isEs ? "Menú de acciones rápidas en cada enlace" : "Quick actions menu on each link"}
+            alt={
+              isEs
+                ? "Menú de acciones rápidas en cada enlace"
+                : "Quick actions menu on each link"
+            }
+            className="max-w-xs"
           />
 
           <Bullets>
@@ -551,7 +636,9 @@ export default async function GettingStartedGuide({
                 : " — instantly copies the link to your clipboard, ready to paste anywhere"}
             </li>
             <li>
-              <Strong>{isEs ? "Abrir URL de destino" : "Open destination URL"}</Strong>
+              <Strong>
+                {isEs ? "Abrir URL de destino" : "Open destination URL"}
+              </Strong>
               {isEs
                 ? " — abre el destino de afiliado real en una pestaña nueva para verificar que funciona"
                 : " — opens the actual affiliate destination in a new tab so you can verify it's working"}
@@ -598,14 +685,17 @@ export default async function GettingStartedGuide({
           </P>
 
           <Screenshot
-            src="/getting-started/link-actions-qr.png"
+            src="/getting-started/qr-dropdown.png"
             alt={isEs ? "Modal de generación de QR" : "QR generation modal"}
+            className="max-w-md"
           />
 
           <P>{isEs ? "Puedes:" : "You can:"}</P>
           <Bullets>
             <li>
-              <Strong>{isEs ? "Elegir qué marca" : "Choose which brand"}</Strong>
+              <Strong>
+                {isEs ? "Elegir qué marca" : "Choose which brand"}
+              </Strong>
               {isEs
                 ? " aplicar para esta descarga específica. El menú desplegable te deja escoger cualquier marca guardada o usar el estilo por defecto de AffProf. Esto significa que un mismo enlace puede descargarse como múltiples variaciones de QR — por ejemplo, una versión a color para Instagram y una en blanco y negro para material impreso"
                 : " to apply for this specific download. The dropdown lets you pick any saved brand or use the default AffProf style. This means one link can be downloaded as multiple QR variations — for example, a colored version for Instagram and a black-and-white version for printed materials"}
@@ -648,7 +738,9 @@ export default async function GettingStartedGuide({
             </li>
             <li>
               <Strong>{isEs ? "Plan Pro" : "Pro plan"}</Strong>
-              {isEs ? ": cada 6 horas (4 veces al día)" : ": every 6 hours (4 times per day)"}
+              {isEs
+                ? ": cada 6 horas (4 veces al día)"
+                : ": every 6 hours (4 times per day)"}
             </li>
           </Bullets>
           <P>
@@ -661,10 +753,16 @@ export default async function GettingStartedGuide({
               {isEs
                 ? "El estado del enlace en tu dashboard cambia de "
                 : "The link's status in your dashboard changes from "}
-              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">{isEs ? "Activo" : "Active"}</code>
+              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+                {isEs ? "Activo" : "Active"}
+              </code>
               {isEs ? " a " : " to "}
-              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">{isEs ? "Roto" : "Broken"}</code>
-              {isEs ? ", con una alerta roja arriba" : ", with a red alert at the top"}
+              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+                {isEs ? "Roto" : "Broken"}
+              </code>
+              {isEs
+                ? ", con una alerta roja arriba"
+                : ", with a red alert at the top"}
             </li>
             <li className="leading-relaxed pl-1">
               {isEs
@@ -676,8 +774,8 @@ export default async function GettingStartedGuide({
             {isEs ? "Si has configurado una " : "If you've configured a "}
             <Strong>{isEs ? "URL de fallback" : "fallback URL"}</Strong>
             {isEs
-              ? " para ese enlace, los visitantes son redirigidos automáticamente al respaldo. Si no, ven una página de \"enlace no disponible\"."
-              : " for that link, visitors are automatically redirected to the backup. If not, they see a \"link unavailable\" page."}
+              ? ' para ese enlace, los visitantes son redirigidos automáticamente al respaldo. Si no, ven una página de "enlace no disponible".'
+              : ' for that link, visitors are automatically redirected to the backup. If not, they see a "link unavailable" page.'}
           </P>
           <P>
             {isEs ? "La sección " : "The "}
@@ -704,16 +802,22 @@ export default async function GettingStartedGuide({
                 {isEs ? "Conecta un dominio propio" : "Connect a custom domain"}
               </Link>
               {isEs ? " para que tus enlaces usen " : " so your links use "}
-              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">links.yourbrand.com</code>
+              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+                links.yourbrand.com
+              </code>
               {isEs ? " en lugar de " : " instead of "}
-              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">affprof.com/go/...</code>
+              <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
+                affprof.com/go/...
+              </code>
             </li>
             <li>
               <Link
                 href={`/${lang}/guides/import-links`}
                 className="text-primary-light underline-offset-2 hover:underline"
               >
-                {isEs ? "Importa tus enlaces existentes" : "Import your existing links"}
+                {isEs
+                  ? "Importa tus enlaces existentes"
+                  : "Import your existing links"}
               </Link>
               {isEs
                 ? " desde un CSV si ya tienes una librería que migrar"
@@ -744,4 +848,3 @@ export default async function GettingStartedGuide({
     </>
   );
 }
-
