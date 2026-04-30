@@ -63,7 +63,7 @@ export async function generateMetadata({
       description: c.meta.description,
       images: [
         {
-          url: `${BASE_URL}/og-image.png`,
+          url: `${BASE_URL}/og-image-v2.png`,
           width: 1200,
           height: 630,
           alt: "AffProf — Affiliate Link Management",
@@ -74,7 +74,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: c.meta.title,
       description: c.meta.description,
-      images: [`${BASE_URL}/og-image.png`],
+      images: [`${BASE_URL}/og-image-v2.png`],
     },
   };
 }
