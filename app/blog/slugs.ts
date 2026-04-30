@@ -3,7 +3,7 @@ type Locale = "en" | "es";
 export const BLOG_SLUGS_BY_ID: Record<string, Record<Locale, string>> = {
   "affiliate-links-break": {
     en: "why-affiliate-links-break",
-    es: "por-que-se-rompen-links-afiliado",
+    es: "por-que-se-rompen-enlaces-de-afiliado",
   },
 };
 
