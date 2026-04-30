@@ -6,6 +6,7 @@
   "nav": {
     "features": "Features",
     "pricing": "Pricing",
+    "blog": "Blog",
     "faq": "FAQ",
     "login": "Log in",
     "getStarted": "Start free"
@@ -291,6 +292,7 @@
     "resources": "Resources",
     "legal": "Legal",
     "contact": "Contact",
+    "blog": "Blog",
     "gettingStarted": "Getting Started",
     "customDomainSetup": "Custom Domain Setup",
     "importingLinks": "Importing Links",

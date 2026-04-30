@@ -2,20 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { getLocalizedPathname } from "../lib/language-paths";
 
 export default function FooterLangSwitcher({ lang }: { lang: string }) {
   const pathname = usePathname() ?? `/${lang}`;
-  const otherLang = lang === "en" ? "es" : "en";
   const otherLabel = lang === "en" ? "Español" : "English";
   const otherCode = lang === "en" ? "ES" : "EN";
-
-  const segments = pathname.split("/").filter(Boolean);
-  if (segments.length === 0) {
-    segments.push(otherLang);
-  } else {
-    segments[0] = otherLang;
-  }
-  const targetHref = `/${segments.join("/")}`;
+  const targetHref = getLocalizedPathname(pathname, lang);
 
   return (
     <Link

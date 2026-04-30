@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getBlogPath, getBlogPostById, getBlogPosts } from "./blog/content";
 
 const BASE_URL = "https://affprof.com";
 
@@ -14,6 +15,11 @@ const pages = [
     path: "/contact",
     changeFrequency: "monthly",
     priority: 0.6,
+  },
+  {
+    path: "/blog",
+    changeFrequency: "weekly",
+    priority: 0.8,
   },
   {
     path: "/guides/getting-started",
@@ -65,7 +71,7 @@ function buildAlternates(path: string): Record<string, string> {
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  return pages.flatMap((page) =>
+  const staticPages = pages.flatMap((page) =>
     locales.map((locale) => ({
       url: buildUrl(locale, page.path),
       lastModified,
@@ -76,4 +82,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     })),
   );
+
+  const blogPosts = getBlogPosts().map((post) => {
+    const languages: Record<string, string> = {};
+
+    for (const locale of locales) {
+      const localized = getBlogPostById(post.id, locale);
+      if (localized) {
+        languages[locale] = `${BASE_URL}${getBlogPath(localized)}`;
+      }
+    }
+
+    const defaultPost = getBlogPostById(post.id, "en");
+    if (defaultPost) {
+      languages["x-default"] = `${BASE_URL}${getBlogPath(defaultPost)}`;
+    }
+
+    return {
+      url: `${BASE_URL}${getBlogPath(post)}`,
+      lastModified: new Date(post.updatedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+      alternates: {
+        languages,
+      },
+    };
+  });
+
+  return [...staticPages, ...blogPosts];
 }

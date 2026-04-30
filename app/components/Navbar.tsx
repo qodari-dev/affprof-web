@@ -2,13 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { CloseIcon, MenuIcon } from "./icons";
+import { getLocalizedPathname } from "../lib/language-paths";
 import { SITE_URLS } from "../site-config";
 
 type NavDict = {
   features: string;
   pricing: string;
+  blog: string;
   faq: string;
   login: string;
   getStarted: string;
@@ -22,15 +25,17 @@ export default function Navbar({
   lang: string;
 }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname() ?? `/${lang}`;
 
   const navLinks = [
     { href: `/${lang}#features`, label: dict.features },
     { href: `/${lang}#pricing`, label: dict.pricing },
+    { href: `/${lang}/blog`, label: dict.blog },
     { href: `/${lang}#faq`, label: dict.faq },
   ];
 
-  const otherLang = lang === "en" ? "es" : "en";
   const otherLabel = lang === "en" ? "ES" : "EN";
+  const languageHref = getLocalizedPathname(pathname, lang);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/8 bg-bg-dark/75 backdrop-blur-xl">
@@ -63,7 +68,7 @@ export default function Navbar({
 
         <div className="hidden items-center gap-3 lg:flex">
           <Link
-            href={`/${otherLang}`}
+            href={languageHref}
             className="inline-flex items-center rounded-full border border-white/10 px-3 py-2 text-xs font-semibold tracking-[0.18em] text-text-secondary transition-colors hover:border-primary/40 hover:text-text-primary"
           >
             {otherLabel}
@@ -84,7 +89,7 @@ export default function Navbar({
 
         <div className="flex items-center gap-2 lg:hidden">
           <Link
-            href={`/${otherLang}`}
+            href={languageHref}
             className="inline-flex h-10 items-center rounded-full border border-white/10 px-3 text-xs font-semibold tracking-[0.18em] text-text-secondary"
           >
             {otherLabel}

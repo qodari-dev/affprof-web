@@ -8,6 +8,7 @@ type FooterDict = {
   resources: string;
   legal: string;
   contact: string;
+  blog: string;
   gettingStarted: string;
   customDomainSetup: string;
   importingLinks: string;
@@ -21,6 +22,7 @@ type FooterDict = {
 type NavDict = {
   features: string;
   pricing: string;
+  blog: string;
   faq: string;
 };
 
@@ -100,6 +102,14 @@ export default function Footer({
               {dict.resources}
             </div>
             <ul className="mt-4 space-y-3 text-sm text-text-secondary">
+              <li>
+                <Link
+                  href={`/${lang}/blog`}
+                  className="transition-colors hover:text-text-primary"
+                >
+                  {dict.blog}
+                </Link>
+              </li>
               <li>
                 <Link
                   href={`/${lang}/guides/getting-started`}

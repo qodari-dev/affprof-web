@@ -6,6 +6,7 @@
   "nav": {
     "features": "Funciones",
     "pricing": "Planes",
+    "blog": "Blog",
     "faq": "FAQ",
     "login": "Iniciar sesión",
     "getStarted": "Empezar gratis"
@@ -297,6 +298,7 @@
     "resources": "Recursos",
     "legal": "Legal",
     "contact": "Contacto",
+    "blog": "Blog",
     "gettingStarted": "Primeros pasos",
     "customDomainSetup": "Configurar dominio propio",
     "importingLinks": "Importar enlaces",
