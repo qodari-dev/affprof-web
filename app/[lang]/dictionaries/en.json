@@ -305,5 +305,11 @@
     "terms": "Terms of Service",
     "tagline": "AffProf helps creators, marketers, and businesses run all their links from one place — short links, QR codes, monitoring, and analytics, without patching together spreadsheets and shorteners.",
     "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "Looks like this link is broken — ironic, we know.",
+    "cta": "Back to home",
+    "hint": "If you were looking for something specific, it may have moved or never existed."
   }
 }

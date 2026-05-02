@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+import { SITE_URLS } from "./site-config";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -10,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://affprof.com"),
+  metadataBase: new URL(SITE_URLS.baseUrl),
   icons: { icon: "/favicon.ico" },
 };
 

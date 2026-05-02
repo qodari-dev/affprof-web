@@ -12,7 +12,7 @@ import {
   type Locale,
 } from "../dictionaries";
 
-const BASE_URL = "https://affprof.com";
+const BASE_URL = SITE_URLS.baseUrl;
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));

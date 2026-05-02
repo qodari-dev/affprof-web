@@ -1,6 +1,7 @@
 import { getBlogPath, type BlogPost } from "../content";
+import { SITE_URLS } from "../../site-config";
 
-const BASE_URL = "https://affprof.com";
+const BASE_URL = SITE_URLS.baseUrl;
 
 export default function ArticleJsonLd({ post }: { post: BlogPost }) {
   const jsonLd = {

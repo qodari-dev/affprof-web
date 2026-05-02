@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getBlogPath, getBlogPostById, getBlogPosts } from "./blog/content";
+import { SITE_URLS } from "./site-config";
 
-const BASE_URL = "https://affprof.com";
+const BASE_URL = SITE_URLS.baseUrl;
 
 const locales = ["en", "es"] as const;
 

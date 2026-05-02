@@ -311,5 +311,11 @@
     "terms": "Términos de servicio",
     "tagline": "AffProf ayuda a creadores, marketers y negocios a manejar todos sus enlaces desde un solo lugar — enlaces cortos, códigos QR, monitoreo y analíticas, sin tener que combinar hojas de cálculo y acortadores por separado.",
     "rights": "Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "subtitle": "Parece que este enlace está roto — irónico, lo sabemos.",
+    "cta": "Volver al inicio",
+    "hint": "Si buscabas algo en concreto, es posible que se haya movido o nunca haya existido."
   }
 }

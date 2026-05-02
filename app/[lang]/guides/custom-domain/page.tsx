@@ -27,8 +27,8 @@ import {
   type Locale,
 } from "../../dictionaries";
 
-const BASE_URL = "https://affprof.com";
-const BILLING_URL = "https://app.affprof.com/billing";
+const BASE_URL = SITE_URLS.baseUrl;
+const BILLING_URL = SITE_URLS.billing;
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));

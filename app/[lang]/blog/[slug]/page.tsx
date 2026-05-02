@@ -10,9 +10,10 @@ import {
 } from "../../../blog/content";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
+import { SITE_URLS } from "../../../site-config";
 import { getDictionary, hasLocale, locales, type Locale } from "../../dictionaries";
 
-const BASE_URL = "https://affprof.com";
+const BASE_URL = SITE_URLS.baseUrl;
 
 export async function generateStaticParams() {
   return getBlogPosts().map((post) => ({

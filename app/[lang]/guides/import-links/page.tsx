@@ -26,8 +26,8 @@ import {
   type Locale,
 } from "../../dictionaries";
 
-const BASE_URL = "https://affprof.com";
-const BILLING_URL = "https://app.affprof.com/billing";
+const BASE_URL = SITE_URLS.baseUrl;
+const BILLING_URL = SITE_URLS.billing;
 
 const CSV_EXAMPLE = `product,link,slug,platform
 Blue Yeti Microphone,https://www.amazon.com/dp/B002VA464S,blue-yeti-amazon,amazon

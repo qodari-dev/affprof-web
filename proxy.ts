@@ -23,7 +23,11 @@ export function proxy(request: NextRequest) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) return;
+  if (pathnameHasLocale) {
+    const response = NextResponse.next();
+    response.headers.set("x-pathname", pathname);
+    return response;
+  }
 
   if (pathname === "/") {
     request.nextUrl.pathname = `/${defaultLocale}`;
@@ -39,6 +43,6 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip internal paths, static files, images, and metadata files
-    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|logo-close.png|logo-fondo-blanco.png|logo-fondo-negro.png|.*\\.svg$|.*\\.png$|.*\\.ico$).*)",
+    "/((?!api|_next/static|_next/image|sitemap.xml|robots.txt|.*\\.svg$|.*\\.png$|.*\\.ico$).*)",
   ],
 };
