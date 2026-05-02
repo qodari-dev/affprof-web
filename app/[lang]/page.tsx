@@ -213,7 +213,7 @@ export default async function Home({
                 {dict.hero.badge}
               </span>
 
-              <h1 className="mx-auto mt-6 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-[4.25rem] lg:leading-[0.98]">
+              <h1 className="mx-auto mt-6 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-[4.25rem] lg:leading-[0.98] text-balance">
                 {dict.hero.titlePart1}{" "}
                 <span className="bg-[linear-gradient(135deg,#9AE6B4_0%,#22C55E_45%,#16A34A_100%)] bg-clip-text text-transparent">
                   {dict.hero.titleHighlight}
@@ -295,7 +295,7 @@ export default async function Home({
               <h2 className="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl">
                 {dict.problems.title}
               </h2>
-              <p className="mt-4 text-lg leading-relaxed text-text-secondary">
+              <p className="mt-4 text-lg leading-relaxed text-text-secondary text-balance">
                 {dict.problems.subtitle}
               </p>
             </div>
