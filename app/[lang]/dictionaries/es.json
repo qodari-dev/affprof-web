@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "AffProf — Protección de ingresos de afiliados para creadores",
-    "description": "Herramienta para gestionar enlaces de afiliados con monitoreo de enlaces rotos, tracking de ingresos y analítica de clics."
+    "title": "AffProf — Gestión inteligente de enlaces para creadores, marketers y negocios",
+    "description": "Enlaces cortos con marca, códigos QR, analíticas de clics y monitoreo automático de enlaces rotos con fallbacks — todo en un solo lugar."
   },
   "nav": {
     "features": "Funciones",
@@ -12,18 +12,18 @@
     "getStarted": "Empezar gratis"
   },
   "hero": {
-    "badge": "Protección de ingresos de afiliados para creadores",
-    "titlePart1": "Deja de perder dinero por",
-    "titleHighlight": "enlaces rotos y clics no rastreados.",
-    "subtitle": "AffProf te da enlaces cortos con marca propia, monitoreo automático de enlaces rotos con fallbacks, y analíticas de clics — creado específicamente para afiliados, no un acortador genérico.",
-    "ctaPrimary": "Protege tus enlaces ahora — Gratis",
+    "badge": "Gestión inteligente de enlaces — hecha para seguir funcionando",
+    "titlePart1": "Toma el control de",
+    "titleHighlight": "cada enlace que compartes.",
+    "subtitle": "Deja de preguntarte si tus enlaces siguen funcionando. Deja de adivinar de dónde vienen tus clics. Deja de mandar gente a páginas caídas. AffProf te da enlaces cortos con tu marca, códigos QR personalizados, analíticas de clics y monitoreo automático de enlaces rotos con fallbacks — para que cada enlace que compartas siga funcionando, se vea profesional y te diga exactamente qué está pasando.",
+    "ctaPrimary": "Toma el control de tus enlaces — Gratis",
     "ctaSecondary": "Ver cómo funciona",
     "microNote": "Sin tarjeta de crédito · Configuración en 2 minutos · Cancela cuando quieras",
-    "socialProof": "Pensado para creadores y sitios de afiliados que quieren dejar de estar pendientes de sus enlaces y empezar a ver qué les genera ingresos realmente.",
+    "socialProof": "Pensado para gente que comparte enlaces todos los días — creadores, marketers, agencias, sitios de afiliados y pequeños negocios.",
     "points": [
-      "Organiza enlaces por producto, campaña o tag en lugar de saltar entre hojas de cálculo y notas sueltas.",
-      "Monitorea enlaces rotos y protege tráfico con alertas, fallbacks y flujos de redirección más limpios.",
-      "Analiza clics por fuente, dispositivo, país, referrer y canal desde el mismo dashboard."
+      "Organiza cada enlace por producto, campaña o tag en lugar de saltar entre hojas de cálculo y notas sueltas.",
+      "Detecta enlaces rotos automáticamente y protege tu tráfico con alertas, fallbacks y redirects más limpios.",
+      "Analiza clics por fuente, dispositivo, país, referrer y canal desde un solo dashboard."
     ]
   },
   "heroMockup": {
@@ -48,7 +48,7 @@
   },
   "mockup": {
     "allLinks": "Todos los enlaces",
-    "title": "Workspace de enlaces de afiliado",
+    "title": "Tu workspace de enlaces",
     "newLink": "+ Nuevo enlace",
     "headerProduct": "Producto",
     "headerShortUrl": "URL corta",
@@ -58,37 +58,37 @@
     "broken": "Roto"
   },
   "problems": {
-    "title": "Estás perdiendo ingresos de afiliados — y ni siquiera lo notas",
-    "subtitle": "Los enlaces rotos, la atribución perdida y las herramientas dispersas te van drenando las comisiones sin que te enteres.",
+    "title": "Tus enlaces están trabajando sin que los estés mirando",
+    "subtitle": "Los enlaces se rompen en silencio. Los clics suceden sin contexto. Las herramientas viven en lugares distintos. Hora de arreglar eso.",
     "cards": [
       {
         "icon": "broken-link",
-        "title": "Los enlaces rotos te cuestan dinero antes de que nadie lo note",
-        "desc": "Los enlaces de afiliados fallan en silencio. Si nadie los revisa, los clics se siguen perdiendo y las comisiones desaparecen sin que te des cuenta."
+        "title": "Los enlaces rotos te cuestan antes de que nadie lo note",
+        "desc": "Los enlaces fallan en silencio. Si nadie los revisa, los clics se siguen perdiendo y el tráfico desaparece sin que te enteres — ya sea una venta, un registro o una comisión."
       },
       {
         "icon": "analytics",
-        "title": "No sabes qué contenido realmente te está generando dinero",
-        "desc": "Publicas en YouTube, Instagram, blogs, newsletters y PDFs, pero sigues sin saber qué canal está generando los clics que de verdad importan."
+        "title": "No sabes qué está generando resultados realmente",
+        "desc": "Compartes enlaces en YouTube, Instagram, blogs, newsletters, emails y PDFs, pero sigues sin saber qué canal está generando los clics que de verdad importan."
       },
       {
         "icon": "organization",
         "title": "Cada cosa vive en una herramienta distinta",
-        "desc": "Los productos en una hoja de cálculo, los enlaces en otra, los códigos QR en otro lado y los dominios de marca en un flujo aparte. Así es como se pierde el ritmo."
+        "desc": "Los enlaces en un lado, los códigos QR en otro, las analíticas en otro, los dominios de marca en un flujo aparte — así es como se pierde el ritmo."
       }
     ]
   },
 
   "features": {
-    "title": "Todo lo que necesitas para gestionar tus enlaces de afiliados",
-    "subtitle": "Desde crear y personalizar tus enlaces, hasta detectar los que se rompen, hasta ver con claridad qué es lo que genera ingresos — todo el flujo vive en un solo lugar.",
+    "title": "Todo lo que necesitas para gestionar tus enlaces",
+    "subtitle": "Desde crear y personalizar tus enlaces, hasta detectar los que se rompen, hasta ver con claridad qué funciona — todo el flujo vive en un solo lugar.",
     "whoTitle": "Para quién es",
     "whatTitle": "Lo que obtienes",
     "audience": {
       "items": [
-        "Creadores que monetizan en video, redes sociales, blogs y newsletters.",
-        "Sitios de afiliados que gestionan cientos de enlaces y necesitan mantenerlos sanos y al día.",
-        "Equipos pequeños que quieren tracking, redirects y reportes en un solo lugar — sin la pesadez de las herramientas enterprise."
+        "Creadores y coaches que comparten enlaces a contenido, cursos y recomendaciones en video, redes sociales, blogs y newsletters.",
+        "Marketers, agencias y sitios de afiliados que gestionan cientos de enlaces que necesitan estar sanos y rastreables.",
+        "Pequeños negocios y emprendedores que quieren enlaces profesionales, códigos QR y analíticas — sin la pesadez de las herramientas enterprise."
       ]
     },
     "groups": [
@@ -97,8 +97,8 @@
         "cards": [
           {
             "icon": "short-link",
-            "title": "Convierte URLs largas de afiliados en enlaces cortos y limpios",
-            "desc": "Genera enlaces cortos con tu marca que tu audiencia quiera realmente hacer clic, sin cambiar el destino original de tu enlace de afiliado."
+            "title": "Convierte URLs largas en enlaces cortos y limpios",
+            "desc": "Genera enlaces cortos con tu marca que tu audiencia quiera realmente hacer clic, sin cambiar el destino original."
           },
           {
             "icon": "custom-domain",
@@ -108,7 +108,7 @@
           {
             "icon": "qr",
             "title": "Captura tráfico desde cualquier lugar con códigos QR",
-            "desc": "Agrega códigos QR a videos, presentaciones, PDFs, packaging o material impreso sin tener que armar flujos por separado."
+            "desc": "Agrega códigos QR con tu marca a videos, presentaciones, PDFs, packaging, flyers o material impreso — sin tener que armar flujos por separado."
           }
         ]
       },
@@ -118,7 +118,7 @@
           {
             "icon": "monitoring",
             "title": "Monitorea la salud de cada enlace",
-            "desc": "AffProf revisa tus enlaces de forma automática para que detectes fallas antes de que sigan quemando clics y comisiones."
+            "desc": "AffProf revisa tus enlaces de forma automática para que detectes fallas antes de que sigan quemando clics e ingresos."
           },
           {
             "icon": "fallback",
@@ -143,12 +143,12 @@
           {
             "icon": "organization",
             "title": "Organiza tus enlaces por producto y campaña",
-            "desc": "Guarda cada URL de afiliado en un solo workspace, agrupa los enlaces por producto y agrega etiquetas para que nada se pierda."
+            "desc": "Guarda cada enlace en un solo workspace, agrupa los enlaces por producto y agrega etiquetas para que nada se pierda."
           },
           {
             "icon": "import",
             "title": "Importa toda tu librería de enlaces de una vez",
-            "desc": "¿Ya tienes una colección grande de enlaces de afiliados en hojas de cálculo? Tráelos vía CSV en vez de reconstruir todo a mano."
+            "desc": "¿Ya tienes una colección grande de enlaces en hojas de cálculo? Tráelos vía CSV en vez de reconstruir todo a mano."
           }
         ]
       }
@@ -156,22 +156,22 @@
   },
   "howItWorks": {
     "title": "De enlaces dispersos a un sistema que funciona",
-    "subtitle": "Centraliza tus enlaces de afiliados, deja que AffProf los genere y los personalice con tu marca, y mantén el ojo puesto en lo que está generando ingresos — sin tener que andar saltando entre hojas de cálculo.",
+    "subtitle": "Centraliza tus enlaces, deja que AffProf los personalice y los monitoree, y mantén el ojo puesto en lo que está funcionando — sin tener que andar saltando entre hojas de cálculo.",
     "steps": [
       {
         "icon": "add",
         "title": "Agrega tus productos e importa tus enlaces",
-        "desc": "Crea tus productos manualmente o impórtalos en lote, después adjunta las URLs de afiliados y las etiquetas que ya usas en tu contenido."
+        "desc": "Crea tus productos manualmente o impórtalos en lote, después adjunta las URLs y las etiquetas que ya usas en tu contenido."
       },
       {
         "icon": "automation",
         "title": "AffProf personaliza tus enlaces y genera los QRs",
-        "desc": "AffProf convierte cada URL de afiliado en un enlace corto, genera códigos QR cuando los necesitas y mantiene tus UTMs y redirects consistentes."
+        "desc": "AffProf convierte cada URL en un enlace corto, genera códigos QR cuando los necesitas y mantiene tus UTMs y redirects consistentes."
       },
       {
         "icon": "alerts",
         "title": "Recibe alertas, fallbacks y analíticas — automáticamente",
-        "desc": "Recibe alertas cuando un enlace se cae, redirige el tráfico muerto a una URL de respaldo y descubre qué canales están generando realmente clics y comisiones."
+        "desc": "Recibe alertas cuando un enlace se cae, redirige el tráfico muerto a una URL de respaldo y descubre qué canales están generando realmente clics."
       }
     ]
   },
@@ -244,7 +244,7 @@
     "items": [
       {
         "q": "¿En qué se diferencia AffProf de un acortador de enlaces tradicional?",
-        "a": "AffProf está hecho específicamente para enlaces de afiliados. Más allá de acortar, monitorea tus enlaces para detectar cuándo se rompen, redirige el tráfico a una URL de respaldo cuando algo falla, organiza los enlaces por producto y campaña, y te muestra qué canales están generando comisiones de verdad. Los acortadores genéricos no hacen nada de eso."
+        "a": "AffProf hace mucho más que acortar. Monitorea tus enlaces para detectar cuándo se rompen, redirige el tráfico a una URL de respaldo cuando algo falla, organiza los enlaces por producto y campaña, genera códigos QR con tu marca y te muestra qué canales están generando clics realmente. Los acortadores genéricos no hacen nada de eso."
       },
       {
         "q": "¿Qué pasa cuando uno de mis enlaces se rompe?",
@@ -255,16 +255,20 @@
         "a": "En Free, los enlaces se revisan una vez al día. En Pro, se revisan 4 veces al día, así que un enlace roto se detecta en horas en vez de en un día entero."
       },
       {
-        "q": "¿Tengo que cambiar mis enlaces de afiliados actuales?",
-        "a": "No. Mantienes tus URLs de afiliados originales. AffProf las envuelve en un enlace corto, registra cada clic y las monitorea en segundo plano — sin tocar la configuración de tu programa de afiliados."
+        "q": "¿Tengo que cambiar mis enlaces actuales?",
+        "a": "No. Mantienes tus URLs originales. AffProf las envuelve en un enlace corto, registra cada clic y las monitorea en segundo plano — sin tocar tu configuración existente."
       },
       {
         "q": "¿Puedo usar mi propio dominio?",
-        "a": "Sí, en Pro. Conecta un dominio personalizado para que tus enlaces se vean como go.tumarca.com/producto en vez de una URL de acortador genérico."
+        "a": "Sí, en Pro. Conecta un subdominio personalizado para que tus enlaces se vean como links.tumarca.com/producto en vez de una URL de acortador genérico."
       },
       {
-        "q": "¿Con qué plataformas de afiliados funciona AffProf?",
-        "a": "Con todas. Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, Hotmart, Eduzz, Monetizze, o cualquier URL de afiliado personalizada. Si puedes pegar un enlace, AffProf lo puede manejar."
+        "q": "¿Funciona AffProf con enlaces de afiliados de Amazon, ShareASale, Impact, etc.?",
+        "a": "Sí — y con cualquier otra URL también. Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, Hotmart, Eduzz, Monetizze, las páginas de tus propios productos, las landing de tus cursos, tu enlace de reservas, tu portafolio. Si puedes pegar una URL, AffProf la puede manejar."
+      },
+      {
+        "q": "¿Quién usa AffProf realmente?",
+        "a": "Creadores que comparten enlaces a videos, cursos y recomendaciones. Coaches y consultores que comparten enlaces de reservas y portafolios. Marketers y agencias que rastrean campañas de clientes. Sitios de afiliados que monitorean cientos de enlaces. Pequeños negocios que comparten códigos QR en flyers, packaging y material impreso. Cualquiera que comparte el mismo enlace en muchos lugares y quiere saber qué pasa con él."
       },
       {
         "q": "¿Puedo importar mis enlaces existentes?",
@@ -283,15 +287,15 @@
         "a": "No. El plan Free es realmente gratis y puedes usarlo todo el tiempo que quieras. Solo ingresas datos de pago cuando decides subir a Pro."
       },
       {
-        "q": "¿Puedo usar AffProf con Amazon Associates o programas de afiliados que prohíben el cloaking?",
+        "q": "¿Puedo usar AffProf con Amazon Associates o programas que prohíben el cloaking?",
         "a": "Sí. AffProf usa redirecciones 302 estándar, no cloaking. Esto está permitido por la mayoría de los programas de afiliados, incluyendo los términos estándar de Amazon Associates. Siempre revisa los términos específicos de tu programa para estar seguro."
       }
     ]
   },
   "cta": {
-    "title": "Protege cada clic antes de perder otra comisión",
+    "title": "Toma el control de cada enlace antes de que se rompa el siguiente",
     "subtitle": "Crea tu cuenta, importa tus enlaces y empieza a proteger cada clic en menos de 2 minutos.",
-    "button": "Empieza a proteger tus enlaces"
+    "button": "Toma el control de tus enlaces"
   },
   "footer": {
     "product": "Producto",
@@ -305,7 +309,7 @@
     "contactForm": "Formulario de contacto",
     "privacy": "Política de privacidad",
     "terms": "Términos de servicio",
-    "tagline": "AffProf ayuda a los creadores a manejar sus enlaces de afiliados desde un solo lugar — enlaces cortos, códigos QR, monitoreo y analíticas, sin tener que combinar hojas de cálculo y acortadores por separado.",
+    "tagline": "AffProf ayuda a creadores, marketers y negocios a manejar todos sus enlaces desde un solo lugar — enlaces cortos, códigos QR, monitoreo y analíticas, sin tener que combinar hojas de cálculo y acortadores por separado.",
     "rights": "Todos los derechos reservados."
   }
 }

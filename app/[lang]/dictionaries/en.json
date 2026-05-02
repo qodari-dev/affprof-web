@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "AffProf — Affiliate revenue protection for creators",
-    "description": "Affiliate link management tool with broken link monitoring, revenue tracking, and click analytics."
+    "title": "AffProf — Smart link management for creators, marketers, and businesses",
+    "description": "Short branded links, QR codes, click analytics, and automatic broken-link monitoring with fallbacks — all in one place."
   },
   "nav": {
     "features": "Features",
@@ -12,18 +12,18 @@
     "getStarted": "Start free"
   },
   "hero": {
-    "badge": "Affiliate revenue protection for creators",
-    "titlePart1": "Stop losing money from",
-    "titleHighlight": "broken links and untracked clicks.",
-    "subtitle": "AffProf gives you short branded links, automatic broken-link monitoring with fallbacks, and click analytics — built specifically for affiliates, not generic shorteners.",
-    "ctaPrimary": "Protect your links now — Free",
+    "badge": "Smart link management — built to keep working",
+    "titlePart1": "Take control of",
+    "titleHighlight": "every link you share.",
+    "subtitle": "Stop wondering if your links still work. Stop guessing where your clicks come from. Stop sending people to dead pages. AffProf gives you short branded links, custom QR codes, click analytics, and automatic broken-link monitoring with fallbacks — so every link you share keeps working, looks professional, and tells you exactly what's happening.",
+    "ctaPrimary": "Take control of your links — Free",
     "ctaSecondary": "See how it works",
     "microNote": "No credit card required · Setup in 2 minutes · Cancel anytime",
-    "socialProof": "Built for creators and affiliate sites that want to stop babysitting their links and start seeing what actually earns.",
+    "socialProof": "Built for people who share links every day — creators, marketers, agencies, affiliate sites, and small businesses.",
     "points": [
-      "Organize links by product, campaign, or tag instead of bouncing between spreadsheets and notes.",
-      "Monitor broken links and protect traffic with alerts, fallbacks, and cleaner redirect flows.",
-      "Track clicks by source, device, country, referrer, and channel from the same dashboard."
+      "Organize every link by product, campaign, or tag instead of bouncing between spreadsheets and notes.",
+      "Catch broken links automatically and protect traffic with alerts, fallbacks, and cleaner redirects.",
+      "Track clicks by source, device, country, referrer, and channel from one dashboard."
     ]
   },
   "heroMockup": {
@@ -48,7 +48,7 @@
   },
   "mockup": {
     "allLinks": "All links",
-    "title": "Affiliate link workspace",
+    "title": "Your link workspace",
     "newLink": "+ New link",
     "headerProduct": "Product",
     "headerShortUrl": "Short URL",
@@ -58,37 +58,37 @@
     "broken": "Broken"
   },
   "problems": {
-    "title": "You’re losing affiliate revenue — and you don’t even notice",
-    "subtitle": "Broken links, missing attribution, and scattered tools quietly drain your affiliate revenue.",
+    "title": "Your links are working without you watching",
+    "subtitle": "Links break silently. Clicks happen without context. Tools live in different places. Time to fix that.",
     "cards": [
       {
         "icon": "broken-link",
-        "title": "Broken links cost money before anyone notices",
-        "desc": "Affiliate links fail silently. If nobody is checking them, clicks keep leaving and commissions disappear in the background."
+        "title": "Broken links cost you before anyone notices",
+        "desc": "Links fail silently. If nobody is checking, clicks keep leaving and traffic disappears in the background — whether it's a sale, a sign-up, or a commission."
       },
       {
         "icon": "analytics",
-        "title": "You don’t know what’s actually making you money",
-        "desc": "You publish on YouTube, Instagram, blogs, newsletters, and PDFs, but you still cannot tell which channel is creating the clicks that matter."
+        "title": "You don't know what's actually driving results",
+        "desc": "You share links on YouTube, Instagram, blogs, newsletters, emails, and PDFs, but you still cannot tell which channel is creating the clicks that matter."
       },
       {
         "icon": "organization",
         "title": "Everything lives in a different tool",
-        "desc": "Products in one spreadsheet, links in another, QR codes somewhere else, and brand domains in a separate workflow is how teams lose momentum."
+        "desc": "Links in one place, QR codes in another, analytics somewhere else, brand domains in a separate workflow — that's how momentum gets lost."
       }
     ]
   },
 
   "features": {
-    "title": "Everything you need to run your affiliate links",
-    "subtitle": "From creating and branding your links, to catching the broken ones, to seeing exactly what earns — every part of the workflow lives in one place.",
+    "title": "Everything you need to run your links",
+    "subtitle": "From creating and branding your links, to catching the broken ones, to seeing exactly what works — every part of the workflow lives in one place.",
     "whoTitle": "Who it's for",
     "whatTitle": "What you get",
     "audience": {
       "items": [
-        "Creators monetizing across video, social, blogs, and newsletters.",
-        "Affiliate sites managing hundreds of links that need to stay healthy and up to date.",
-        "Small teams that want tracking, redirects, and reporting in one place — without enterprise bloat."
+        "Creators and coaches sharing links to content, courses, and recommendations across video, social, blogs, and newsletters.",
+        "Marketers, agencies, and affiliate sites managing hundreds of links that need to stay healthy and trackable.",
+        "Small businesses and solopreneurs who want professional links, QR codes, and analytics — without enterprise bloat."
       ]
     },
     "groups": [
@@ -97,8 +97,8 @@
         "cards": [
           {
             "icon": "short-link",
-            "title": "Turn long affiliate URLs into clean short links",
-            "desc": "Generate branded short links your audience actually wants to click, without changing your original affiliate destination."
+            "title": "Turn long URLs into clean short links",
+            "desc": "Generate branded short links your audience actually wants to click, without changing your original destination."
           },
           {
             "icon": "custom-domain",
@@ -108,7 +108,7 @@
           {
             "icon": "qr",
             "title": "Capture traffic from anywhere with QR codes",
-            "desc": "Attach QR codes to videos, presentations, PDFs, packaging, or print assets without building separate workflows."
+            "desc": "Attach branded QR codes to videos, presentations, PDFs, packaging, flyers, or print assets — without building separate workflows."
           }
         ]
       },
@@ -118,7 +118,7 @@
           {
             "icon": "monitoring",
             "title": "Monitor the health of every link",
-            "desc": "AffProf checks your links automatically so you can catch failures before they keep burning clicks and commissions."
+            "desc": "AffProf checks your links automatically so you can catch failures before they keep burning clicks and revenue."
           },
           {
             "icon": "fallback",
@@ -143,12 +143,12 @@
           {
             "icon": "organization",
             "title": "Organize links around products and campaigns",
-            "desc": "Store every affiliate URL in one workspace, group links by product, and add tags so nothing gets buried."
+            "desc": "Store every link in one workspace, group them by product, and add tags so nothing gets buried."
           },
           {
             "icon": "import",
             "title": "Import your whole link library in one go",
-            "desc": "Already have a big collection of affiliate links in spreadsheets? Bring them in via CSV instead of rebuilding everything by hand."
+            "desc": "Already have a big collection of links in spreadsheets? Bring them in via CSV instead of rebuilding everything by hand."
           }
         ]
       }
@@ -156,22 +156,22 @@
   },
   "howItWorks": {
     "title": "From messy links to a working system",
-    "subtitle": "Centralize your affiliate links, let AffProf generate and brand them, and keep an eye on what's earning — without juggling spreadsheets.",
+    "subtitle": "Centralize your links, let AffProf brand and monitor them, and keep an eye on what's working — without juggling spreadsheets.",
     "steps": [
       {
         "icon": "add",
         "title": "Add your products and import your links",
-        "desc": "Create your products manually or import them in bulk, then attach the affiliate URLs and tags you actually use in your content."
+        "desc": "Create your products manually or import them in bulk, then attach the URLs and tags you actually use in your content."
       },
       {
         "icon": "automation",
         "title": "AffProf brands your links and generates QRs",
-        "desc": "AffProf turns every affiliate URL into a short link, generates QR codes when you need them, and keeps your UTMs and redirects consistent."
+        "desc": "AffProf turns every URL into a short link, generates QR codes when you need them, and keeps your UTMs and redirects consistent."
       },
       {
         "icon": "alerts",
         "title": "Get alerts, fallbacks, and analytics — automatically",
-        "desc": "Get alerts when a link goes down, redirect dead traffic to a fallback, and see which channels are actually driving clicks and commissions."
+        "desc": "Get alerts when a link goes down, redirect dead traffic to a fallback, and see which channels are actually driving clicks."
       }
     ]
   },
@@ -238,7 +238,7 @@
     "items": [
       {
         "q": "How is AffProf different from a typical link shortener?",
-        "a": "AffProf is built specifically for affiliate links. Beyond shortening, it monitors your links for breakage, redirects traffic to a backup when something fails, organizes links by product and campaign, and shows you which channels are actually earning commissions. Generic shorteners don't do any of that."
+        "a": "AffProf does more than shorten. It monitors your links for breakage, redirects traffic to a backup when something fails, organizes links by product and campaign, generates branded QR codes, and shows you which channels are actually driving clicks. Generic shorteners don't do any of that."
       },
       {
         "q": "What happens when one of my links breaks?",
@@ -249,16 +249,20 @@
         "a": "On Free, links are checked once per day. On Pro, they're checked 4 times per day, so a broken link is detected within hours instead of a full day."
       },
       {
-        "q": "Do I need to change my existing affiliate links?",
-        "a": "No. You keep your original affiliate URLs. AffProf wraps them with a short link, tracks every click, and monitors them in the background — without touching your affiliate program setup."
+        "q": "Do I need to change my existing links?",
+        "a": "No. You keep your original URLs. AffProf wraps them with a short link, tracks every click, and monitors them in the background — without touching your existing setup."
       },
       {
         "q": "Can I use my own domain?",
-        "a": "Yes, on Pro. Connect a custom domain so your links look like go.yourbrand.com/product instead of a generic shortener URL."
+        "a": "Yes, on Pro. Connect a custom subdomain so your links look like links.yourbrand.com/product instead of a generic shortener URL."
       },
       {
-        "q": "What affiliate platforms does AffProf work with?",
-        "a": "All of them. Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, Hotmart, Eduzz, Monetizze, or any custom affiliate URL. If you can paste a link, AffProf can manage it."
+        "q": "Does AffProf work with affiliate links from Amazon, ShareASale, Impact, etc.?",
+        "a": "Yes — and any other URL too. Amazon Associates, ShareASale, Impact, CJ Affiliate, Rakuten, ClickBank, Hotmart, your own product pages, your own course landing pages, your booking link, your portfolio. If you can paste a URL, AffProf can manage it."
+      },
+      {
+        "q": "Who actually uses AffProf?",
+        "a": "Creators sharing links to videos, courses, and recommendations. Coaches and consultants sharing booking and portfolio links. Marketers and agencies tracking client campaigns. Affiliate sites monitoring hundreds of links. Small businesses sharing QR codes on flyers, packaging, and print. Anyone who shares the same link in many places and wants to know what happens to it."
       },
       {
         "q": "Can I import my existing links?",
@@ -277,15 +281,15 @@
         "a": "No. The Free plan is genuinely free and you can use it as long as you want. You only enter payment info when you decide to upgrade to Pro."
       },
       {
-        "q": "Can I use AffProf with Amazon Associates or affiliate programs that prohibit cloaking?",
+        "q": "Can I use AffProf with Amazon Associates or programs that prohibit cloaking?",
         "a": "Yes. AffProf uses standard 302 redirects, not cloaking. This is permitted by most affiliate programs including Amazon Associates' standard terms. Always check your specific program's terms to be sure."
       }
     ]
   },
   "cta": {
-    "title": "Protect every click before you lose another commission",
+    "title": "Take control of every link before the next one breaks",
     "subtitle": "Create your account, import your links, and start protecting every click in under 2 minutes.",
-    "button": "Start protecting your links"
+    "button": "Take control of your links"
   },
   "footer": {
     "product": "Product",
@@ -299,7 +303,7 @@
     "contactForm": "Contact Form",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "tagline": "AffProf helps creators run their affiliate links from one place — short links, QR codes, monitoring, and analytics, without patching together spreadsheets and shorteners.",
+    "tagline": "AffProf helps creators, marketers, and businesses run all their links from one place — short links, QR codes, monitoring, and analytics, without patching together spreadsheets and shorteners.",
     "rights": "All rights reserved."
   }
 }

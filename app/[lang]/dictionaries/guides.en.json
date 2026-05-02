@@ -66,7 +66,7 @@
       "createProductTitle": "Create a product",
       "createProductPathPrefix": "Go to ",
       "createProductPath": "Products → New product",
-      "createProductPathSuffix": " and give it a name (e.g., \"My Tech Blog\", \"YouTube Channel\", \"Notion Affiliate Program\").",
+      "createProductPathSuffix": " and give it a name (e.g., \"My Tech Blog\", \"YouTube Channel\", \"Coaching Sessions\", \"Amazon Associates\").",
       "createFirstLinkTitle": "Create your first link",
       "createFirstLinkPathPrefix": "Go to ",
       "createFirstLinkPath": "Links → New link",
@@ -77,9 +77,9 @@
       "basicInfoProductLabel": "Product",
       "basicInfoProductText": ": select the product you just created",
       "basicInfoBaseUrlLabel": "Base URL",
-      "basicInfoBaseUrlText": ": paste your full affiliate URL — the long, ugly one. AffProf will detect existing UTM parameters automatically if you've already added them",
+      "basicInfoBaseUrlText": ": paste your full destination URL — the long, ugly one. AffProf will detect existing UTM parameters automatically if you've already added them",
       "basicInfoPlatformLabel": "Platform",
-      "basicInfoPlatformText": ": which affiliate network this link belongs to (Amazon, ShareASale, Impact, Hotmart, etc.). This is just for your own organization",
+      "basicInfoPlatformText": ": which platform or network this link belongs to (Amazon, ShareASale, Impact, Hotmart, your own site, etc.). This is just for your own organization",
       "basicInfoSlugLabel": "Slug",
       "basicInfoSlugPrefix": ": this is the part that appears in your short link. Type your own (e.g., ",
       "basicInfoSlugMiddle": ") or click ",
@@ -150,7 +150,7 @@
       "quickActionsCopyShortUrlLabel": "Copy short URL",
       "quickActionsCopyShortUrlText": " — instantly copies the link to your clipboard, ready to paste anywhere",
       "quickActionsOpenDestinationLabel": "Open destination URL",
-      "quickActionsOpenDestinationText": " — opens the actual affiliate destination in a new tab so you can verify it's working",
+      "quickActionsOpenDestinationText": " — opens the actual destination URL in a new tab so you can verify it's working",
       "quickActionsQrCodeLabel": "QR Code",
       "quickActionsQrCodeText": " — opens the QR generator modal (more on this below)",
       "quickActionsCheckLinkLabel": "Check link",
@@ -207,11 +207,11 @@
   "importLinks": {
     "meta": {
       "title": "Import your existing links from CSV — AffProf",
-      "description": "Bulk-import affiliate links into AffProf from a CSV in about 5 minutes. Works whether you have 10 links or 1,000."
+      "description": "Bulk-import links into AffProf from a CSV in about 5 minutes. Works whether you have 10 links or 1,000."
     },
     "eyebrow": "Guide",
     "title": "Import your existing links from CSV",
-    "intro": "Already have a library of affiliate links in a spreadsheet, another shortener, or a notes app? Import them all into AffProf in one shot — no need to recreate anything by hand.",
+    "intro": "Already have a library of links in a spreadsheet, another shortener, or a notes app? Import them all into AffProf in one shot — no need to recreate anything by hand.",
     "noteLabel": "Note",
     "text": {
       "guideDuration": "This guide takes about 5 minutes and works whether you have 10 links or 1,000.",
@@ -317,7 +317,7 @@
       "updatesIntroPrefix": "If you upload a CSV with a slug that ",
       "updatesExistingSlugLabel": "already exists",
       "updatesIntroSuffix": " in your account, AffProf updates that link with the new values from the CSV instead of creating a duplicate. This means you can use CSV import to:",
-      "updatesDestinationUrlsText": "Bulk-update destination URLs across many links (handy when an affiliate program migrates)",
+      "updatesDestinationUrlsText": "Bulk-update destination URLs across many links (handy when a platform migrates or product URLs change)",
       "updatesUtmText": "Add UTM parameters to a batch of existing links",
       "updatesTagsText": "Apply a tag to many links at once",
       "updatesNotesFallbackText": "Update notes or fallback URLs in bulk",
