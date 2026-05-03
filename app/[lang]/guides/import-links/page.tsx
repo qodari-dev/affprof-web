@@ -70,7 +70,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/og-image-v2.png`,
           width: 1200,
           height: 630,
-          alt: "AffProf — Affiliate Link Management",
+          alt: "AffProf — Link Management",
         },
       ],
     },
@@ -108,24 +108,18 @@ export default async function ImportLinksGuide({
             {c.title}
           </h1>
           <P className="text-lg">{c.intro}</P>
-          <P>
-            {g.guideDuration}
-          </P>
+          <P>{g.guideDuration}</P>
 
           <Callout label={c.noteLabel}>
             {g.proFeaturePrefix}
-            <ExtLink href={BILLING_URL}>
-              {g.upgradeLinkLabel}
-            </ExtLink>
+            <ExtLink href={BILLING_URL}>{g.upgradeLinkLabel}</ExtLink>
             {g.proFeatureSuffix}
           </Callout>
 
           <Hr />
 
           <H2>{g.whatGetsImportedTitle}</H2>
-          <P>
-            {g.whatGetsImportedIntro}
-          </P>
+          <P>{g.whatGetsImportedIntro}</P>
           <Bullets>
             <li>
               {g.importLinksPrefix}
@@ -143,9 +137,7 @@ export default async function ImportLinksGuide({
               {g.importTagsSuffix}
             </li>
           </Bullets>
-          <P>
-            {g.autoCreateNote}
-          </P>
+          <P>{g.autoCreateNote}</P>
 
           <Hr />
 
@@ -163,15 +155,11 @@ export default async function ImportLinksGuide({
             alt={g.openDialogAlt}
           />
 
-          <P>
-            {g.openDialogBody}
-          </P>
+          <P>{g.openDialogBody}</P>
 
           <Hr />
 
-          <H2>
-            {g.templateTitle}
-          </H2>
+          <H2>{g.templateTitle}</H2>
           <P>
             {g.templateDownloadPrefix}
             <Strong>{g.templateDownloadLabel}</Strong>
@@ -232,9 +220,7 @@ export default async function ImportLinksGuide({
           />
 
           <H3>{g.optionalColumnsTitle}</H3>
-          <P>
-            {g.optionalColumnsIntro}
-          </P>
+          <P>{g.optionalColumnsIntro}</P>
           <Table
             rows={[
               {
@@ -324,20 +310,14 @@ export default async function ImportLinksGuide({
           />
 
           <H3>{g.minimumCsvTitle}</H3>
-          <P>
-            {g.minimumCsvIntro}
-          </P>
+          <P>{g.minimumCsvIntro}</P>
           <CodeBlock language="csv">{CSV_EXAMPLE}</CodeBlock>
-          <P>
-            {g.minimumCsvNote}
-          </P>
+          <P>{g.minimumCsvNote}</P>
 
           <Hr />
 
           <H2>{g.uploadPreviewTitle}</H2>
-          <P>
-            {g.uploadPreviewIntro}
-          </P>
+          <P>{g.uploadPreviewIntro}</P>
 
           <Screenshot
             src="/import-links/import-link-step3.png"
@@ -350,12 +330,8 @@ export default async function ImportLinksGuide({
               {g.uploadPreviewValidRowsPrefix}
               <Strong>{g.uploadPreviewValidRowsLabel}</Strong>
             </li>
-            <li>
-              {g.uploadPreviewTableText}
-            </li>
-            <li>
-              {g.uploadPreviewRowNumbersText}
-            </li>
+            <li>{g.uploadPreviewTableText}</li>
+            <li>{g.uploadPreviewRowNumbersText}</li>
           </Bullets>
           <P>
             {g.uploadPreviewReplacePrefix}
@@ -366,9 +342,7 @@ export default async function ImportLinksGuide({
           <Hr />
 
           <H2>{g.fixIssuesTitle}</H2>
-          <P>
-            {g.fixIssuesIntro}
-          </P>
+          <P>{g.fixIssuesIntro}</P>
 
           <Screenshot
             src="/import-links/import-link-step4-if-there-are-errors.png"
@@ -409,31 +383,23 @@ export default async function ImportLinksGuide({
             </li>
           </Bullets>
 
-          <P>
-            {g.errorHandlingIntro}
-          </P>
+          <P>{g.errorHandlingIntro}</P>
 
-          <H3>
-            {g.importValidRowsTitle}
-          </H3>
+          <H3>{g.importValidRowsTitle}</H3>
           <P>
             {g.importValidRowsPrefix}
             <Strong>{g.importValidRowsButtonLabel}</Strong>
             {g.importValidRowsSuffix}
           </P>
 
-          <H3>
-            {g.fixEverythingTitle}
-          </H3>
+          <H3>{g.fixEverythingTitle}</H3>
           <P>
             {g.fixEverythingPrefix}
             <Strong>{g.fixEverythingReplaceLabel}</Strong>
             {g.fixEverythingSuffix}
           </P>
 
-          <Callout label={g.tipLabel}>
-            {g.errorTipBody}
-          </Callout>
+          <Callout label={g.tipLabel}>{g.errorTipBody}</Callout>
 
           <Hr />
 
@@ -449,9 +415,7 @@ export default async function ImportLinksGuide({
             alt={g.confirmImportAlt}
           />
 
-          <P>
-            {g.confirmImportBody}
-          </P>
+          <P>{g.confirmImportBody}</P>
 
           <Hr />
 
@@ -462,18 +426,10 @@ export default async function ImportLinksGuide({
             {g.updatesIntroSuffix}
           </P>
           <Bullets>
-            <li>
-              {g.updatesDestinationUrlsText}
-            </li>
-            <li>
-              {g.updatesUtmText}
-            </li>
-            <li>
-              {g.updatesTagsText}
-            </li>
-            <li>
-              {g.updatesNotesFallbackText}
-            </li>
+            <li>{g.updatesDestinationUrlsText}</li>
+            <li>{g.updatesUtmText}</li>
+            <li>{g.updatesTagsText}</li>
+            <li>{g.updatesNotesFallbackText}</li>
           </Bullets>
           <P>
             {g.updatesMatchPrefix}
@@ -505,9 +461,7 @@ export default async function ImportLinksGuide({
               {g.cleanImportsSmallBatchText}
             </li>
             <li>
-              <Strong>
-                {g.cleanImportsPipeTagsLabel}
-              </Strong>
+              <Strong>{g.cleanImportsPipeTagsLabel}</Strong>
               {g.cleanImportsPipeTagsTextPrefix}
               <Code>|</Code>
               {g.cleanImportsPipeTagsTextMiddle}
@@ -528,9 +482,7 @@ export default async function ImportLinksGuide({
               {g.limitationsMaxTagsText}
             </li>
             <li>
-              <Strong>
-                {g.limitationsUniqueSlugsLabel}
-              </Strong>
+              <Strong>{g.limitationsUniqueSlugsLabel}</Strong>
               {g.limitationsUniqueSlugsText}
             </li>
             <li>

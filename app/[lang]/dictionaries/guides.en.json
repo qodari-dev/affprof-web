@@ -249,7 +249,7 @@
       "requiredColumnsTitle": "Required columns",
       "requiredColumnsIntro": "These four are mandatory for every row:",
       "requiredProductDescription": "Product name. Created automatically if it doesn't exist. Example: ",
-      "requiredLinkDescription": "The destination affiliate URL. Example: ",
+      "requiredLinkDescription": "The destination URL. Example: ",
       "requiredSlugDescription": "The short link slug (lowercase letters, numbers, and hyphens only). Example: ",
       "requiredPlatformDescription": "Affiliate network or marketplace. Example: ",
       "optionalColumnsTitle": "Optional columns",

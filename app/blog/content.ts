@@ -55,7 +55,7 @@ export type BlogPost = {
   tocHeading: string;
   sections: BlogSection[];
   relatedHeading: string;
-    relatedArticles: Array<{
+  relatedArticles: Array<{
     title: string;
     url: string;
     comingSoon?: boolean;
@@ -80,22 +80,22 @@ export const BLOG_INDEX_COPY: Record<
   }
 > = {
   en: {
-    title: "Affiliate Marketing Blog | AffProf",
+    title: "AffProf Blog — Smart link management",
     description:
-      "Practical guides for affiliate marketers on link monitoring, redirects, analytics, and revenue protection.",
+      "Practical guides on link monitoring, QR codes, click analytics, and getting more out of every link you share.",
     eyebrow: "AffProf Blog",
-    heading: "Affiliate link management, without the guesswork",
+    heading: "Smart link management, without the guesswork",
     subtitle:
-      "Practical guides for creators and affiliate sites that want healthier links, cleaner tracking, and fewer lost commissions.",
+      "Practical guides for creators, marketers, and businesses who want healthier links, cleaner tracking, and more value from every click.",
   },
   es: {
-    title: "Blog de Affiliate Marketing | AffProf",
+    title: "Blog de AffProf — Gestión inteligente de enlaces",
     description:
-      "Guías prácticas para marketers de afiliados sobre monitoreo de enlaces, redirects, analítica y protección de ingresos.",
+      "Guías prácticas sobre monitoreo de enlaces, códigos QR, analíticas de clics y cómo sacarle más provecho a cada enlace que compartes.",
     eyebrow: "Blog de AffProf",
-    heading: "Gestión de enlaces de afiliado, sin adivinar",
+    heading: "Gestión inteligente de enlaces, sin adivinar",
     subtitle:
-      "Guías prácticas para creadores y sitios de afiliados que quieren enlaces más sanos, tracking más claro y menos comisiones perdidas.",
+      "Guías prácticas para creadores, marketers y negocios que quieren enlaces más sanos, tracking más claro y más valor en cada clic.",
   },
 };
 
@@ -181,7 +181,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         id: "delivery-packaging",
-        heading: "3. QR Codes on Delivery Packaging with a Discount for the Next Order",
+        heading:
+          "3. QR Codes on Delivery Packaging with a Discount for the Next Order",
         intro:
           "Every time you ship a delivery order, you are already paying for packaging. That packaging is free advertising space most businesses waste.",
         paragraphs: [
@@ -192,7 +193,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         id: "flyers-posters",
-        heading: "4. QR Codes on Flyers and Posters to Measure What's Actually Working",
+        heading:
+          "4. QR Codes on Flyers and Posters to Measure What's Actually Working",
         intro:
           "If you spend money on flyers, posters, billboards, or any printed material, until now you were flying blind: you know what you paid but not how many people actually saw it and acted on it.",
         paragraphs: [
@@ -214,7 +216,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         id: "storefronts-windows",
-        heading: "6. QR Codes on Storefronts and Windows for Info or Direct WhatsApp",
+        heading:
+          "6. QR Codes on Storefronts and Windows for Info or Direct WhatsApp",
         intro:
           "A lot of people walk past your store when it is closed. Or they look at it from outside to check if you have what they are looking for, without going in. Today those people just walk away. With a QR code, they do not.",
         paragraphs: [
@@ -225,7 +228,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         id: "restaurant-feedback-tips",
-        heading: "7. QR Codes on Restaurant Tables for Quick Feedback or Digital Tipping",
+        heading:
+          "7. QR Codes on Restaurant Tables for Quick Feedback or Digital Tipping",
         intro:
           "Small service details get lost when nobody reports them. And many customers today do not carry cash, which directly hurts staff tips.",
         paragraphs: [
@@ -401,7 +405,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         id: "empaques-delivery",
-        heading: "3. QR en empaques de delivery con descuento para próxima compra",
+        heading:
+          "3. QR en empaques de delivery con descuento para próxima compra",
         intro:
           "Cada vez que mandas un pedido a domicilio, estás pagando empaque de todos modos. Ese empaque es espacio publicitario gratuito que la mayoría de negocios desperdicia.",
         paragraphs: [
@@ -412,7 +417,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         id: "flyers-posters",
-        heading: "4. QR en flyers y posters físicos para medir qué campaña funciona",
+        heading:
+          "4. QR en flyers y posters físicos para medir qué campaña funciona",
         intro:
           "Si gastas dinero en flyers, posters, vallas o impresos, hasta ahora estabas a ciegas: sabes cuánto pagaste pero no cuántas personas vieron y reaccionaron.",
         paragraphs: [
@@ -434,7 +440,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         id: "escaparates-vidrieras",
-        heading: "6. QR en escaparates y vidrieras con información o WhatsApp directo",
+        heading:
+          "6. QR en escaparates y vidrieras con información o WhatsApp directo",
         intro:
           "Mucha gente pasa frente a tu local cuando está cerrado. O lo mira de afuera para ver si tienen lo que buscan, sin entrar. Hoy esas personas se van. Con un QR, no.",
         paragraphs: [
@@ -445,7 +452,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         id: "feedback-propinas",
-        heading: "7. QR en mesas de restaurante para feedback rápido o propinas digitales",
+        heading:
+          "7. QR en mesas de restaurante para feedback rápido o propinas digitales",
         intro:
           "Los pequeños detalles de servicio se pierden si nadie los reporta. Y muchos clientes hoy no llevan efectivo, lo que afecta directo las propinas del personal.",
         paragraphs: [
@@ -534,7 +542,8 @@ export const BLOG_POSTS: BlogPost[] = [
         comingSoon: true,
       },
       {
-        title: "Las mejores herramientas de gestión de enlaces para equipos pequeños",
+        title:
+          "Las mejores herramientas de gestión de enlaces para equipos pequeños",
         url: "/es/blog/herramientas-gestion-enlaces-equipos-pequenos",
         comingSoon: true,
       },
@@ -1025,7 +1034,8 @@ export const BLOG_POSTS: BlogPost[] = [
         comingSoon: true,
       },
       {
-        title: "Las mejores herramientas de gestión de enlaces para equipos pequeños",
+        title:
+          "Las mejores herramientas de gestión de enlaces para equipos pequeños",
         url: "/es/blog/herramientas-gestion-enlaces-equipos-pequenos",
         comingSoon: true,
       },
@@ -1041,11 +1051,19 @@ export function getBlogPosts(locale?: Locale): BlogPost[] {
   return [...posts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
 
-export function getBlogPost(locale: Locale, slug: string): BlogPost | undefined {
-  return BLOG_POSTS.find((post) => post.locale === locale && post.slug === slug);
+export function getBlogPost(
+  locale: Locale,
+  slug: string,
+): BlogPost | undefined {
+  return BLOG_POSTS.find(
+    (post) => post.locale === locale && post.slug === slug,
+  );
 }
 
-export function getBlogPostById(id: string, locale: Locale): BlogPost | undefined {
+export function getBlogPostById(
+  id: string,
+  locale: Locale,
+): BlogPost | undefined {
   return BLOG_POSTS.find((post) => post.id === id && post.locale === locale);
 }
 

@@ -50,7 +50,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/og-image-v2.png`,
           width: 1200,
           height: 630,
-          alt: "AffProf — Affiliate Link Management",
+          alt: "AffProf — Link Management",
         },
       ],
     },

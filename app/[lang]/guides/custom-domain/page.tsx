@@ -66,7 +66,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/og-image-v2.png`,
           width: 1200,
           height: 630,
-          alt: "AffProf — Affiliate Link Management",
+          alt: "AffProf — Link Management",
         },
       ],
     },
@@ -104,15 +104,11 @@ export default async function CustomDomainGuide({
             {c.title}
           </h1>
           <P className="text-lg">{c.intro}</P>
-          <P>
-            {g.s001}
-          </P>
+          <P>{g.s001}</P>
 
           <Callout label={c.noteLabel}>
             {g.s002}
-            <ExtLink href={BILLING_URL}>
-              {g.s003}
-            </ExtLink>
+            <ExtLink href={BILLING_URL}>{g.s003}</ExtLink>
             {g.s004}
           </Callout>
 
@@ -142,9 +138,7 @@ export default async function CustomDomainGuide({
           </Bullets>
           <P>
             {g.s015}
-            <Strong>
-              {g.s016}
-            </Strong>
+            <Strong>{g.s016}</Strong>
             {g.s017}
             <Code>affprof.com/go/...</Code>
             {g.s018}
@@ -166,7 +160,9 @@ export default async function CustomDomainGuide({
             <li className="leading-relaxed pl-1">
               <Strong>{g.s025}</Strong>
               {g.s026}
-              <Code>go</Code>, <Code>links</Code>, <Code>l</Code>{g.s027}<Code>to</Code>
+              <Code>go</Code>, <Code>links</Code>, <Code>l</Code>
+              {g.s027}
+              <Code>to</Code>
               {g.s028}
               <Code>go.tumarca.com</Code>
               {g.s029}
@@ -201,16 +197,12 @@ export default async function CustomDomainGuide({
             {g.s040}
             <Strong>{g.s041}</Strong>.
           </P>
-          <P>
-            {g.s042}
-          </P>
+          <P>{g.s042}</P>
 
           <Hr />
 
           <H2>{g.s043}</H2>
-          <P>
-            {g.s044}
-          </P>
+          <P>{g.s044}</P>
 
           <Screenshot
             src="/custom-domain/custom-domain-step2.png"
@@ -220,9 +212,7 @@ export default async function CustomDomainGuide({
           <P>{g.s046}</P>
 
           <H3>{g.s047}</H3>
-          <P>
-            {g.s048}
-          </P>
+          <P>{g.s048}</P>
           <Table
             rows={[
               { label: "Type", value: "TXT" },
@@ -230,8 +220,7 @@ export default async function CustomDomainGuide({
                 label: "Name",
                 value: (
                   <>
-                    <Code>_affprof.go.yourbrand.com</Code>{" "}
-                    {g.s049}
+                    <Code>_affprof.go.yourbrand.com</Code> {g.s049}
                   </>
                 ),
               },
@@ -239,8 +228,7 @@ export default async function CustomDomainGuide({
                 label: "Value",
                 value: (
                   <>
-                    <Code>affprof-verify=...</Code>{" "}
-                    {g.s050}
+                    <Code>affprof-verify=...</Code> {g.s050}
                   </>
                 ),
               },
@@ -252,9 +240,7 @@ export default async function CustomDomainGuide({
           />
 
           <H3>{g.s052}</H3>
-          <P>
-            {g.s053}
-          </P>
+          <P>{g.s053}</P>
           <Table
             rows={[
               { label: "Type", value: "CNAME" },
@@ -262,8 +248,7 @@ export default async function CustomDomainGuide({
                 label: "Name",
                 value: (
                   <>
-                    <Code>go.yourbrand.com</Code>{" "}
-                    {g.s054}
+                    <Code>go.yourbrand.com</Code> {g.s054}
                   </>
                 ),
               },
@@ -282,14 +267,10 @@ export default async function CustomDomainGuide({
             ]}
           />
 
-          <Callout label={g.s057}>
-            {g.s058}
-          </Callout>
+          <Callout label={g.s057}>{g.s058}</Callout>
 
           <H3>{g.s059}</H3>
-          <P>
-            {g.s060}
-          </P>
+          <P>{g.s060}</P>
           <Bullets>
             <li>
               <Strong>Cloudflare</Strong>
@@ -308,9 +289,7 @@ export default async function CustomDomainGuide({
               {g.s065}
             </li>
           </Bullets>
-          <P>
-            {g.s066}
-          </P>
+          <P>{g.s066}</P>
 
           <Hr />
 
@@ -340,10 +319,7 @@ export default async function CustomDomainGuide({
             {g.s080}
           </P>
           <P>
-            <Strong>
-              {g.s081}
-            </Strong>{" "}
-            {g.s082}
+            <Strong>{g.s081}</Strong> {g.s082}
             <Code>affprof.com/go/...</Code>
             {g.s083}
           </P>
@@ -352,21 +328,15 @@ export default async function CustomDomainGuide({
 
           <H2>{g.s084}</H2>
 
-          <H4>
-            {g.s085}
-          </H4>
+          <H4>{g.s085}</H4>
           <Bullets>
-            <li>
-              {g.s086}
-            </li>
+            <li>{g.s086}</li>
             <li>
               {g.s087}
               <Code>cname.affprof.com</Code>
               {g.s088}
             </li>
-            <li>
-              {g.s089}
-            </li>
+            <li>{g.s089}</li>
             <li>
               {g.s090}
               <ExtLink href="https://dnschecker.org">dnschecker.org</ExtLink>
@@ -374,16 +344,10 @@ export default async function CustomDomainGuide({
             </li>
           </Bullets>
 
-          <H4>
-            {g.s092}
-          </H4>
+          <H4>{g.s092}</H4>
           <Bullets>
-            <li>
-              {g.s093}
-            </li>
-            <li>
-              {g.s094}
-            </li>
+            <li>{g.s093}</li>
+            <li>{g.s094}</li>
             <li>
               {g.s095}
               <a
@@ -396,9 +360,7 @@ export default async function CustomDomainGuide({
             </li>
           </Bullets>
 
-          <H4>
-            {g.s097}
-          </H4>
+          <H4>{g.s097}</H4>
           <Bullets>
             <li>
               {g.s098}
@@ -412,9 +374,7 @@ export default async function CustomDomainGuide({
           <H2>{g.s101}</H2>
           <Bullets>
             <li>
-              <Strong>
-                {g.s102}
-              </Strong>
+              <Strong>{g.s102}</Strong>
               {g.s103}
             </li>
             <li>

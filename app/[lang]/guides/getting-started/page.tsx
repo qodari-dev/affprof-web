@@ -61,7 +61,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/og-image-v2.png`,
           width: 1200,
           height: 630,
-          alt: "AffProf — Affiliate Link Management",
+          alt: "AffProf — Link Management",
         },
       ],
     },
@@ -116,9 +116,7 @@ export default async function GettingStartedGuide({
 
           <Hr />
 
-          <H2>
-            {g.createAccountTitle}
-          </H2>
+          <H2>{g.createAccountTitle}</H2>
           <P>
             {g.createAccountRegisterPrefix}
             <ExtLink href={SITE_URLS.register}>
@@ -126,15 +124,11 @@ export default async function GettingStartedGuide({
             </ExtLink>
             {g.createAccountRegisterSuffix}
           </P>
-          <P>
-            {g.createAccountFreePlan}
-          </P>
+          <P>{g.createAccountFreePlan}</P>
 
           <Hr />
 
-          <H2>
-            {g.homeDashboardTitle}
-          </H2>
+          <H2>{g.homeDashboardTitle}</H2>
           <P>
             {g.homeDashboardIntroPrefix}
             <Strong>{g.homeDashboardHomeLabel}</Strong>
@@ -143,14 +137,10 @@ export default async function GettingStartedGuide({
 
           <Screenshot
             src="/getting-started/home.png"
-            alt={
-              g.homeDashboardAlt
-            }
+            alt={g.homeDashboardAlt}
           />
 
-          <P>
-            {g.homeDashboardCardsIntro}
-          </P>
+          <P>{g.homeDashboardCardsIntro}</P>
           <Bullets>
             <li>
               <Strong>{g.homeDashboardTotalLinksLabel}</Strong>
@@ -161,21 +151,15 @@ export default async function GettingStartedGuide({
               {g.homeDashboardBrokenLinksText}
             </li>
             <li>
-              <Strong>
-                {g.homeDashboardClicksLabel}
-              </Strong>
+              <Strong>{g.homeDashboardClicksLabel}</Strong>
               {g.homeDashboardClicksText}
             </li>
           </Bullets>
-          <P>
-            {g.homeDashboardQuickActions}
-          </P>
+          <P>{g.homeDashboardQuickActions}</P>
 
           <Hr />
 
-          <H2>
-            {g.brandSetupTitle}
-          </H2>
+          <H2>{g.brandSetupTitle}</H2>
           <P>
             {g.brandSetupIntroPrefix}
             <Strong>{g.brandSetupBrandLabel}</Strong>
@@ -183,17 +167,12 @@ export default async function GettingStartedGuide({
           </P>
           <P>
             {g.brandSetupPathPrefix}
-            <Strong>
-              {g.brandSetupPath}
-            </Strong>
-            :
+            <Strong>{g.brandSetupPath}</Strong>:
           </P>
 
           <Screenshot
             src="/getting-started/create-brand.png"
-            alt={
-              g.brandSetupAlt
-            }
+            alt={g.brandSetupAlt}
             className="max-w-md"
           />
 
@@ -212,9 +191,7 @@ export default async function GettingStartedGuide({
               {g.brandSetupQrForegroundText}
             </li>
             <li>
-              <Strong>
-                {g.brandSetupQrBackgroundLabel}
-              </Strong>
+              <Strong>{g.brandSetupQrBackgroundLabel}</Strong>
               {g.brandSetupQrBackgroundText}
             </li>
           </Bullets>
@@ -224,15 +201,11 @@ export default async function GettingStartedGuide({
             {g.brandSetupDefaultBrandSuffix}
           </P>
 
-          <Callout label={c.noteLabel}>
-            {g.brandSetupProNote}
-          </Callout>
+          <Callout label={c.noteLabel}>{g.brandSetupProNote}</Callout>
 
           <Hr />
 
-          <H2>
-            {g.productLinkTitle}
-          </H2>
+          <H2>{g.productLinkTitle}</H2>
           <P>
             {g.productIntroPrefix}
             <Strong>{g.productLabel}</Strong>
@@ -242,32 +215,24 @@ export default async function GettingStartedGuide({
           <H3>{g.createProductTitle}</H3>
           <P>
             {g.createProductPathPrefix}
-            <Strong>
-              {g.createProductPath}
-            </Strong>
+            <Strong>{g.createProductPath}</Strong>
             {g.createProductPathSuffix}
           </P>
 
           <H3>{g.createFirstLinkTitle}</H3>
           <P>
             {g.createFirstLinkPathPrefix}
-            <Strong>
-              {g.createFirstLinkPath}
-            </Strong>
+            <Strong>{g.createFirstLinkPath}</Strong>
             {g.createFirstLinkPathSuffix}
           </P>
 
           <Screenshot
             src="/getting-started/create-link.png"
-            alt={
-              g.createLinkAlt
-            }
+            alt={g.createLinkAlt}
             className="max-w-md"
           />
 
-          <P>
-            {g.createLinkSectionsIntro}
-          </P>
+          <P>{g.createLinkSectionsIntro}</P>
 
           <H3>{g.basicInfoTitle}</H3>
           <Bullets>
@@ -294,17 +259,13 @@ export default async function GettingStartedGuide({
               {g.basicInfoSlugSuffix}
             </li>
             <li>
-              <Strong>
-                {g.basicInfoAvailabilityLabel}
-              </Strong>
+              <Strong>{g.basicInfoAvailabilityLabel}</Strong>
               {g.basicInfoAvailabilityText}
             </li>
           </Bullets>
 
           <H3>{g.utmTrackingTitle}</H3>
-          <P>
-            {g.utmTrackingIntro}
-          </P>
+          <P>{g.utmTrackingIntro}</P>
           <Bullets>
             <li>
               <Strong>{g.utmSourceLabel}</Strong>
@@ -319,9 +280,7 @@ export default async function GettingStartedGuide({
               {g.utmCampaignText}
             </li>
           </Bullets>
-          <P>
-            {g.utmTrackingNote}
-          </P>
+          <P>{g.utmTrackingNote}</P>
 
           <H3>{g.optionsTitle}</H3>
           <Bullets>
@@ -355,8 +314,7 @@ export default async function GettingStartedGuide({
             <code className="rounded bg-white/8 px-1.5 py-0.5 text-xs">
               youtube
             </code>
-            .
-            {g.organizationTagsAfterExamples}
+            .{g.organizationTagsAfterExamples}
           </P>
           <P>
             {g.organizationSubmitPrefix}
@@ -366,44 +324,32 @@ export default async function GettingStartedGuide({
 
           <Hr />
 
-          <H2>
-            {g.shareAnalyticsTitle}
-          </H2>
+          <H2>{g.shareAnalyticsTitle}</H2>
           <P>
             {g.shareAnalyticsIntroPrefix}
             <Strong>{g.shareAnalyticsLinksLabel}</Strong>
             {g.shareAnalyticsIntroSuffix}
           </P>
-          <P>
-            {g.shareAnalyticsTabsIntro}
-          </P>
+          <P>{g.shareAnalyticsTabsIntro}</P>
 
           <H3>{g.overviewTabTitle}</H3>
-          <P>
-            {g.overviewTabBody}
-          </P>
+          <P>{g.overviewTabBody}</P>
 
           <H3>{g.analyticsTabTitle}</H3>
 
           <Screenshot
             src="/getting-started/analytic-specific-link.png"
-            alt={
-              g.analyticsTabAlt
-            }
+            alt={g.analyticsTabAlt}
           />
 
-          <P>
-            {g.analyticsTrafficIntro}
-          </P>
+          <P>{g.analyticsTrafficIntro}</P>
           <Bullets>
             <li>
               <Strong>{g.analyticsTotalClicksLabel}</Strong>
               {g.analyticsTotalClicksText}
             </li>
             <li>
-              <Strong>
-                {g.analyticsClicksOverTimeLabel}
-              </Strong>
+              <Strong>{g.analyticsClicksOverTimeLabel}</Strong>
               {g.analyticsClicksOverTimeText}
             </li>
             <li>
@@ -412,10 +358,8 @@ export default async function GettingStartedGuide({
             </li>
             <li>
               <Strong>{g.analyticsDevicesLabel}</Strong>,{" "}
-              <Strong>
-                {g.analyticsOperatingSystemsLabel}
-              </Strong>
-              , <Strong>{g.analyticsBrowsersLabel}</Strong>
+              <Strong>{g.analyticsOperatingSystemsLabel}</Strong>,{" "}
+              <Strong>{g.analyticsBrowsersLabel}</Strong>
               {g.analyticsAudienceText}
             </li>
             <li>
@@ -443,9 +387,7 @@ export default async function GettingStartedGuide({
 
           <Hr />
 
-          <H2>
-            {g.quickActionsTitle}
-          </H2>
+          <H2>{g.quickActionsTitle}</H2>
           <P>
             {g.quickActionsIntroPrefix}
             <Strong>{g.quickActionsLinksLabel}</Strong>
@@ -454,9 +396,7 @@ export default async function GettingStartedGuide({
 
           <Screenshot
             src="/getting-started/link-actions.png"
-            alt={
-              g.quickActionsAlt
-            }
+            alt={g.quickActionsAlt}
             className="max-w-xs"
           />
 
@@ -470,9 +410,7 @@ export default async function GettingStartedGuide({
               {g.quickActionsCopyShortUrlText}
             </li>
             <li>
-              <Strong>
-                {g.quickActionsOpenDestinationLabel}
-              </Strong>
+              <Strong>{g.quickActionsOpenDestinationLabel}</Strong>
               {g.quickActionsOpenDestinationText}
             </li>
             <li>
@@ -513,9 +451,7 @@ export default async function GettingStartedGuide({
           <P>{g.qrCodesCapabilitiesIntro}</P>
           <Bullets>
             <li>
-              <Strong>
-                {g.qrCodesChooseBrandLabel}
-              </Strong>
+              <Strong>{g.qrCodesChooseBrandLabel}</Strong>
               {g.qrCodesChooseBrandText}
             </li>
             <li>
@@ -527,18 +463,12 @@ export default async function GettingStartedGuide({
               {g.qrCodesDownloadPngText}
             </li>
           </Bullets>
-          <P>
-            {g.qrCodesAnalyticsNote}
-          </P>
+          <P>{g.qrCodesAnalyticsNote}</P>
 
           <Hr />
 
-          <H2>
-            {g.healthMonitoringTitle}
-          </H2>
-          <P>
-            {g.healthMonitoringIntro}
-          </P>
+          <H2>{g.healthMonitoringTitle}</H2>
+          <P>{g.healthMonitoringIntro}</P>
           <Bullets>
             <li>
               <Strong>{g.healthMonitoringFreePlanLabel}</Strong>
@@ -549,9 +479,7 @@ export default async function GettingStartedGuide({
               {g.healthMonitoringProPlanText}
             </li>
           </Bullets>
-          <P>
-            {g.healthMonitoringBrokenIntro}
-          </P>
+          <P>{g.healthMonitoringBrokenIntro}</P>
           <ol className="mt-4 space-y-2 text-sm text-text-secondary list-decimal pl-5 marker:text-primary-light marker:font-semibold">
             <li className="leading-relaxed pl-1">
               {g.healthMonitoringStatusPrefix}
@@ -582,9 +510,7 @@ export default async function GettingStartedGuide({
           <Hr />
 
           <H2>{c.whatsNextTitle}</H2>
-          <P>
-            {g.whatsNextIntro}
-          </P>
+          <P>{g.whatsNextIntro}</P>
           <Bullets>
             <li>
               <Link

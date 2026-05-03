@@ -49,7 +49,7 @@ export async function generateMetadata({
           url: `${BASE_URL}/og-image-v2.png`,
           width: 1200,
           height: 630,
-          alt: "AffProf — Affiliate Link Management",
+          alt: "AffProf — Link Management",
         },
       ],
     },
@@ -79,9 +79,12 @@ export default async function TermsPage({
 
       <main className="flex-1 py-16">
         <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">{dict.title}</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+            {dict.title}
+          </h1>
           <p className="mt-2 text-sm text-text-muted">
-            {lang === "es" ? "Última actualización" : "Last updated"}: {dict.lastUpdated}
+            {lang === "es" ? "Última actualización" : "Last updated"}:{" "}
+            {dict.lastUpdated}
           </p>
 
           {dict.intro && (
@@ -91,14 +94,18 @@ export default async function TermsPage({
           )}
 
           <div className="mt-10 space-y-8">
-            {dict.sections.map((section: { heading: string; content: string }) => (
-              <section key={section.heading}>
-                <h2 className="text-xl font-semibold text-text-primary">{section.heading}</h2>
-                <p className="mt-3 text-sm text-text-secondary leading-relaxed whitespace-pre-line">
-                  {section.content}
-                </p>
-              </section>
-            ))}
+            {dict.sections.map(
+              (section: { heading: string; content: string }) => (
+                <section key={section.heading}>
+                  <h2 className="text-xl font-semibold text-text-primary">
+                    {section.heading}
+                  </h2>
+                  <p className="mt-3 text-sm text-text-secondary leading-relaxed whitespace-pre-line">
+                    {section.content}
+                  </p>
+                </section>
+              ),
+            )}
           </div>
         </article>
       </main>
