@@ -101,6 +101,446 @@ export const BLOG_INDEX_COPY: Record<
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "qr-codes-small-business",
+    locale: "en",
+    slug: BLOG_SLUGS_BY_ID["qr-codes-small-business"].en,
+    title:
+      "QR Codes for Small Business: 7 Practical Ideas That Actually Bring Customers",
+    description:
+      "7 concrete ways to use QR codes in your business to bring more customers, measure what works, and stop guessing. Real examples for restaurants, gyms, retail, and more.",
+    subtitle:
+      "Use QR codes to connect offline marketing with measurable customer action, from events and receipts to storefronts and delivery packaging.",
+    intro: [
+      'QR codes went from being "that weird pandemic thing for menus" to a real marketing tool. Phone cameras read them without an app, customers know how to use them by reflex, and unlike a regular flyer, a QR code actually tells you whether it is working.',
+      "If you run a small business and you are not using QR codes strategically, you are leaving data and customers on the table. The good news: getting started is cheap and simple.",
+      "In this guide you will find 7 concrete ways to use QR codes to bring more customers, measure which campaign is working, and stop guessing. Each idea comes with a real example and how to apply it to your business.",
+    ],
+    author: "AffProf",
+    readTime: "7 min read",
+    publishedAt: "2026-05-04",
+    updatedAt: "2026-05-04",
+    ogImage: "/blog/og/qr-codes-small-business-en.png",
+    tocHeading: "In this article",
+    labels: {
+      category: "QR codes",
+      backToBlog: "Back to blog",
+      updated: "Updated",
+      comingSoon: "Coming soon",
+      readArticle: "Read article",
+    },
+    sections: [
+      {
+        id: "why-qr-codes-work",
+        heading: "Why QR Codes Work in 2026",
+        intro:
+          "Three things changed in the last few years and it is worth understanding them before applying any of these ideas.",
+        subsections: [
+          {
+            heading: "First: cameras read them natively",
+            paragraphs: [
+              "Five years ago you needed an app to scan a QR code. Today iPhone and Android detect them automatically with the native camera. That removed the biggest friction point.",
+            ],
+          },
+          {
+            heading: "Second: customers know what to do",
+            paragraphs: [
+              'You do not need to explain "scan this with your camera." People see a QR and scan it by reflex, the same way they tap a button.',
+            ],
+          },
+          {
+            heading: "Third: QR codes are trackable",
+            paragraphs: [
+              "A paper flyer costs money but you never know how many people actually read it. A QR code tells you exactly how many scans it got, from what device, at what hour, on what day. That turns physical material into data.",
+              "With that out of the way, let us get into the ideas.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "events-trade-shows",
+        heading: "1. QR Codes at Events and Trade Shows to Capture Leads",
+        intro:
+          "If you go to trade shows, networking events, talks, or exhibitions, handing out physical business cards works but has a problem: half of them end up in the hotel trash and you cannot measure anything.",
+        paragraphs: [
+          "The idea: a large, visible QR code on your booth, banner, or badge that leads to a page with your information, an event-specific offer, or a quick contact form.",
+          'Real-world example: A freelance designer attends a small business expo. She puts a QR code on her laptop that says "Scan for a free 30-minute design consultation." The QR leads to a Calendly page. By the end of the event, she knows exactly how many people scanned, how many actually booked, and during what hours scans were highest.',
+          "Bonus: if you go to multiple events, you can generate a different QR for each event and compare which one brought you the best results. Usually one or two events a year are the ones that actually pay off, while the rest are expensive distractions.",
+        ],
+      },
+      {
+        id: "google-reviews",
+        heading: "2. QR Codes on Receipts to Get Google Reviews",
+        intro:
+          "Google Maps reviews are the single best free marketing tool a local business has. But asking for them in person is awkward and most happy customers simply forget once they leave.",
+        paragraphs: [
+          'The idea: print a small QR at the bottom of every receipt or check that says "Enjoyed your visit? Leave us a Google review." The QR goes directly to your Google Maps review form.',
+          "Real-world example: A coffee shop adds a QR to the printed check. Before, they got a few reviews per month and had to ask manually for every one. After putting the QR on the receipt, reviews started coming in much more frequently without asking. More reviews push your ranking on Google Maps higher, which brings new customers without spending a dollar on ads.",
+          "Works for: restaurants, salons, repair shops, any service that hands out a receipt or invoice.",
+          "Key insight: most people leave a review within the first few hours of their visit. The QR on the receipt captures that perfect moment when the experience is still fresh.",
+        ],
+      },
+      {
+        id: "delivery-packaging",
+        heading: "3. QR Codes on Delivery Packaging with a Discount for the Next Order",
+        intro:
+          "Every time you ship a delivery order, you are already paying for packaging. That packaging is free advertising space most businesses waste.",
+        paragraphs: [
+          'The idea: a sticker or stamp with a QR on the box, bag, or napkin that says "10% off your next order — scan here." The QR leads to your menu or online store with the code already applied.',
+          "Real-world example: A local pizza place adds a QR sticker to every delivery box offering a discount on the next pizza. After a few months, the percentage of repeat customers went up noticeably. And because each QR has tracking, they know exactly how many people scan and how many end up redeeming the discount.",
+          "Works for: restaurants with delivery, online stores with physical shipments, home cooking, bakeries.",
+        ],
+      },
+      {
+        id: "flyers-posters",
+        heading: "4. QR Codes on Flyers and Posters to Measure What's Actually Working",
+        intro:
+          "If you spend money on flyers, posters, billboards, or any printed material, until now you were flying blind: you know what you paid but not how many people actually saw it and acted on it.",
+        paragraphs: [
+          "The idea: every printed material gets a different QR code. Flyers in the north side of town get one QR, flyers in the south get another, the ad in the local paper gets a third. After a month, you know which material drove the most results and where to put the next budget.",
+          "Real-world example: A gym distributes 3 versions of flyers in different parts of the city. Each flyer has a different QR leading to the same signup page. By the end of the month, they discover that the area they expected to perform best brought very few scans, while a more distant area brought many more. They focus the next campaign there.",
+          "Without QR codes, that information does not exist. It is the difference between marketing based on intuition and marketing based on data.",
+        ],
+      },
+      {
+        id: "business-cards",
+        heading: "5. QR Codes on Business Cards as a Professional Link-in-Bio",
+        intro:
+          "Traditional business cards have a limit: you can only fit 4-5 pieces of info. And if you update your Instagram, WhatsApp number, or website, all the cards you handed out become outdated.",
+        paragraphs: [
+          "The idea: a minimal card with your name, title, and a large QR code that leads to a personal page with all your contact info: phone, email, social media, booking calendar, portfolio. If anything changes, you update the page and every card you have ever handed out keeps working with the new info.",
+          "Real-world example: A real estate agent replaces her traditional cards with one that has a QR. The QR leads to a simple page with her WhatsApp, active listings, contact form, and a 30-second intro video. Result: more WhatsApp conversations and fewer cards ending up in the trash.",
+          "Works especially well for: independent professionals, consultants, real estate agents, freelancers, coaches.",
+        ],
+      },
+      {
+        id: "storefronts-windows",
+        heading: "6. QR Codes on Storefronts and Windows for Info or Direct WhatsApp",
+        intro:
+          "A lot of people walk past your store when it is closed. Or they look at it from outside to check if you have what they are looking for, without going in. Today those people just walk away. With a QR code, they do not.",
+        paragraphs: [
+          "The idea: a visible QR on the door or window that leads to something useful when the store is closed: hours, menu, product catalog, or direct WhatsApp to ask about availability.",
+          'Real-world example: A clothing boutique puts a QR on the window that says "Browse the catalog or message us on WhatsApp." The QR alternates depending on the time: during open hours it goes to the store WhatsApp, after hours it goes to the Instagram catalog. Result: they started getting messages from people walking by at 9pm who previously would have just kept walking.',
+          "Works for: retail stores, restaurants, gyms, any business with a physical location and set hours.",
+        ],
+      },
+      {
+        id: "restaurant-feedback-tips",
+        heading: "7. QR Codes on Restaurant Tables for Quick Feedback or Digital Tipping",
+        intro:
+          "Small service details get lost when nobody reports them. And many customers today do not carry cash, which directly hurts staff tips.",
+        paragraphs: [
+          'The idea, part A — feedback: a small QR on the table that says "Tell us how your experience was." It leads to a simple 3-question form. People who fill it out do so while waiting for the check, not after they leave.',
+          "The idea, part B — tipping: a QR that goes to a direct payment page with tip suggestions ($2, $5, $10, custom amount). Connects to your digital payment account. Customers can leave a tip even without cash on hand.",
+          "Real-world example: A restaurant implements both QRs on the tables. Before, they got few internal comments per month and digital tips were zero. After: many more feedback responses with real data on what to improve, and a real increase in total tips thanks to the digital option.",
+          "Works for: restaurants, cafes, bars, any business where customers sit for a while.",
+        ],
+      },
+      {
+        id: "common-mistakes",
+        heading: "Common Mistakes That Ruin Your QR Codes",
+        intro:
+          "Before you print, avoid these 4 mistakes that show up over and over.",
+        subsections: [
+          {
+            heading: "1. Printing without verifying the link works",
+            paragraphs: [
+              "Sounds obvious but it happens all the time. You print 5,000 flyers and discover a week later the link had a typo or the page went down. Result: wasted money and a bad first impression for whoever scanned.",
+            ],
+          },
+          {
+            heading: "2. Using a generic QR with no branding",
+            paragraphs: [
+              "A black QR with white squares and no context looks like spam. A QR with your logo in the center and your brand colors looks professional, builds trust, and gets scanned more often.",
+            ],
+          },
+          {
+            heading: "3. Not tracking how many people scan",
+            paragraphs: [
+              "If you are not measuring, you are just printing expensive decorations. Any QR you put on something printed should have basic tracking: how many scans, what hour, what day.",
+            ],
+          },
+          {
+            heading: "4. No backup plan if the page fails",
+            paragraphs: [
+              "What happens if your website goes down right when someone scans your QR at an important event? A backup URL prevents the customer from seeing an error page and walking away.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "affprof",
+        heading: "How to Get It Right with AffProf",
+        intro:
+          'If you are going to use QR codes for your business, doing it with a serious tool is the difference between "pretty decoration" and "marketing that works." AffProf gives you what you need so every QR works in your favor.',
+        list: {
+          type: "unordered",
+          items: [
+            "Branded QR codes: add your logo in the center and pick your brand colors. Customers see a professional QR, not a generic one.",
+            "Real analytics: know exactly how many scans each QR got, from what device, what country, and what time. Compare campaigns and make decisions based on data.",
+            "Automatic monitoring: AffProf checks your links up to 4 times a day. If one breaks, we email you instantly.",
+            "Backup URL: if the main page fails, your QR automatically redirects to an alternative you choose. Your printed QR codes never go stale in the real world.",
+            "Free plan to get started: up to 10 links free, no credit card, no time limit. Perfect to test before committing.",
+          ],
+        },
+        ctaBox: {
+          title: "Create trackable QR codes with AffProf",
+          subtitle:
+            "Turn offline campaigns into measurable links with branded QR codes, analytics, monitoring, and fallback URLs.",
+          buttonText: "Start free",
+          buttonUrl: SITE_URLS.register,
+          secondaryText:
+            "Free plan available. No credit card required to get started.",
+        },
+      },
+      {
+        id: "wrapping-up",
+        heading: "Wrapping Up",
+        paragraphs: [
+          "QR codes are not a passing trend or a tool reserved for big companies. They are one of the cheapest and most effective ways for a small business to measure what is working and bring in more customers from the physical world.",
+          "Start with one idea — the one that fits your business best out of the 7. Implement it, track scans for 30 days, and adjust. In 3 months you will know more about what actually works in your business than you did in the last 3 years.",
+        ],
+      },
+    ],
+    relatedHeading: "Related articles",
+    relatedArticles: [
+      {
+        title:
+          "Why affiliate links break, and how to detect them before they cost you sales",
+        url: "/en/blog/why-affiliate-links-break",
+      },
+      {
+        title: "How to set up QR analytics for local campaigns",
+        url: "/en/blog/qr-code-analytics-local-campaigns",
+        comingSoon: true,
+      },
+      {
+        title: "The best link management tools for small teams",
+        url: "/en/blog/link-management-tools-small-teams",
+        comingSoon: true,
+      },
+    ],
+  },
+  {
+    id: "qr-codes-small-business",
+    locale: "es",
+    slug: BLOG_SLUGS_BY_ID["qr-codes-small-business"].es,
+    title:
+      "Códigos QR para pequeños negocios: la guía práctica con 7 ideas que dan resultados",
+    description:
+      "7 formas concretas de usar códigos QR en tu negocio para traer más clientes, medir qué funciona y dejar de adivinar. Ejemplos reales para restaurantes, gimnasios, retail y más.",
+    subtitle:
+      "Usa códigos QR para conectar tu marketing físico con acciones medibles de clientes, desde eventos y recibos hasta vidrieras y empaques de delivery.",
+    intro: [
+      'Los códigos QR pasaron de ser "esa cosa rara para escanear menús durante la pandemia" a una herramienta real de marketing. La cámara del celular los lee sin app, los clientes ya saben usarlos, y a diferencia de un flyer común, un QR sí te dice si está funcionando.',
+      "Si tienes un pequeño negocio y todavía no estás usando QR de forma estratégica, estás dejando datos y clientes sobre la mesa. La buena noticia: empezar es barato y simple.",
+      "En esta guía vas a ver 7 formas concretas de usar códigos QR para traer más clientes, medir qué campaña funciona y dejar de adivinar. Cada idea viene con su ejemplo real y cómo aplicarla en tu negocio.",
+    ],
+    author: "AffProf",
+    readTime: "7 min",
+    publishedAt: "2026-05-04",
+    updatedAt: "2026-05-04",
+    ogImage: "/blog/og/codigos-qr-pequenos-negocios-es.png",
+    tocHeading: "En este artículo",
+    labels: {
+      category: "Códigos QR",
+      backToBlog: "Volver al blog",
+      updated: "Actualizado",
+      comingSoon: "Próximamente",
+      readArticle: "Leer artículo",
+    },
+    sections: [
+      {
+        id: "por-que-funcionan",
+        heading: "Por qué los QR funcionan en 2026",
+        intro:
+          "Tres cosas cambiaron en los últimos años y vale la pena entenderlas antes de aplicar las ideas.",
+        subsections: [
+          {
+            heading: "Primero: la cámara los lee solos",
+            paragraphs: [
+              "Hace 5 años necesitabas una app para escanear QR. Hoy iPhone y Android los detectan automáticamente con la cámara nativa. Eso eliminó la fricción más grande.",
+            ],
+          },
+          {
+            heading: "Segundo: el cliente ya sabe qué hacer",
+            paragraphs: [
+              'No necesitas explicar "escanea esto con tu cámara". La gente lo ve y lo escanea por reflejo, igual que aprietan un botón.',
+            ],
+          },
+          {
+            heading: "Tercero: los QR son trackeables",
+            paragraphs: [
+              "Un flyer de papel cuesta dinero pero nunca sabes cuántas personas lo leyeron. Un QR sí te dice cuántos escaneos hubo, desde qué dispositivo, en qué hora, qué día. Eso convierte el material físico en data.",
+              "Con eso claro, vamos a las ideas.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "eventos-ferias",
+        heading: "1. QR en eventos y ferias para capturar contactos",
+        intro:
+          "Si vas a ferias, eventos de networking, charlas o exhibiciones, llevar tarjetas físicas funciona pero tiene un problema: la mitad termina en la basura del hotel y no puedes medir nada.",
+        paragraphs: [
+          "La idea: un QR grande visible en tu stand, banner o credencial que lleve a una página con tu información, oferta especial del evento o formulario de contacto rápido.",
+          'Ejemplo real: Una freelancer de diseño va a una feria de pequeños negocios. Pone un QR en su laptop que dice "Escanea para 30 min de consultoría gratis". El QR lleva a un Calendly. Al final del evento sabe exactamente cuántas personas escanearon, cuántas reservaron y de qué hora vinieron más escaneos.',
+          "Ventaja extra: si vas a múltiples eventos, puedes generar un QR diferente para cada evento y comparar cuál te trajo más resultados. Probablemente uno o dos eventos al año son los que de verdad valen la pena, mientras los demás son distracción cara.",
+        ],
+      },
+      {
+        id: "resenas-google",
+        heading: "2. QR en facturas y recibos para conseguir reseñas en Google",
+        intro:
+          "Las reseñas en Google Maps son el mejor marketing gratis que existe para un negocio local. Pero pedirlas a mano es incómodo y la mayoría de clientes felices simplemente se olvidan.",
+        paragraphs: [
+          'La idea: imprime un pequeño QR al final de cada factura, recibo o ticket que diga "¿Te gustó tu visita? Déjanos una reseña en Google". El QR lleva directo al formulario de reseña de tu ficha en Google Maps.',
+          "Ejemplo real: Un café pone el QR en la cuenta. Antes recibía pocas reseñas al mes y todas requerían pedirlas a mano. Después de poner el QR, las reseñas empezaron a llegar mucho más seguido sin tener que pedirlas. Más reseñas suben el ranking en Google Maps, y eso trae más clientes nuevos sin gastar un peso en publicidad.",
+          "Funciona para: restaurantes, peluquerías, talleres, cualquier servicio que entregue factura o recibo físico.",
+          "Dato clave: la mayoría de las personas dejan reseña dentro de las primeras horas de la visita. El QR en el recibo captura ese momento perfecto cuando todavía recuerdan la experiencia.",
+        ],
+      },
+      {
+        id: "empaques-delivery",
+        heading: "3. QR en empaques de delivery con descuento para próxima compra",
+        intro:
+          "Cada vez que mandas un pedido a domicilio, estás pagando empaque de todos modos. Ese empaque es espacio publicitario gratuito que la mayoría de negocios desperdicia.",
+        paragraphs: [
+          'La idea: una pegatina o stamp con un QR en la caja, bolsa o servilleta que diga "10% de descuento en tu próxima orden — escanea aquí". El QR lleva a tu menú o tienda online con el código aplicado.',
+          "Ejemplo real: Una pizzería local agrega un QR adhesivo a cada caja con descuento para la siguiente pizza. Después de unos meses, el porcentaje de clientes recurrentes subió notablemente. Y como cada QR tiene tracking, saben cuántas personas escanean y cuántas terminan redimiendo el descuento.",
+          "Funciona para: restaurantes con delivery, tiendas online con envíos físicos, comida casera, repostería.",
+        ],
+      },
+      {
+        id: "flyers-posters",
+        heading: "4. QR en flyers y posters físicos para medir qué campaña funciona",
+        intro:
+          "Si gastas dinero en flyers, posters, vallas o impresos, hasta ahora estabas a ciegas: sabes cuánto pagaste pero no cuántas personas vieron y reaccionaron.",
+        paragraphs: [
+          "La idea: cada material impreso lleva un QR distinto. Volantes en la zona norte llevan un QR, los de la zona sur otro, los del flyer en el periódico local otro distinto. Al cabo de un mes sabes cuál material trajo más resultados y dónde gastar el próximo presupuesto.",
+          "Ejemplo real: Un gimnasio reparte 3 versiones de flyers en zonas distintas de la ciudad. Cada flyer tiene un QR diferente que lleva a la misma página de inscripción. Al final del mes descubren que la zona donde pensaban que iba a funcionar mejor trajo muy pocos escaneos, mientras una zona más lejana trajo muchos más. La próxima campaña la enfocan ahí.",
+          "Sin QR, esa información no existe. Es la diferencia entre marketing basado en intuición y marketing basado en data.",
+        ],
+      },
+      {
+        id: "business-cards",
+        heading: "5. QR en business cards como link-in-bio profesional",
+        intro:
+          "Las tarjetas de presentación tradicionales tienen un problema: solo caben 4-5 datos. Y si actualizas tu Instagram, número de WhatsApp o sitio web, las tarjetas viejas quedan obsoletas.",
+        paragraphs: [
+          "La idea: una tarjeta minimalista con tu nombre, profesión y un QR grande que lleva a una página personal con todos tus contactos: teléfono, email, redes sociales, agenda de citas, portafolio. Si cambias algo, actualizas la página y todas las tarjetas que repartiste siguen funcionando con la información nueva.",
+          "Ejemplo real: Una agente inmobiliaria reemplaza sus tarjetas tradicionales por una con QR. El QR lleva a una página simple con su WhatsApp, listings activos, formulario de contacto y video de presentación de 30 segundos. Resultado: más conversaciones de WhatsApp y menos tarjetas que terminan en la basura.",
+          "Funciona especialmente bien para: profesionales independientes, consultores, agentes inmobiliarios, freelancers, coaches.",
+        ],
+      },
+      {
+        id: "escaparates-vidrieras",
+        heading: "6. QR en escaparates y vidrieras con información o WhatsApp directo",
+        intro:
+          "Mucha gente pasa frente a tu local cuando está cerrado. O lo mira de afuera para ver si tienen lo que buscan, sin entrar. Hoy esas personas se van. Con un QR, no.",
+        paragraphs: [
+          "La idea: un QR visible en la puerta o vidriera que lleve a algo útil cuando el local está cerrado: horarios, menú, catálogo de productos o WhatsApp directo para preguntar disponibilidad.",
+          'Ejemplo real: Una boutique de ropa pone un QR en la vidriera que dice "Mira el catálogo o pregunta por WhatsApp". El QR alterna según la hora: en horario de atención lleva al WhatsApp de la tienda, fuera de horario lleva al catálogo de Instagram. Resultado: empezaron a recibir mensajes de personas que pasaban a las 9pm y antes simplemente seguían de largo.',
+          "Funciona para: tiendas de retail, restaurantes, gimnasios, cualquier negocio con local físico que tenga horarios.",
+        ],
+      },
+      {
+        id: "feedback-propinas",
+        heading: "7. QR en mesas de restaurante para feedback rápido o propinas digitales",
+        intro:
+          "Los pequeños detalles de servicio se pierden si nadie los reporta. Y muchos clientes hoy no llevan efectivo, lo que afecta directo las propinas del personal.",
+        paragraphs: [
+          'La idea, parte A — feedback: un pequeño QR en la mesa que diga "Cuéntanos cómo estuvo tu experiencia". Lleva a un formulario simple de 3 preguntas. La gente que lo llena lo hace mientras espera la cuenta, no después.',
+          "La idea, parte B — propinas: un QR que lleve a una página de pago directa con sugerencias de propina ($2, $5, $10, otro monto). Conecta con tu cuenta de pagos digital. El cliente puede dejar propina aunque no tenga efectivo.",
+          "Ejemplo real: Un restaurante implementa los dos QR en la mesa. Antes recibía pocos comentarios internos al mes y las propinas digitales eran cero. Después: muchos más feedbacks con datos reales de qué mejorar, y un aumento real en propinas totales gracias a la opción digital.",
+          "Funciona para: restaurantes, cafés, bares, cualquier negocio donde el cliente está sentado un rato.",
+        ],
+      },
+      {
+        id: "errores-comunes",
+        heading: "Errores comunes que arruinan tus QR codes",
+        intro:
+          "Antes de imprimir, evita estos 4 errores que se ven una y otra vez.",
+        subsections: [
+          {
+            heading: "1. Imprimir sin verificar que el link funciona",
+            paragraphs: [
+              "Suena obvio pero pasa todo el tiempo. Imprimes 5,000 flyers y descubres una semana después que el link tenía un typo o la página se cayó. Resultado: dinero quemado y mala impresión a quien escaneó.",
+            ],
+          },
+          {
+            heading: "2. Usar un QR genérico sin tu marca",
+            paragraphs: [
+              "Un QR negro con cuadritos blancos sin contexto se ve como spam. Un QR con tu logo en el centro y los colores de tu marca se ve profesional, genera confianza y la gente lo escanea más.",
+            ],
+          },
+          {
+            heading: "3. No medir cuántos lo escanean",
+            paragraphs: [
+              "Si no estás midiendo, estás haciendo decoración cara. Cualquier QR que pongas en algo impreso debería tener tracking básico: cuántos escaneos, qué hora, qué día.",
+            ],
+          },
+          {
+            heading: "4. No tener plan B si la página falla",
+            paragraphs: [
+              "¿Qué pasa si el sitio web se cae justo cuando alguien escanea tu QR en un evento importante? Una alternativa evita que el cliente vea una página de error y se vaya.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "affprof",
+        heading: "Cómo hacerlo bien con AffProf",
+        intro:
+          'Si vas a usar QR para tu negocio, hacerlo con una herramienta seria marca la diferencia entre "decoración bonita" y "marketing que funciona". AffProf te da lo que necesitas para que cada QR trabaje a tu favor.',
+        list: {
+          type: "unordered",
+          items: [
+            "QR con tu marca: agrega tu logo en el centro y elige los colores de tu marca. Tus clientes ven un QR profesional, no uno genérico.",
+            "Analíticas reales: sabes exactamente cuántos escaneos tuvo cada QR, desde qué dispositivo, qué país y qué hora. Compara campañas y decide con datos.",
+            "Monitoreo automático: AffProf revisa tus enlaces hasta 4 veces al día. Si alguno se rompe, te avisamos al instante por email.",
+            "URL de respaldo: si la página principal falla, tu QR redirige automáticamente a una alternativa que tú elijas. Tus QR físicos nunca quedan rotos en el mundo real.",
+            "Plan gratis para empezar: hasta 10 enlaces gratis, sin tarjeta de crédito, sin límite de tiempo. Perfecto para probar antes de comprometerte.",
+          ],
+        },
+        ctaBox: {
+          title: "Crea códigos QR medibles con AffProf",
+          subtitle:
+            "Convierte campañas físicas en enlaces medibles con QR de marca, analítica, monitoreo y URLs de respaldo.",
+          buttonText: "Empezar gratis",
+          buttonUrl: SITE_URLS.register,
+          secondaryText:
+            "Plan gratuito disponible. No necesitas tarjeta de crédito para empezar.",
+        },
+      },
+      {
+        id: "conclusion",
+        heading: "Conclusión",
+        paragraphs: [
+          "Los QR no son una moda pasajera ni una herramienta exclusiva de empresas grandes. Son una de las formas más baratas y efectivas para que un pequeño negocio mida qué está funcionando y traiga más clientes desde el mundo físico.",
+          "Empieza con una sola idea, la que más te aplique de las 7. Implementa, mide los escaneos durante 30 días y ajusta. En 3 meses vas a saber más sobre qué funciona en tu negocio que en los últimos 3 años.",
+        ],
+      },
+    ],
+    relatedHeading: "Artículos relacionados",
+    relatedArticles: [
+      {
+        title:
+          "Por qué se rompen tus enlaces de afiliado, y cómo detectarlos antes de perder ventas",
+        url: "/es/blog/por-que-se-rompen-enlaces-de-afiliado",
+      },
+      {
+        title: "Cómo medir campañas locales con códigos QR",
+        url: "/es/blog/analitica-codigos-qr-campanas-locales",
+        comingSoon: true,
+      },
+      {
+        title: "Las mejores herramientas de gestión de enlaces para equipos pequeños",
+        url: "/es/blog/herramientas-gestion-enlaces-equipos-pequenos",
+        comingSoon: true,
+      },
+    ],
+  },
+  {
     id: "affiliate-links-break",
     locale: "en",
     slug: BLOG_SLUGS_BY_ID["affiliate-links-break"].en,
@@ -329,18 +769,18 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedHeading: "Related articles",
     relatedArticles: [
       {
-        title: "Bitly vs Pretty Links vs AffProf: which is best for affiliates",
-        url: "/en/blog/bitly-vs-pretty-links-vs-affprof",
+        title:
+          "QR Codes for Small Business: 7 Practical Ideas That Actually Bring Customers",
+        url: "/en/blog/qr-codes-small-business-ideas-that-work",
+      },
+      {
+        title: "How to set up QR analytics for local campaigns",
+        url: "/en/blog/qr-code-analytics-local-campaigns",
         comingSoon: true,
       },
       {
-        title: "The 7 best tools for affiliate marketers in 2026",
-        url: "/en/blog/best-affiliate-marketing-tools",
-        comingSoon: true,
-      },
-      {
-        title: "How to set up UTMs on affiliate links correctly",
-        url: "/en/blog/utm-affiliate-links",
+        title: "The best link management tools for small teams",
+        url: "/en/blog/link-management-tools-small-teams",
         comingSoon: true,
       },
     ],
@@ -575,18 +1015,18 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedHeading: "Artículos relacionados",
     relatedArticles: [
       {
-        title: "Bitly vs Pretty Links vs AffProf: cuál es mejor para afiliados",
-        url: "/es/blog/bitly-vs-pretty-links-vs-affprof",
+        title:
+          "Códigos QR para pequeños negocios: la guía práctica con 7 ideas que dan resultados",
+        url: "/es/blog/codigos-qr-pequenos-negocios-ideas-que-funcionan",
+      },
+      {
+        title: "Cómo medir campañas locales con códigos QR",
+        url: "/es/blog/analitica-codigos-qr-campanas-locales",
         comingSoon: true,
       },
       {
-        title: "Las 7 mejores herramientas para affiliate marketers en 2026",
-        url: "/es/blog/herramientas-affiliate-marketers",
-        comingSoon: true,
-      },
-      {
-        title: "Cómo configurar UTMs en enlaces de afiliado correctamente",
-        url: "/es/blog/utms-links-afiliado",
+        title: "Las mejores herramientas de gestión de enlaces para equipos pequeños",
+        url: "/es/blog/herramientas-gestion-enlaces-equipos-pequenos",
         comingSoon: true,
       },
     ],
