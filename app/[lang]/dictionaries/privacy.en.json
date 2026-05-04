@@ -4,19 +4,19 @@
     "description": "Learn how AffProf collects, uses, and protects your information when you use our link management service."
   },
   "title": "Privacy Policy",
-  "lastUpdated": "April 25, 2026",
+  "lastUpdated": "May 4, 2026",
   "sections": [
     {
       "heading": "1. Information We Collect",
-      "content": "AffProf (\"AffProf\", \"we\", \"us\", \"our\") is operated by Carlos Sanchez operating as AffProf, based in Ottawa, Ontario, Canada.\n\nAccount information\n• Email address and name when you register\n• Password hash (we never see your plaintext password)\n\nUsage data\n• Links, products, tags, and settings you create\n• Click events on your short links\n• Brand assets you upload (logos, images for QR codes)\n\nClick analytics (visitors of your short links)\n• Country (derived from IP address)\n• Device type, browser, and operating system\n• Referrer source\n• We do not store personally identifiable information about visitors. IP addresses are hashed before storage and never retained in raw form.\n\nPayment information\n• Handled entirely by Stripe. We never store credit card details on our servers.\n• We retain only Stripe customer and subscription identifiers needed to manage your subscription.\n\nOperational data\n• Server logs containing timestamps, request paths, and error traces\n• Email delivery logs from Resend"
+      "content": "AffProf (\"AffProf\", \"we\", \"us\", \"our\") is operated by Carlos Sanchez operating as AffProf, based in Ottawa, Ontario, Canada.\n\nAccount information\n• Email address and name when you register\n• Password hash (we never see your plaintext password)\n\nUsage data\n• Links, products, tags, and settings you create\n• Click events on your short links\n• Brand assets you upload (logos, images for QR codes)\n\nClick analytics (visitors of your short links)\n• Country (derived from IP address)\n• Device type, browser, and operating system\n• Referrer source\n• We do not store personally identifiable information about visitors. IP addresses are hashed before storage and never retained in raw form.\n\nMarketing site analytics\n• Pages visited on affprof.com\n• Clicks on primary buttons, registration links, login, pricing, contact, blog CTAs, and social links\n• Page language, button location or section, selected plan, and call-to-action type\n• Technical data such as device type, browser, operating system, approximate country, and referrer source\n\nPayment information\n• Handled entirely by Stripe. We never store credit card details on our servers.\n• We retain only Stripe customer and subscription identifiers needed to manage your subscription.\n\nOperational data\n• Server logs containing timestamps, request paths, and error traces\n• Email delivery logs from Resend"
     },
     {
       "heading": "2. How We Use Your Information",
-      "content": "• To provide and operate the Service\n• To send email alerts when your links break\n• To send transactional emails (account confirmation, billing receipts, security notifications)\n• To improve and develop new features\n• To respond to support requests\n• To detect and prevent fraud or abuse\n\nWe do not sell your personal data. We do not use your data to train AI models."
+      "content": "• To provide and operate the Service\n• To send email alerts when your links break\n• To send transactional emails (account confirmation, billing receipts, security notifications)\n• To measure how visitors interact with our marketing site, including primary buttons, pricing pages, blog content, and registration links\n• To improve our pages, messaging, pricing, and user experience\n• To respond to support requests\n• To detect and prevent fraud or abuse\n\nWe do not sell your personal data. We do not use your data to train AI models."
     },
     {
       "heading": "3. Data Sharing",
-      "content": "We share data only with the following processors, each contractually bound to protect your data:\n\n• Stripe — Payment processing for Pro subscriptions (email, name, billing address)\n• Resend — Transactional email delivery (email, name, message content)\n• Neon — Database hosting, all operational data\n• DigitalOcean — Application hosting at app.affprof.com, all operational data\n• Vercel — Marketing site hosting at affprof.com, marketing site visitor data only\n\nWe never share your data with advertisers or marketing networks."
+      "content": "We share data only with the following processors, each contractually bound to protect your data:\n\n• Stripe — Payment processing for Pro subscriptions (email, name, billing address)\n• Resend — Transactional email delivery (email, name, message content)\n• Neon — Database hosting, all operational data\n• DigitalOcean — Application hosting at app.affprof.com, all operational data\n• Vercel — Marketing site hosting at affprof.com, marketing site visitor data only\n• Google Analytics / Google LLC — Marketing site analytics, including page views, interaction events, browser/device technical data, and referrer source\n\nWe never share your data with advertisers or marketing networks."
     },
     {
       "heading": "4. Data Retention",
@@ -24,7 +24,7 @@
     },
     {
       "heading": "5. Cookies",
-      "content": "AffProf uses only essential cookies required for authentication and session management. We do not use advertising cookies, third-party analytics cookies, or any cookies that identify individual visitors of your short links."
+      "content": "AffProf uses essential cookies required for authentication and session management. On the marketing site affprof.com, we may also use analytics cookies or similar technologies, such as Google Analytics, to measure visits, primary button clicks, and content performance. We do not use advertising cookies or sell personal data. We also do not use cookies to personally identify individual visitors of your short links."
     },
     {
       "heading": "6. Your Rights",

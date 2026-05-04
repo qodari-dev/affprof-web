@@ -33,7 +33,13 @@ function renderList(list?: BlogSection["list"]) {
   );
 }
 
-function BlogSectionBlock({ section }: { section: BlogSection }) {
+function BlogSectionBlock({
+  post,
+  section,
+}: {
+  post: BlogPost;
+  section: BlogSection;
+}) {
   return (
     <section
       id={section.id}
@@ -62,7 +68,15 @@ function BlogSectionBlock({ section }: { section: BlogSection }) {
         </div>
       ))}
       {renderParagraphs(section.paragraphsAfter)}
-      {section.ctaBox ? <BlogCta cta={section.ctaBox} /> : null}
+      {section.ctaBox ? (
+        <BlogCta
+          cta={section.ctaBox}
+          locale={post.locale}
+          postId={post.id}
+          postSlug={post.slug}
+          sectionId={section.id}
+        />
+      ) : null}
     </section>
   );
 }
@@ -152,7 +166,7 @@ export default function BlogArticle({ post }: { post: BlogPost }) {
           </div>
 
           {post.sections.map((section) => (
-            <BlogSectionBlock key={section.id} section={section} />
+            <BlogSectionBlock key={section.id} post={post} section={section} />
           ))}
         </div>
 

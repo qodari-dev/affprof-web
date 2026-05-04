@@ -1,4 +1,5 @@
 import { CheckIcon, NotIncludedIcon } from "./icons";
+import TrackedLink from "./TrackedLink";
 import { SITE_URLS } from "../site-config";
 
 type Feature = { label: string; included: boolean };
@@ -36,7 +37,13 @@ type PricingDict = {
   };
 };
 
-export default function Pricing({ dict }: { dict: PricingDict }) {
+export default function Pricing({
+  dict,
+  lang,
+}: {
+  dict: PricingDict;
+  lang: string;
+}) {
   return (
     <section id="pricing" className="border-t border-white/8 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -98,12 +105,18 @@ export default function Pricing({ dict }: { dict: PricingDict }) {
               ))}
             </ul>
 
-            <a
+            <TrackedLink
               href={SITE_URLS.register}
+              eventParams={{
+                location: "pricing",
+                cta: "free_plan",
+                lang,
+                plan: "free",
+              }}
               className="mt-8 inline-flex w-full items-center justify-center rounded-2xl border border-white/10 bg-white/3 px-4 py-3 text-sm font-semibold text-text-primary transition-colors hover:border-primary/35 hover:bg-white/6"
             >
               {dict.free.cta}
-            </a>
+            </TrackedLink>
           </div>
           <p className="mb-8 text-center text-sm text-text-muted">
             {dict.free.note}
@@ -145,12 +158,19 @@ export default function Pricing({ dict }: { dict: PricingDict }) {
                   <p className="mt-3 text-sm leading-relaxed text-text-secondary">
                     {dict.pro.descMonthly}
                   </p>
-                  <a
+                  <TrackedLink
                     href={SITE_URLS.registerPro}
+                    eventParams={{
+                      location: "pricing",
+                      cta: "pro_monthly",
+                      lang,
+                      plan: "pro",
+                      billing_cycle: "monthly",
+                    }}
                     className="mt-5 inline-flex w-full items-center justify-center rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-sm font-semibold text-text-primary transition-colors hover:bg-white/10"
                   >
                     {dict.pro.ctaMonthly}
-                  </a>
+                  </TrackedLink>
                 </div>
 
                 <div className="rounded-3xl border border-primary/30 bg-primary/10 p-5">
@@ -168,12 +188,19 @@ export default function Pricing({ dict }: { dict: PricingDict }) {
                   <p className="mt-3 text-sm leading-relaxed text-text-secondary">
                     {dict.pro.descYearly}
                   </p>
-                  <a
+                  <TrackedLink
                     href={SITE_URLS.registerProAnnual}
+                    eventParams={{
+                      location: "pricing",
+                      cta: "pro_annual",
+                      lang,
+                      plan: "pro",
+                      billing_cycle: "annual",
+                    }}
                     className="mt-5 inline-flex w-full items-center justify-center rounded-2xl bg-primary px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
                   >
                     {dict.pro.ctaYearly}
-                  </a>
+                  </TrackedLink>
                 </div>
               </div>
 

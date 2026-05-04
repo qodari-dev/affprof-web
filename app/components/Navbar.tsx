@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { CloseIcon, MenuIcon } from "./icons";
+import TrackedLink from "./TrackedLink";
 import { getLocalizedPathname } from "../lib/language-paths";
 import { SITE_URLS } from "../site-config";
 
@@ -73,18 +74,25 @@ export default function Navbar({
           >
             {otherLabel}
           </Link>
-          <Link
+          <TrackedLink
             href={SITE_URLS.login}
+            eventParams={{ location: "header_desktop", cta: "login", lang }}
             className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
           >
             {dict.login}
-          </Link>
-          <Link
+          </TrackedLink>
+          <TrackedLink
             href={SITE_URLS.register}
+            eventParams={{
+              location: "header_desktop",
+              cta: "get_started",
+              lang,
+              plan: "free",
+            }}
             className="inline-flex items-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-transform transition-colors hover:bg-primary-dark hover:-translate-y-0.5"
           >
             {dict.getStarted}
-          </Link>
+          </TrackedLink>
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
@@ -122,20 +130,27 @@ export default function Navbar({
                   </Link>
                 ))}
                 <div className="my-1 h-px bg-white/8" />
-                <Link
+                <TrackedLink
                   href={SITE_URLS.login}
                   onClick={() => setOpen(false)}
+                  eventParams={{ location: "header_mobile", cta: "login", lang }}
                   className="rounded-2xl border border-transparent px-4 py-3 text-sm font-medium text-text-secondary transition-colors hover:border-white/8 hover:bg-white/4 hover:text-text-primary"
                 >
                   {dict.login}
-                </Link>
-                <Link
+                </TrackedLink>
+                <TrackedLink
                   href={SITE_URLS.register}
                   onClick={() => setOpen(false)}
+                  eventParams={{
+                    location: "header_mobile",
+                    cta: "get_started",
+                    lang,
+                    plan: "free",
+                  }}
                   className="mt-1 inline-flex items-center justify-center rounded-2xl bg-primary px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
                 >
                   {dict.getStarted}
-                </Link>
+                </TrackedLink>
               </div>
             </div>
           </div>

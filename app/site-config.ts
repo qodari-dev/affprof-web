@@ -6,4 +6,9 @@ export const SITE_URLS = {
   login: "https://app.affprof.com/",
   billing: "https://app.affprof.com/billing",
   supportEmail: "hello@affprof.com",
+  social: {
+    facebook: "https://www.facebook.com/profile.php?id=61588929043244",
+    instagram: "https://www.instagram.com/affprof/",
+    x: "https://x.com/affprof_app",
+  },
 } as const;

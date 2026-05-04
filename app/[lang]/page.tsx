@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
@@ -10,6 +9,7 @@ import {
 } from "../components/icons";
 import Navbar from "../components/Navbar";
 import Pricing from "../components/Pricing";
+import TrackedLink from "../components/TrackedLink";
 import { SITE_URLS } from "../site-config";
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 
@@ -239,18 +239,29 @@ export default async function Home({
               </ul>
 
               <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-                <Link
+                <TrackedLink
                   href={SITE_URLS.register}
+                  eventParams={{
+                    location: "home_hero",
+                    cta: "primary_register",
+                    lang,
+                    plan: "free",
+                  }}
                   className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3.5 text-base font-semibold text-white transition-transform transition-colors hover:bg-primary-dark hover:-translate-y-0.5"
                 >
                   {dict.hero.ctaPrimary}
-                </Link>
-                <Link
+                </TrackedLink>
+                <TrackedLink
                   href="#how-it-works"
+                  eventParams={{
+                    location: "home_hero",
+                    cta: "secondary_how_it_works",
+                    lang,
+                  }}
                   className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/4 px-6 py-3.5 text-base font-semibold text-text-primary transition-colors hover:border-primary/35 hover:bg-white/8"
                 >
                   {dict.hero.ctaSecondary}
-                </Link>
+                </TrackedLink>
               </div>
 
               <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-text-secondary">
@@ -440,7 +451,7 @@ export default async function Home({
           </div>
         </section>
 
-        <Pricing dict={dict.pricing} />
+        <Pricing dict={dict.pricing} lang={lang} />
 
         <Faq dict={dict.faq} />
 
@@ -462,18 +473,29 @@ export default async function Home({
                 </div>
 
                 <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-                  <Link
+                  <TrackedLink
                     href={SITE_URLS.register}
+                    eventParams={{
+                      location: "home_final_cta",
+                      cta: "register",
+                      lang,
+                      plan: "free",
+                    }}
                     className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-base font-semibold text-primary-dark transition-colors hover:bg-white/92"
                   >
                     {dict.cta.button}
-                  </Link>
-                  <Link
+                  </TrackedLink>
+                  <TrackedLink
                     href={SITE_URLS.login}
+                    eventParams={{
+                      location: "home_final_cta",
+                      cta: "login",
+                      lang,
+                    }}
                     className="inline-flex items-center justify-center rounded-full border border-white/20 bg-black/12 px-6 py-3.5 text-base font-semibold text-white transition-colors hover:bg-black/20"
                   >
                     {dict.nav.login}
-                  </Link>
+                  </TrackedLink>
                 </div>
               </div>
             </div>
