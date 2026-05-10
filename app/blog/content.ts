@@ -19,6 +19,8 @@ type BlogSubsection = {
   heading: string;
   paragraphs: string[];
   list?: BlogList;
+  code?: string;
+  paragraphsAfter?: string[];
 };
 
 export type BlogSection = {
@@ -26,6 +28,7 @@ export type BlogSection = {
   heading: string;
   intro?: string;
   paragraphs?: string[];
+  code?: string;
   list?: BlogList;
   callouts?: BlogCallout[];
   subsections?: BlogSubsection[];
@@ -100,6 +103,355 @@ export const BLOG_INDEX_COPY: Record<
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    id: "utm-tracking-guide",
+    locale: "en",
+    slug: BLOG_SLUGS_BY_ID["utm-tracking-guide"].en,
+    title:
+      "UTM Tracking Made Simple: How to Know Which Channels Actually Bring You Customers",
+    description:
+      "Learn what UTM tracking is, which parameters matter, and how to use UTMs to identify the channels that actually bring customers.",
+    subtitle:
+      "Stop guessing where your customers come from. Use UTM tracking to connect every shared link to the channel, campaign, and customer action behind it.",
+    intro: [
+      "You share your links everywhere. Instagram bio. Newsletter. Podcast. Facebook ads. QR codes on flyers. Maybe even WhatsApp groups.",
+      "But here is the question that keeps founders, marketers, and creators up at night: which one is actually working?",
+      'If your honest answer is "I do not know, I just check Google Analytics sometimes and hope for the best," you are not alone. Most people compare their own marketing to a black box. They post, they share, they hope.',
+      "The good news: there is a simple, free system that has been around for over a decade and solves exactly this problem. It is called UTM tracking.",
+      'This guide will show you what UTMs are, the five parameters that matter, and real examples for affiliate marketers, coaches, small businesses, and agencies. By the end, you will never wonder "where did this customer come from?" again.',
+    ],
+    author: "AffProf",
+    readTime: "6 min read",
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    ogImage: "/blog/og/utm-tracking-guide-en.png",
+    tocHeading: "In this article",
+    labels: {
+      category: "UTM tracking",
+      backToBlog: "Back to blog",
+      updated: "Updated",
+      comingSoon: "Coming soon",
+      readArticle: "Read article",
+    },
+    sections: [
+      {
+        id: "what-is-a-utm",
+        heading: "What is a UTM?",
+        paragraphs: [
+          "A UTM is a small tag you add to the end of any URL. When someone clicks that tagged link, Google Analytics or any analytics tool records exactly where they came from.",
+          "Here is the same link, before and after UTMs.",
+        ],
+        subsections: [
+          {
+            heading: "Without UTM",
+            paragraphs: [],
+            code: "https://yoursite.com/products",
+          },
+          {
+            heading: "With UTM",
+            paragraphs: [],
+            code: "https://yoursite.com/products?utm_source=instagram&utm_medium=bio&utm_campaign=spring_promo",
+          },
+        ],
+        paragraphsAfter: [
+          'Same destination. But now your analytics knows: "this visitor came from Instagram, specifically from the bio link, during the spring promo campaign."',
+          "Multiply this by every channel you use, and suddenly you can see exactly which ones bring real customers, not just clicks.",
+        ],
+      },
+      {
+        id: "five-utm-parameters",
+        heading: "The Five UTM Parameters",
+        intro:
+          "There are five parameters you can use. The first three are the most important.",
+        list: {
+          type: "unordered",
+          items: [
+            "utm_source: the platform or website where the link was shared. Examples: instagram, newsletter, youtube, podcast, facebook, partner_blog.",
+            "utm_medium: the type of channel. Examples: social, email, cpc, organic, referral, qr_code.",
+            "utm_campaign: the specific campaign or promotion. Examples: summer_launch, black_friday, welcome_series, affiliate_amazon.",
+            "utm_content: used to differentiate similar links within the same campaign. Examples: header_button, footer_link, image_cta, video_description.",
+            "utm_term: used mostly for paid search to track keywords. Examples: link_management, qr_code_generator.",
+          ],
+        },
+        paragraphs: [
+          "You do not need all five every time. Most people use just source, medium, and campaign for 90% of their tracking.",
+        ],
+      },
+      {
+        id: "real-use-cases",
+        heading: "Real Use Cases by Profile",
+        intro:
+          "This is where UTMs go from theory to actual money in your bank account.",
+        subsections: [
+          {
+            heading: "For Affiliate Marketers",
+            paragraphs: [
+              "You promote the same Amazon product across YouTube, Instagram, and your blog. Without UTMs, you have no idea which channel converts best.",
+              "With UTMs, your three links look like this.",
+            ],
+            code: "amazon.com/dp/B0XXX?tag=youraff-20&utm_source=youtube&utm_medium=video&utm_campaign=product_review\n\namazon.com/dp/B0XXX?tag=youraff-20&utm_source=instagram&utm_medium=story&utm_campaign=product_review\n\namazon.com/dp/B0XXX?tag=youraff-20&utm_source=blog&utm_medium=post&utm_campaign=product_review",
+            paragraphsAfter: [
+              'After 30 days, you can see: "Instagram brought 200 clicks but 1 sale. YouTube brought 50 clicks but 8 sales." Now you know where to focus.',
+            ],
+          },
+          {
+            heading: "For Coaches and Creators",
+            paragraphs: [
+              "You share your booking page in your Instagram bio, in your weekly newsletter, and in your podcast description. They all point to the same Calendly link. Without UTMs, all bookings look identical in your dashboard.",
+            ],
+            code: "calendly.com/yourname?utm_source=instagram&utm_medium=bio&utm_campaign=q4_2026\n\ncalendly.com/yourname?utm_source=newsletter&utm_medium=email&utm_campaign=q4_2026\n\ncalendly.com/yourname?utm_source=podcast&utm_medium=show_notes&utm_campaign=q4_2026",
+            paragraphsAfter: [
+              'Now you can answer: "Is my newsletter actually bringing clients, or am I writing for nothing?" If 80% of your bookings come from Instagram and 5% from newsletter, you know where to invest your time.',
+            ],
+          },
+          {
+            heading: "For Small Businesses",
+            paragraphs: [
+              "You print 5,000 flyers with a QR code. You also run Facebook ads. You also send a monthly email to your list.",
+              'Without UTMs, all this traffic shows up as "direct" or mixed in your analytics. With UTMs in your QR code link, ad link, and email link, you can finally answer: "Was the $400 I spent printing flyers worth it, or should I move that budget to Facebook ads?"',
+            ],
+          },
+          {
+            heading: "For Marketing Agencies",
+            paragraphs: [
+              "You manage links for three clients across multiple platforms. Each client wants a clear report at the end of the month.",
+              "UTMs let you tag every link with the client name, channel, and campaign.",
+            ],
+            code: "client_a_landing.com?utm_source=facebook&utm_medium=cpc&utm_campaign=client_a_q4\n\nclient_b_landing.com?utm_source=linkedin&utm_medium=organic&utm_campaign=client_b_thought_leadership",
+          },
+        ],
+        paragraphsAfter: [
+          "When report day comes, you filter by utm_campaign=client_a_q4 and have your entire performance breakdown ready in two clicks.",
+        ],
+      },
+      {
+        id: "common-mistakes",
+        heading: "Common Mistakes That Kill Your Tracking",
+        intro: "Here are the four most common mistakes people make with UTMs.",
+        list: {
+          type: "ordered",
+          items: [
+            "Inconsistent capitalization. Instagram, instagram, and INSTAGRAM are three different sources in Google Analytics. Pick lowercase and stick to it forever.",
+            "Not documenting your UTMs. Six months from now, you will not remember if you used summer_launch or summer_2026 for that campaign. Keep a simple spreadsheet with every UTM you create.",
+            "Using UTMs on internal links. If you tag links between pages on your own website, you will break your Analytics sessions. UTMs are for external traffic only.",
+            "Forgetting to track QR codes. A printed QR code is just a link. If you do not add UTMs to it before generating the QR, you will never know how many scans it actually got.",
+          ],
+        },
+      },
+      {
+        id: "without-losing-your-mind",
+        heading: "How to Do This Without Losing Your Mind",
+        paragraphs: [
+          "Manually building UTMs for every link is tedious. You will forget parameters. You will typo a campaign name. You will lose the spreadsheet.",
+          "This is why link management tools exist. AffProf, for example, includes a built-in UTM builder that generates parameters automatically, saves your templates, and tracks every click in real time. You also get short branded links, custom QR codes, and broken-link alerts so your printed materials never become useless.",
+          "But the tool matters less than the habit. Whatever you use, the rule is simple: never share a marketing link without UTMs again.",
+          "The customers you did not know you had are about to become very obvious.",
+        ],
+        ctaBox: {
+          title: "Ready to track every link in one place?",
+          subtitle:
+            "AffProf gives you short links, custom QR codes, click analytics by country and device, and an automatic UTM builder in one dashboard.",
+          buttonText: "Start free",
+          buttonUrl: SITE_URLS.register,
+          secondaryText:
+            "Free plan available. No credit card required. Available in English and Spanish.",
+        },
+      },
+    ],
+    relatedHeading: "Related articles",
+    relatedArticles: [
+      {
+        title:
+          "QR Codes for Small Business: 7 Practical Ideas That Actually Bring Customers",
+        url: "/en/blog/qr-codes-small-business-ideas-that-work",
+      },
+      {
+        title:
+          "Why Affiliate Links Break, and How to Detect Them Before They Cost You Sales",
+        url: "/en/blog/why-affiliate-links-break",
+      },
+      {
+        title: "How to track QR code campaigns with UTMs",
+        url: "/en/blog/track-qr-code-campaigns-with-utms",
+        comingSoon: true,
+      },
+    ],
+  },
+  {
+    id: "utm-tracking-guide",
+    locale: "es",
+    slug: BLOG_SLUGS_BY_ID["utm-tracking-guide"].es,
+    title:
+      "Tracking con UTMs Sin Complicarte: Cómo Saber Qué Canales Te Traen Clientes",
+    description:
+      "Aprende qué es el tracking con UTMs, qué parámetros importan y cómo usar UTMs para identificar los canales que realmente traen clientes.",
+    subtitle:
+      "Deja de adivinar de dónde vienen tus clientes. Usa UTMs para conectar cada enlace compartido con el canal, campaña y acción real detrás del clic.",
+    intro: [
+      "Compartes tus enlaces en todas partes. Bio de Instagram. Newsletter. Podcast. Anuncios de Facebook. Códigos QR en flyers. Hasta en grupos de WhatsApp.",
+      "Pero ahí está la pregunta que mantiene despiertos a fundadores, marketers y creators: ¿cuál de todos esos canales realmente está funcionando?",
+      'Si tu respuesta honesta es "no sé, miro Google Analytics a veces y espero lo mejor", no estás solo. La mayoría de las personas tratan su propio marketing como una caja negra. Publican, comparten, esperan.',
+      "La buena noticia: existe un sistema simple y gratuito que lleva más de una década solucionando exactamente este problema. Se llama tracking con UTMs.",
+      'Esta guía te muestra qué son los UTMs, los cinco parámetros que importan, y ejemplos reales para affiliate marketers, coaches, pequeños negocios y agencias. Al final, nunca más vas a preguntarte "¿de dónde vino este cliente?".',
+    ],
+    author: "AffProf",
+    readTime: "6 min",
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-05-09",
+    ogImage: "/blog/og/tracking-utms-es.png",
+    tocHeading: "En este artículo",
+    labels: {
+      category: "Tracking UTM",
+      backToBlog: "Volver al blog",
+      updated: "Actualizado",
+      comingSoon: "Próximamente",
+      readArticle: "Leer artículo",
+    },
+    sections: [
+      {
+        id: "que-es-un-utm",
+        heading: "¿Qué es un UTM?",
+        paragraphs: [
+          "Un UTM es una pequeña etiqueta que agregas al final de cualquier URL. Cuando alguien hace clic en ese enlace etiquetado, Google Analytics o cualquier herramienta de analítica registra exactamente de dónde vino.",
+          "Aquí el mismo enlace, antes y después de UTMs.",
+        ],
+        subsections: [
+          {
+            heading: "Sin UTM",
+            paragraphs: [],
+            code: "https://tusitio.com/productos",
+          },
+          {
+            heading: "Con UTM",
+            paragraphs: [],
+            code: "https://tusitio.com/productos?utm_source=instagram&utm_medium=bio&utm_campaign=promo_primavera",
+          },
+        ],
+        paragraphsAfter: [
+          'El destino es el mismo. Pero ahora tu analítica sabe: "este visitante vino de Instagram, específicamente del enlace de la bio, durante la campaña de primavera."',
+          "Multiplica esto por cada canal que usas, y de repente puedes ver exactamente cuáles te traen clientes reales, no solo clics.",
+        ],
+      },
+      {
+        id: "cinco-parametros-utm",
+        heading: "Los Cinco Parámetros UTM",
+        intro:
+          "Hay cinco parámetros que puedes usar. Los primeros tres son los más importantes.",
+        list: {
+          type: "unordered",
+          items: [
+            "utm_source: la plataforma o sitio web donde se compartió el enlace. Ejemplos: instagram, newsletter, youtube, podcast, facebook, blog_partner.",
+            "utm_medium: el tipo de canal. Ejemplos: social, email, cpc, organic, referral, qr_code.",
+            "utm_campaign: la campaña o promoción específica. Ejemplos: lanzamiento_verano, black_friday, serie_bienvenida, afiliados_amazon.",
+            "utm_content: para diferenciar enlaces similares dentro de la misma campaña. Ejemplos: boton_header, enlace_footer, cta_imagen, descripcion_video.",
+            "utm_term: usado principalmente en búsquedas pagadas para rastrear palabras clave. Ejemplos: gestion_enlaces, generador_codigo_qr.",
+          ],
+        },
+        paragraphs: [
+          "No necesitas los cinco cada vez. La mayoría de la gente usa solo source, medium y campaign para el 90% de su tracking.",
+        ],
+      },
+      {
+        id: "casos-de-uso",
+        heading: "Casos de Uso Reales por Perfil",
+        intro:
+          "Aquí es donde los UTMs pasan de teoría a dinero real en tu cuenta.",
+        subsections: [
+          {
+            heading: "Para Affiliate Marketers",
+            paragraphs: [
+              "Promueves el mismo producto de Amazon en YouTube, Instagram y tu blog. Sin UTMs, no tienes idea cuál canal convierte mejor.",
+              "Con UTMs, tus tres enlaces se ven así.",
+            ],
+            code: "amazon.com/dp/B0XXX?tag=tuafiliado-20&utm_source=youtube&utm_medium=video&utm_campaign=review_producto\n\namazon.com/dp/B0XXX?tag=tuafiliado-20&utm_source=instagram&utm_medium=story&utm_campaign=review_producto\n\namazon.com/dp/B0XXX?tag=tuafiliado-20&utm_source=blog&utm_medium=post&utm_campaign=review_producto",
+            paragraphsAfter: [
+              'Después de 30 días, puedes ver: "Instagram trajo 200 clics pero 1 venta. YouTube trajo 50 clics pero 8 ventas." Ahora sabes dónde enfocarte.',
+            ],
+          },
+          {
+            heading: "Para Coaches y Creators",
+            paragraphs: [
+              "Compartes tu página de reservas en la bio de Instagram, en tu newsletter semanal y en la descripción del podcast. Todos apuntan al mismo enlace de Calendly. Sin UTMs, todas las reservas se ven idénticas en tu dashboard.",
+            ],
+            code: "calendly.com/tunombre?utm_source=instagram&utm_medium=bio&utm_campaign=q4_2026\n\ncalendly.com/tunombre?utm_source=newsletter&utm_medium=email&utm_campaign=q4_2026\n\ncalendly.com/tunombre?utm_source=podcast&utm_medium=show_notes&utm_campaign=q4_2026",
+            paragraphsAfter: [
+              "Ahora puedes responder: ¿mi newsletter realmente trae clientes, o estoy escribiendo para nada? Si el 80% de tus reservas vienen de Instagram y solo el 5% del newsletter, sabes dónde invertir tu tiempo.",
+            ],
+          },
+          {
+            heading: "Para Pequeños Negocios",
+            paragraphs: [
+              "Imprimes 5,000 flyers con un código QR. También corres anuncios en Facebook. Y mandas un email mensual a tu lista de clientes.",
+              'Sin UTMs, todo este tráfico aparece como "directo" o mezclado en tu analítica. Con UTMs en el enlace de tu QR, el de tu anuncio y el de tu email, finalmente puedes responder: "¿Los $400 que gasté imprimiendo flyers valieron la pena, o debería mover ese presupuesto a anuncios de Facebook?"',
+            ],
+          },
+          {
+            heading: "Para Agencias de Marketing",
+            paragraphs: [
+              "Manejas enlaces para tres clientes en múltiples plataformas. Cada cliente quiere un reporte claro a fin de mes.",
+              "Los UTMs te permiten etiquetar cada enlace con el nombre del cliente, el canal y la campaña.",
+            ],
+            code: "landing_cliente_a.com?utm_source=facebook&utm_medium=cpc&utm_campaign=cliente_a_q4\n\nlanding_cliente_b.com?utm_source=linkedin&utm_medium=organic&utm_campaign=cliente_b_liderazgo",
+          },
+        ],
+        paragraphsAfter: [
+          "Cuando llega el día del reporte, filtras por utm_campaign=cliente_a_q4 y tienes el desglose completo de performance en dos clics.",
+        ],
+      },
+      {
+        id: "errores-comunes",
+        heading: "Errores Comunes Que Matan Tu Tracking",
+        intro:
+          "Aquí los cuatro errores más comunes que comete la gente con UTMs.",
+        list: {
+          type: "ordered",
+          items: [
+            "Mayúsculas y minúsculas inconsistentes. Instagram, instagram e INSTAGRAM son tres sources distintos en Google Analytics. Elige minúsculas y respétalo siempre.",
+            "No documentar tus UTMs. En seis meses no vas a recordar si usaste lanzamiento_verano o verano_2026 para esa campaña. Mantén una hoja de cálculo simple con cada UTM que creas.",
+            "Usar UTMs en enlaces internos. Si etiquetas enlaces entre páginas de tu propio sitio web, vas a romper las sesiones de Analytics. Los UTMs son solo para tráfico externo.",
+            "Olvidar trackear los códigos QR. Un código QR impreso es solo un enlace. Si no le agregas UTMs antes de generar el QR, nunca vas a saber cuántos escaneos realmente recibió.",
+          ],
+        },
+      },
+      {
+        id: "sin-complicarte",
+        heading: "Cómo Hacer Esto Sin Volverte Loco",
+        paragraphs: [
+          "Construir UTMs manualmente para cada enlace es tedioso. Vas a olvidarte de parámetros. Vas a tener un typo en el nombre de campaña. Vas a perder la hoja de cálculo.",
+          "Por eso existen las herramientas de gestión de enlaces. AffProf, por ejemplo, incluye un UTM builder integrado que genera los parámetros automáticamente, guarda tus templates y rastrea cada clic en tiempo real. También obtienes enlaces cortos con tu marca, códigos QR personalizados y alertas cuando un enlace se rompe, para que tu material impreso nunca quede inservible.",
+          "Pero la herramienta importa menos que el hábito. Sea lo que uses, la regla es simple: nunca más compartas un enlace de marketing sin UTMs.",
+          "Los clientes que no sabías que tenías están a punto de volverse muy obvios.",
+        ],
+        ctaBox: {
+          title: "¿Listo para rastrear cada enlace en un solo lugar?",
+          subtitle:
+            "AffProf te da enlaces cortos, códigos QR personalizados, analíticas de clics por país y dispositivo, y un UTM builder automático desde un dashboard.",
+          buttonText: "Empezar gratis",
+          buttonUrl: SITE_URLS.register,
+          secondaryText:
+            "Plan gratis sin tarjeta de crédito. Disponible en español e inglés.",
+        },
+      },
+    ],
+    relatedHeading: "Artículos relacionados",
+    relatedArticles: [
+      {
+        title:
+          "Códigos QR para pequeños negocios: la guía práctica con 7 ideas que dan resultados",
+        url: "/es/blog/codigos-qr-pequenos-negocios-ideas-que-funcionan",
+      },
+      {
+        title:
+          "Por qué se rompen tus enlaces de afiliado, y cómo detectarlos antes de perder ventas",
+        url: "/es/blog/por-que-se-rompen-enlaces-de-afiliado",
+      },
+      {
+        title: "Cómo trackear campañas QR con UTMs",
+        url: "/es/blog/trackear-campanas-qr-con-utms",
+        comingSoon: true,
+      },
+    ],
+  },
   {
     id: "qr-codes-small-business",
     locale: "en",

@@ -33,6 +33,16 @@ function renderList(list?: BlogSection["list"]) {
   );
 }
 
+function renderCodeBlock(code?: string) {
+  if (!code) return null;
+
+  return (
+    <pre className="mt-5 overflow-x-auto rounded-2xl border border-white/8 bg-black/30 p-4 text-sm leading-7 text-text-secondary">
+      <code>{code}</code>
+    </pre>
+  );
+}
+
 function BlogSectionBlock({
   post,
   section,
@@ -53,6 +63,7 @@ function BlogSectionBlock({
           {section.intro}
         </p>
       ) : null}
+      {renderCodeBlock(section.code)}
       {renderList(section.list)}
       {renderParagraphs(section.paragraphs)}
       {section.callouts?.map((callout) => (
@@ -64,7 +75,9 @@ function BlogSectionBlock({
             {subsection.heading}
           </h3>
           {renderParagraphs(subsection.paragraphs)}
+          {renderCodeBlock(subsection.code)}
           {renderList(subsection.list)}
+          {renderParagraphs(subsection.paragraphsAfter)}
         </div>
       ))}
       {renderParagraphs(section.paragraphsAfter)}

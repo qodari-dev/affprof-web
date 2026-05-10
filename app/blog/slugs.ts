@@ -1,6 +1,10 @@
 type Locale = "en" | "es";
 
 export const BLOG_SLUGS_BY_ID: Record<string, Record<Locale, string>> = {
+  "utm-tracking-guide": {
+    en: "utm-tracking-guide-channels-bring-customers",
+    es: "tracking-utms-canales-traen-clientes",
+  },
   "qr-codes-small-business": {
     en: "qr-codes-small-business-ideas-that-work",
     es: "codigos-qr-pequenos-negocios-ideas-que-funcionan",
